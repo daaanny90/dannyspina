@@ -11,20 +11,17 @@
 </script>
 
 <script charset="utf-8">
-  import Header from '$lib/components/Header.svelte'
-  import Footer from '$lib/components/Footer.svelte'
+  import Sidebar from '$lib/components/Sidebar.svelte'
   import '$lib/styles/style.scss'
   import { fade } from 'svelte/transition'
 
   export let currentRoute
 </script>
 
-<Header />
+<Sidebar />
 
 {#key currentRoute}
   <main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
     <slot />
   </main>
 {/key}
-
-<Footer />
