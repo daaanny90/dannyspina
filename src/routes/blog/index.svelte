@@ -12,9 +12,12 @@ export const load = async ({ fetch }) => {
 </script>
 
 <script>
+  import PageTitle from '$lib/components/PageTitle.svelte';
+
   export let posts
 </script>
 
+<PageTitle title="Blog" subtitle="" />
 <ul>
   {#each posts as post}
     <li>

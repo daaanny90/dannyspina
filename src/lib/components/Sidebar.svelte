@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
 	.logo {
-		font-family: $font-rhyme;
+		font-family: $font-serif;
 		width: 5rem;
 		text-align: center;
 		font-size: 2rem;
@@ -33,7 +33,7 @@
 
 	.sidebar {
 		position: fixed;
-		font-family: $font-montserrat;
+		font-family: $font-sans-serif;
 		font-weight: 700;
 		top: 0;
 		bottom: 0;
