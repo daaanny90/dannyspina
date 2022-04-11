@@ -12,6 +12,7 @@
 
 <script charset="utf-8">
   import Sidebar from '$lib/components/Sidebar.svelte'
+  import MobileMenu from '$lib/components/MobileMenu.svelte'
   import '$lib/styles/style.scss'
   import { fade } from 'svelte/transition'
 
@@ -19,6 +20,7 @@
 </script>
 
 <Sidebar />
+<MobileMenu />
 
 {#key currentRoute}
   <main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
