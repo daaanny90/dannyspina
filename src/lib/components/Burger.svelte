@@ -14,9 +14,9 @@
 	<label>
 		<input type="checkbox" on:click={toggleMenu} />
 		<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-			<path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
-			<path class="line--2" d="M0 50h70" />
-			<path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+			<path class="line--1 light-mode" d="M0 40h62c13 0 6 28-4 18L35 35" />
+			<path class="line--2 light-mode" d="M0 50h70" />
+			<path class="line--3 light-mode" d="M0 60h62c13 0 6-28-4-18L35 65" />
 		</svg>
 	</label>
 </div>
@@ -41,14 +41,13 @@
 		height: 7rem;
 		font-size: 2rem;
 		position: absolute;
-		top: -3rem;
+		top: -9rem;
 		right: 0;
 		z-index: 250;
 	}
 
 	path {
 		fill: none;
-		stroke: $red;
 		stroke-width: 3;
 		stroke-linecap: round;
 		stroke-linejoin: round;
@@ -57,6 +56,16 @@
 		stroke-dasharray: var(--length) var(--total-length);
 		stroke-dashoffset: var(--offset);
 		transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+		&.line--1,
+		&.line--2,
+		&.line--3 {
+			stroke: $white;
+
+			&.light-mode {
+				stroke: $black;
+			}
+		}
 	}
 
 	.cross input:checked + svg {

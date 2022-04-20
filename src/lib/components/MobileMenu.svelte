@@ -11,7 +11,7 @@
 </script>
 
 <Burger on:menuOpen={handleMessage} />
-<div class="mobile-menu" class:active>
+<div class="mobile-menu light-mode" class:active>
 	<MenuItem link="/blog" text="Blog" />
 	<MenuItem link="/about" text="About" />
 	<MenuItem link="/contact" text="Contact" />
@@ -32,13 +32,21 @@
 		justify-content: center;
 		flex-direction: column;
 		z-index: -200;
-		background: $white;
+		background: $black;
 		transition: right 0.3s ease-out;
+
+		&.light-mode {
+			background: $white;
+		}
 
 		&.active {
 			right: 0;
 			z-index: 200;
 			transition: right 0.3s ease-in;
+
+			@media screen and (min-width: $breakpoint-mobile) {
+				right: -100vw;
+			}
 		}
 	}
 </style>

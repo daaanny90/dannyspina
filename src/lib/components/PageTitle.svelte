@@ -13,9 +13,9 @@
 <style lang="scss">
 	.title-center {
 		.page-title {
-			font-family: $font-serif;
+			font-family: $font-sans-serif;
 			font-size: 5rem;
-			margin: 0;
+			margin: 0 0 1rem 0;
 		}
 		p {
 			font-size: 3rem;

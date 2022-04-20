@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
 	.logo {
-		font-family: $font-serif;
+		font-family: $font-sans-serif;
 		width: 5rem;
 		text-align: center;
 		font-size: 2rem;
@@ -34,7 +34,7 @@
 	.sidebar {
 		position: fixed;
 		font-family: $font-sans-serif;
-		font-weight: 700;
+		font-weight: 200;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -51,7 +51,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			padding: 7rem 0 1rem 0;
+			padding: 7rem 0 7rem 0;
 			height: 100%;
 		}
 	}
