@@ -10,6 +10,7 @@
 		document.querySelector('.line--2').classList.toggle('light-mode');
 		document.querySelector('.line--3').classList.toggle('light-mode');
 		document.querySelector('.mobile-menu').classList.toggle('light-mode');
+		document.querySelector('.bg-container').classList.toggle('light-mode');
 	}
 </script>
 

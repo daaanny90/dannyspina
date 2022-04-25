@@ -1,20 +1,26 @@
 <script lang="ts">
 	import MenuItem from './MenuItem.svelte';
 	import Burger from './Burger.svelte';
+	import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
+	let active: boolean = false;
 
-	function handleMessage(event) {
-		console.log(event.detail);
+	function handleMessage(event): void {
 		active = !active;
 	}
 
-	let active: boolean = false;
+	function closeMenu(): void {
+		active = false;
+    dispatch('menuOpen', false);
+  }
+
 </script>
 
 <Burger on:menuOpen={handleMessage} />
 <div class="mobile-menu light-mode" class:active>
-	<MenuItem link="/blog" text="Blog" />
-	<MenuItem link="/about" text="About" />
-	<MenuItem link="/contact" text="Contact" />
+	<MenuItem link="/blog" text="Blog" on:click={closeMenu}/>
+	<MenuItem link="/about" text="About" on:click={closeMenu}/>
+	<MenuItem link="/contact" text="Contact" on:click={closeMenu}/>
 </div>
 
 <style lang="scss" scoped>
@@ -33,7 +39,7 @@
 		flex-direction: column;
 		z-index: -200;
 		background: $black;
-		transition: right 0.3s ease-out;
+		transition: all 0.3s ease-out;
 
 		&.light-mode {
 			background: $white;
@@ -42,7 +48,7 @@
 		&.active {
 			right: 0;
 			z-index: 200;
-			transition: right 0.3s ease-in;
+			transition: all 0.3s ease-in;
 
 			@media screen and (min-width: $breakpoint-mobile) {
 				right: -100vw;
