@@ -28,7 +28,7 @@
 		z-index: 250;
 	}
 	.mobile-menu {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		right: -100vw;
 		width: 100%;
