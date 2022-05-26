@@ -23,7 +23,7 @@
 <div class="bg-container light-mode" />
 <Sidebar />
 <MobileMenu />
-<DarkModeSwitch />
+<!-- TODO: must be implemented correctly, now is still too buggy -> <DarkModeSwitch /> -->
 
 {#key currentRoute}
 	<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>

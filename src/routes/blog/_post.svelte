@@ -1,27 +1,33 @@
 <!-- _post.svelte -->
 <script>
-  export let title
-  export let date
-  export let categories
+	import PageTitle from '$lib/components/PageTitle.svelte';
+
+	export let title;
+  export let subtitle;
+	export let date;
+	export let categories;
+
+	let postCat = categories.length === 1 ? 'Category' : 'Categories';
+  console.log(postCat)
+  let cat = categories.map(category => `<a href="/blog/categories/${category}">${category}</a>`)
+  console.log(cat)
+	cat = cat.join(', ');
 </script>
 
-<h1>{title}</h1>
-
-<p>Published: {date}</p>
+<PageTitle {title} {subtitle}/>
 
 {#if categories.length}
-  <aside>
-    <h2>Posted in:</h2>
-    <ul>
-      {#each categories as category}
-        <li>
-          <a href="/blog/categories/{category}">
-            {category}
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </aside>
+<aside class="categories">
+  <h3>{ postCat }: {@html cat }</h3>
+</aside>
 {/if}
 
+<p class="date">{date}</p>
+
 <slot />
+
+<style scoped>
+.date {
+  margin-bottom: 5rem;
+}
+</style>
