@@ -20,6 +20,7 @@
 	a {
 		text-decoration: none;
 		font-size: 1.3rem;
+		color: $black;
 		font-weight: $font-weight-normal;
 
 		&:hover {
