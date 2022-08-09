@@ -6,7 +6,8 @@
 <a class="logo" href="/">DS</a>
 <div class="sidebar">
 	<div class="menu">
-		<MenuItem isSidebar={true} link="/blog" text="Blog" />
+		<MenuItem isSidebar={true} link="/blog" text="🇬🇧 Blog" />
+		<MenuItem isSidebar={true} link="/blog_personal" text="🇮🇹 Blog" />
 		<MenuItem isSidebar={true} link="/about" text="About" />
 		<MenuItem isSidebar={true} link="/contact" text="Contact" />
 	</div>
@@ -18,13 +19,18 @@
 		width: 5rem;
 		text-align: center;
 		font-size: 2rem;
-		position: absolute;
+		position: fixed;
 		top: 1rem;
 		margin: 0;
 		color: black;
 		font-weight: normal;
 		text-decoration: none;
 		z-index: 100;
+
+		@media screen and (max-width: $breakpoint-mobile) {
+			position: absolute;
+			top: 1.5rem;
+		}
 
 		&:visited {
 			color: inherit;
