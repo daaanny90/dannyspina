@@ -10,17 +10,19 @@
 	}
 
 	function closeMenu(): void {
-		active = false;
-    dispatch('menuOpen', false);
+		setTimeout(() => {
+			active = false;
+			dispatch('menuOpen', false);
+		}, 250);
   }
 
 </script>
 
 <Burger on:menuOpen={handleMessage} />
-<div class="mobile-menu light-mode" class:active>
-	<MenuItem link="/blog" text="Blog" on:click={closeMenu}/>
-	<MenuItem link="/about" text="About" on:click={closeMenu}/>
-	<MenuItem link="/contact" text="Contact" on:click={closeMenu}/>
+<div class="mobile-menu light-mode" on:click={closeMenu} class:active>
+	<MenuItem link="/blog" text="Blog" />
+	<MenuItem link="/about" text="About" />
+	<MenuItem link="/contact" text="Contact" />
 </div>
 
 <style lang="scss" scoped>
