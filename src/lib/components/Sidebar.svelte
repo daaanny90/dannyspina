@@ -1,13 +1,13 @@
 <!-- Header.svelte -->
 <script>
-	import MenuItem from './MenuItem.svelte'
+	import MenuItem from './MenuItem.svelte';
 </script>
 
 <a class="logo" href="/">DS</a>
 <div class="sidebar">
 	<div class="menu">
-		<MenuItem isSidebar={true} link="/blog" text="🇬🇧 Blog" />
-		<MenuItem isSidebar={true} link="/blog_personal" text="🇮🇹 Blog" />
+		<!-- <MenuItem isSidebar={true} link="/blog" text="🇬🇧 Blog" /> -->
+		<!-- <MenuItem isSidebar={true} link="/blog_personal" text="🇮🇹 Blog" /> -->
 		<MenuItem isSidebar={true} link="/about" text="About" />
 		<MenuItem isSidebar={true} link="/contact" text="Contact" />
 	</div>
@@ -47,7 +47,7 @@
 		display: flex;
 		width: 5rem;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		@media screen and (max-width: $breakpoint-mobile) {
 			display: none;
@@ -56,7 +56,7 @@
 		.menu {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: space-around;
 			padding: 7rem 0 7rem 0;
 			height: 100%;
 		}

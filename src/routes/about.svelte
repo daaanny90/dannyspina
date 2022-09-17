@@ -10,7 +10,7 @@
 </p>
 
 <p>
-	I went through basic training that in the end led me to become, for what it can mean, a
+	I went through a 3 years training that in the end led me to become, for what it can mean, a
 	"full-stack" developer.
 </p>
 <p>
@@ -19,4 +19,4 @@
 	trying new things.
 </p>
 
-<p>See you in the blog.</p>
+<p>Feel free to contact me.</p>
