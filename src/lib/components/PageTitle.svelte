@@ -14,13 +14,21 @@
 	.title-center {
 		.page-title {
 			font-family: $font-sans-serif;
-			font-size: 5rem;
+			font-size: 4rem;
 			margin: 0 0 1rem 0;
+
+			@media only screen and (max-width: 600px) {
+				font-size: 3rem;
+			}
 		}
 		p {
-			font-size: 3rem;
+			font-size: 2rem;
 			font-weight: lighter;
 			margin: 0;
+
+			@media only screen and (max-width: 600px) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 </style>

@@ -6,7 +6,7 @@
 <a class="logo" href="/">DS</a>
 <div class="sidebar">
 	<div class="menu">
-		<!-- <MenuItem isSidebar={true} link="/blog" text="🇬🇧 Blog" /> -->
+		<MenuItem isSidebar={true} link="/blog" text="Blog" />
 		<!-- <MenuItem isSidebar={true} link="/blog_personal" text="🇮🇹 Blog" /> -->
 		<MenuItem isSidebar={true} link="/about" text="About" />
 		<MenuItem isSidebar={true} link="/contact" text="Contact" />
