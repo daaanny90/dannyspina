@@ -8,14 +8,6 @@ categories:
   - "best practicess"
 ---
 
-
-# TL;DR
-TypeScript is a statically typed programming language that can help to improve code quality and reduce the risk of errors in enterprise software development. Its ability to enforce a strong typing strategy can increase efficiency and reduce the overall cost of development. #typetastic
-
----
-
-# Typescript and Enterprise Projects: The Importance of Proper Configuration
-
 Typescript is a popular programming language that provides strong typing and other features to JavaScript. It is particularly useful for enterprise and complex projects, where codebase size and complexity can make maintaining and extending the code difficult.
 
 In this blog post, we'll explore the benefits of using Typescript in enterprise projects, and provide some best practices for configuring Typescript with tsconfig and eslint. We'll also show you how to set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate the process of linting your code.

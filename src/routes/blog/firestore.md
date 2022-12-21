@@ -8,10 +8,6 @@ categories:
   - "Database"
 ---
 
-# Real World Use Cases for Firestore
-
-tl;dr: This blog post explores how Firestore, a flexible and scalable NoSQL database, can be used in real world software projects. It includes code examples for developers to try out.
-
 ## Introduction
 
 Firestore is a NoSQL document database that offers a flexible, scalable solution for storing and syncing data across devices and servers. It's a powerful tool that can be used in a variety of software projects, from simple apps to complex systems.

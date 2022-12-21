@@ -16,6 +16,7 @@
 			font-family: $font-sans-serif;
 			font-size: 4rem;
 			margin: 0 0 1rem 0;
+			line-height: 1.1;
 
 			@media only screen and (max-width: 600px) {
 				font-size: 3rem;
