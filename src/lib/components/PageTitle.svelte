@@ -19,7 +19,7 @@
 			line-height: 1.1;
 
 			@media only screen and (max-width: 600px) {
-				font-size: 3rem;
+				font-size: 2.6rem;
 			}
 		}
 		p {
@@ -28,7 +28,7 @@
 			margin: 0;
 
 			@media only screen and (max-width: 600px) {
-				font-size: 1.5rem;
+				font-size: 1.3rem;
 			}
 		}
 	}
