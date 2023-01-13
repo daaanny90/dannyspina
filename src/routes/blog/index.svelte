@@ -13,6 +13,7 @@
 
 <script>
 	import PageTitle from '$lib/components/PageTitle.svelte';
+	import PostCard from '$lib/components/PostCard.svelte';
 
 	export let posts;
 
@@ -23,40 +24,12 @@
 <ul class="blog-posts">
 	{#each posts as post}
 		<li>
-			<a href={post.path}>
-				<h2>
-					{post.meta.title}
-				</h2>
-				<h4>{post.meta.subtitle}</h4>
-				Published {post.meta.date}
-			</a>
+			<PostCard {post} />
 		</li>
 	{/each}
 </ul>
 
 <style lang="scss">
-	.blog-posts {
-
-		a {
-			text-decoration: none;
-			color: inherit;
-			height: 100%;
-			display: block;
-			border: 1px solid $black;
-			padding: 2rem;
-	
-			&:visited,
-			&:hover {
-				text-decoration: none;
-				color: inherit;
-			}
-	
-			&:hover {
-				border: 2px solid $black;
-			}
-		}
-	}
-
 	.blog-posts {
 		list-style-type: none;
 		padding: 0;
