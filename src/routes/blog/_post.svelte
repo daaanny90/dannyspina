@@ -8,10 +8,8 @@
 	export let categories;
 
 	let postCat = categories.length === 1 ? 'Category' : 'Categories';
-  console.log(postCat)
-  let cat = categories.map(category => `<a href="/blog/categories/${category}">${category}</a>`)
-  console.log(cat)
-	cat = cat.join(', ');
+  let cat = categories.map(category => `<a class="cat" href="/blog/categories/${category}">${category}</a>`)
+	cat = cat.join(' ');
 </script>
 
 <PageTitle {title} {subtitle}/>
@@ -26,7 +24,7 @@
 
 <slot />
 
-<style scoped>
+<style>
 .date {
   margin-bottom: 5rem;
 }

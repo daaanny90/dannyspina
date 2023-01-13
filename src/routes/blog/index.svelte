@@ -34,23 +34,26 @@
 	{/each}
 </ul>
 
-<style lang="scss" scoped>
-	a {
-		text-decoration: none;
-		color: inherit;
-		height: 100%;
-		display: block;
-		border: 1px solid $black;
-		padding: 2rem;
+<style lang="scss">
+	.blog-posts {
 
-		&:visited,
-		&:hover {
+		a {
 			text-decoration: none;
 			color: inherit;
-		}
-
-		&:hover {
-			border: 2px solid $black;
+			height: 100%;
+			display: block;
+			border: 1px solid $black;
+			padding: 2rem;
+	
+			&:visited,
+			&:hover {
+				text-decoration: none;
+				color: inherit;
+			}
+	
+			&:hover {
+				border: 2px solid $black;
+			}
 		}
 	}
 
