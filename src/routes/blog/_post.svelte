@@ -7,7 +7,6 @@
 	export let date;
 	export let categories;
 
-	let postCat = categories.length === 1 ? 'Category' : 'Categories';
   let cat = categories.map(category => `<a class="cat" href="/blog/categories/${category}">${category}</a>`)
 	cat = cat.join(' ');
 </script>
@@ -16,7 +15,7 @@
 
 {#if categories.length}
 <aside class="categories">
-  <h3>{ postCat }: {@html cat }</h3>
+  <h3>{@html cat }</h3>
 </aside>
 {/if}
 
