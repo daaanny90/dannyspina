@@ -11,8 +11,11 @@
 
 	function closeMenu(): void {
 		setTimeout(() => {
-			active = false;
+			active = !active;
 			dispatch('menuOpen', false);
+			if (document.querySelector('.cross input').checked) {
+				document.querySelector('.cross input').checked = false
+			}
 		}, 250);
   }
 </script>
