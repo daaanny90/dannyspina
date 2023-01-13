@@ -1,14 +1,17 @@
 <script>
   export let post;
+
+	let dateOptions = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
+	let pusblishDate = new Date(post.meta.date).toLocaleDateString("gb-GB", dateOptions)
 </script>
 <a href={post.path}>
 	<h2>
 		{post.meta.title}
 	</h2>
 	<h4>{post.meta.subtitle}</h4>
-	Published {post.meta.date}
+	<span class="cat">{pusblishDate}</span>
 </a>
-<style lang="scss">
+<style lang="scss" scoped>
   		a {
 			text-decoration: none;
 			color: inherit;
@@ -30,6 +33,14 @@
 				box-shadow: 1px 1px 21px -4px #333;
 				transition: box-shadow 0.1s linear;
 			}
+
+		}
+		
+		h4 {
+			font-weight: lighter;
 		}
 
+		span {
+			font-size: .8rem;
+		}
 </style>

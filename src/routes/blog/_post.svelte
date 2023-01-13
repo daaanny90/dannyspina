@@ -7,6 +7,8 @@
 	export let date;
 	export let categories;
 
+	let dateOptions = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
+	let pusblishDate = new Date(date).toLocaleDateString("gb-GB", dateOptions)
   let cat = categories.map(category => `<a class="cat" href="/blog/categories/${category}">${category}</a>`)
 	cat = cat.join(' ');
 </script>
@@ -19,7 +21,7 @@
 </aside>
 {/if}
 
-<p class="date">{date}</p>
+<p class="date">{pusblishDate}</p>
 
 <slot />
 

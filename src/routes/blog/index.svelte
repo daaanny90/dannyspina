@@ -12,15 +12,11 @@
 </script>
 
 <script>
-	import PageTitle from '$lib/components/PageTitle.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
 
 	export let posts;
-
-	console.log(posts);
 </script>
 
-<PageTitle title="Blog" subtitle="" />
 <ul class="blog-posts">
 	{#each posts as post}
 		<li>
