@@ -17,7 +17,7 @@
 			color: inherit;
 			height: 100%;
 			display: block;
-			border: 1px solid $black;
+			border: .5px solid $black;
 			padding: 1rem;
 			box-shadow: 2px 1px 30px -1px transparent;
 			transition: box-shadow 0.1s linear;

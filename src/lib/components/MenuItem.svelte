@@ -11,10 +11,14 @@
 <style lang="scss" scoped>
   .sidebar {
     transform: rotate(270deg);
+		&:hover {
+			text-decoration: line-through;
+		}
   }
 
 	.active {
 		text-decoration: line-through;
+		text-decoration-color: forestgreen;
 	}
 
 	a {
@@ -23,9 +27,6 @@
 		color: $black;
 		font-weight: $font-weight-normal;
 
-		&:hover {
-			text-decoration: line-through;
-		}
 
 		&:visited {
 			color: inherit;
