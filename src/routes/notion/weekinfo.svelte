@@ -30,6 +30,7 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
 
 <style lang="scss">
   $notionWhite: #D1D1D1;
+  $notionBackground: #131313;
 
   h2 {
     color: $notionWhite;
@@ -55,7 +56,7 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
     justify-content: flex-end;
     padding-right: .5rem;
     align-items: center;
-    color: $notionWhite;
+    color: $notionBackground;
     position: absolute;
     top: 0;
     left: 0;
