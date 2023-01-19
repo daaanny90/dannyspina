@@ -29,11 +29,17 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
 </span>
 
 <style lang="scss">
+  $notionWhite: #D1D1D1;
+
+  h2 {
+    color: $notionWhite;
+  }
+
   .weekProgressBar {
     display: block;
     width: 30rem;
     height: 2rem;
-    border: 2px solid black;
+    border: 2px solid $notionWhite;
     position: relative;
 
     
@@ -49,12 +55,12 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
     justify-content: flex-end;
     padding-right: .5rem;
     align-items: center;
-    color: white;
+    color: $notionWhite;
     position: absolute;
     top: 0;
     left: 0;
     height: 2rem;
-    background-color: black;
+    background-color: $notionWhite;
     width: 0;
   }
 </style>
