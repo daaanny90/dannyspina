@@ -18,7 +18,6 @@ const config = {
 			extensions: ['.md'],
 			layout: {
 				blog: 'src/routes/blog/_post.svelte',
-				blog_personal: 'src/routes/blog_personal/_post.svelte'
 			}
 		})
 	],
