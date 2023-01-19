@@ -38,7 +38,7 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
 
   .weekProgressBar {
     display: block;
-    width: 30rem;
+    width: 95%;
     height: 2rem;
     border: 2px solid $notionWhite;
     position: relative;
