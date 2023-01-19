@@ -17,19 +17,27 @@
 	import '$lib/styles/style.scss';
 	import { fade } from 'svelte/transition';
 
+	const excludedRoutesFromLayout = [
+		'/notion/weekinfo'
+	]
+
 	export let currentRoute;
 </script>
 
-<div class="bg-container light-mode" />
-<Sidebar />
-<MobileMenu />
-<!-- TODO: must be implemented correctly, now is still too buggy -> <DarkModeSwitch /> -->
+{#if !excludedRoutesFromLayout.includes(currentRoute)}
+	<div class="bg-container light-mode" />
+	<Sidebar />
+	<MobileMenu />
+	<!-- TODO: must be implemented correctly, now is still too buggy -> <DarkModeSwitch /> -->
 
-{#key currentRoute}
-	<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+	{#key currentRoute}
+		<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+			<slot />
+		</main>
+	{/key}
+{:else}
 		<slot />
-	</main>
-{/key}
+{/if}
 
 <style lang="scss">
 	.bg-container {
