@@ -1,4 +1,18 @@
-# create-svelte
+# dannyspina.com
+
+## 📝 Notion Widgets
+Under `/notion` are located the notion widgets.
+
+The currently available widgets are:
+
+<details>
+  <summary>📅 Week Info (<code>/notion/weekinfo</code>)</summary>
+widget to see the information about the weeks -> <code>today is {day} {number} {month} of the week number {weeknumber}</code> with a progress bar showing the current week status.
+</details>
+
+---
+
+## This website is built with Svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
