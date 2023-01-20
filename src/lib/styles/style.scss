@@ -1,44 +1,90 @@
 body {
-	margin: 0;
-	color: #333;
-	font-family: sans-serif;
-	overflow-x: hidden;
+  margin: 0;
+  color: #333;
+  font-family: sans-serif;
+  overflow-x: hidden;
 
-	&.dark-mode {
-		color: #ffffff;
-	}
+  &.dark-mode {
+    color: #ffffff;
+  }
 }
 
 main {
-	padding: 1rem;
-	margin: 8rem 0 0 10rem;
-	max-width: 40rem;
-	line-height: 1.7;
+  padding: 1rem;
+  margin: 8rem 0 0 10rem;
+  max-width: 40rem;
+  line-height: 1.7;
 
-	@media screen and (max-width: 800px) {
-		margin: 8rem 2rem 0 2rem;
-	}
+  @media screen and (max-width: 800px) {
+    margin: 8rem 2rem 0 2rem;
+  }
 }
 
+/*
+ *  Links
+ */
 a {
-	color: forestgreen;
-	text-decoration: none;
-}
-.cat {
-	color: #eee;
-	background-color: #333;
-	padding: 0.3rem;
-	// border-radius: 5px;
-	text-decoration: none;
-	font-size: 1rem;
+  color: forestgreen;
+  text-decoration: none;
 }
 
+/*
+ *  Category Tags
+ */
+.cat {
+  color: #eee;
+  background-color: #333;
+  padding: 0.3rem;
+  // border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/*
+ *  Code blocks and Code inline
+ */
 pre {
-	width: 100%;
-	min-width: 100%;
-	overflow: auto;
-	background: #d2d2d2;
+  width: 100%;
+  min-width: 100%;
+  overflow: auto;
+  background: #d2d2d2;
 }
 code {
-	display: inline-block;
+  display: inline-block;
+}
+
+/*
+ * Quotes 
+ */
+blockquote {
+  margin: 50px auto;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 35px;
+  border-left: 8px solid forestgreen;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+}
+
+blockquote::before {
+  font-family: Arial;
+  content: "“";
+  color: forestgreen;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+blockquote::after {
+  content: "";
+}
+
+blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
 }
