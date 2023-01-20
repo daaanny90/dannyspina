@@ -61,10 +61,10 @@
 		align-items: center;
 		margin-bottom: 2rem;
 
-		.back-arrow {
-			max-width: 2rem;
-			margin-right: .5rem;
-		}
 	}
+  .back-arrow {
+    max-width: 2rem;
+    margin-right: .5rem;
+  }
 
 </style>
