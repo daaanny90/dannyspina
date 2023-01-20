@@ -30,7 +30,7 @@
 			}
 
 			&:hover {
-				box-shadow: 1px 1px 21px -4px #333;
+				box-shadow: 0px 0px 0px 6px #333;
 				transition: box-shadow 0.1s linear;
 			}
 
