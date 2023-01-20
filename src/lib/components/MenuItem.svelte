@@ -12,12 +12,16 @@
   .sidebar {
     transform: rotate(270deg);
 		&:hover {
-			text-decoration: line-through;
+			a {
+				text-decoration: line-through;
+			}
 		}
   }
 
 	.active {
-		text-decoration: line-through;
+		a {
+			text-decoration: line-through;
+		}
 		text-decoration-color: forestgreen;
 	}
 
