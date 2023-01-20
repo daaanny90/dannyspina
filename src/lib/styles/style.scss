@@ -15,7 +15,7 @@ main {
   max-width: 40rem;
   line-height: 1.7;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px), screen and (max-height: 530px) {
     margin: 8rem 2rem 0 2rem;
   }
 }
@@ -87,4 +87,10 @@ blockquote span {
   font-style: normal;
   font-weight: bold;
   margin-top: 1em;
+}
+
+.bug-hunter-icon,
+.digital-craftsman-icon {
+  max-width: 1.5rem;
+  vertical-align: middle;
 }

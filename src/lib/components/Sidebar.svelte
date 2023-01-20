@@ -48,7 +48,8 @@
 		flex-direction: column;
 		justify-content: space-around;
 
-		@media screen and (max-width: $breakpoint-mobile) {
+		@media screen and (max-width: $breakpoint-mobile), 
+					 screen and (max-height: 530px) {
 			display: none;
 		}
 

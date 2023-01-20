@@ -6,7 +6,7 @@
 <div class="title-center">
 	<h1 class="page-title">{title}</h1>
 	{#if subtitle}
-		<p>{subtitle}</p>
+		<p>{@html subtitle}</p>
 	{/if}
 </div>
 

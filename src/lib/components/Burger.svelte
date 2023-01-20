@@ -29,9 +29,14 @@
 	.cross {
 		position: relative;
 
-		@media screen and (min-width: $breakpoint-mobile) {
+		@media screen and (min-width: $breakpoint-mobile) and (orientation: portrait) {
 			display: none;
 		}
+
+		@media screen and (min-height: 530px) and (orientation: landscape) {
+			display: none;
+		}
+
 	}
 
 	label {
