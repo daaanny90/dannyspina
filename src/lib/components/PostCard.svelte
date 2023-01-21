@@ -3,7 +3,6 @@
 
 	let dateOptions = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
 	let pusblishDate = new Date(post.meta.date).toLocaleDateString("gb-GB", dateOptions)
-	console.log(post.meta)
 </script>
 <a href={post.path}>
 	<h2>
