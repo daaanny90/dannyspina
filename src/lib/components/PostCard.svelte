@@ -9,9 +9,31 @@
 		{post.meta.title}
 	</h2>
 	<h4>{post.meta.subtitle}</h4>
-	<span class="cat">{pusblishDate}</span>
+	<div class="card-footer">
+		<span class="cat">{pusblishDate}</span>
+		<div class="categories">
+			{#each post.meta.categories as category}
+				<span class="cat">{category}</span>
+			{/each}
+		</div>
+	</div>
 </a>
 <style lang="scss" scoped>
+	.card-footer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		.categories {
+			.cat {
+				font-size: .7rem;
+			}
+			.cat:not(:first-child) {
+				margin-left: .3rem
+			}
+		}
+	}
   		a {
 			text-decoration: none;
 			color: inherit;
@@ -30,7 +52,7 @@
 			}
 
 			&:hover {
-				box-shadow: 1px 1px 21px -4px #333;
+				box-shadow: 0px 0px 0px 6px #333;
 				transition: box-shadow 0.1s linear;
 			}
 
