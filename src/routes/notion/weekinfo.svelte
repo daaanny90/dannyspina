@@ -1,52 +1,91 @@
 <script>
-let today = new Date().getDay();
-let currentDate = new Date();
-let startDate = new Date(currentDate.getFullYear(), 0, 1);
-var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
+  import Calendar from "$lib/helpers/Calendar";
 
-const daysOfTheWeek = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wedneday',
-  'Thursday',
-  'Friday',
-  'Saturday'
-]
-      
-const weekNumber = Math.ceil(days / 7);
-const currentDay = daysOfTheWeek[today]
-let progress = Math.round((today / 7) * 100) + '%'
-
-let month = new Intl.DateTimeFormat('en', { month: 'long' }).format(new Date());
-let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Date());
-
+  const calendar = new Calendar();
 </script>
 
-<h2>Today is { currentDay } { dayNumber } { month } of the Week number { weekNumber }</h2>
-<span class="weekProgressBar">
-  <span class="progress" style="width: {progress};"><span class="percent">{progress}</span></span>
-</span>
+<div class="background">
+  <h2>
+    Today is <u>{calendar.getDayName()}
+    {calendar.getDayNumber()}
+    {calendar.getMonthName()}</u>. <br>
+  </h2>
+  <h5>Week {calendar.getWeekNumber()}</h5>
+  <span class="progressBar">
+    <span class="progress" style="width: {calendar.getWeekProgress()}%;"
+      ><span class="percent">{calendar.getWeekProgress()}%</span></span
+    >
+  </span>
+  <h5>{calendar.currentDate.getFullYear()}</h5>
+  <span class="progressBar year">
+    <span class="progress" style="width: {calendar.getYearProgress()}%;"
+    ><span class="percent">{calendar.getYearProgress()}%</span></span
+    >
+    <span class="quarters">
+      <span>Q1</span>
+      <span>Q2</span>
+      <span>Q3</span>
+      <span>Q4</span>
+    </span>
+  </span>
+  <h5>Q{calendar.getQuarter()}</h5>
+  <span class="progressBar">
+    <span class="progress" style="width: {calendar.getQuarterProgress()}%;"
+      ><span class="percent">{calendar.getQuarterProgress()}%</span></span
+    >
+  </span>
+</div>
 
 <style lang="scss">
-  $notionWhite: #D1D1D1;
+  $notionWhite: #d1d1d1;
   $notionBackground: #131313;
+
+  .background {
+    background-color: $notionBackground;
+    color: $notionWhite;
+    padding-bottom: 1rem;
+
+    h5 {
+      margin-bottom: 0;
+    }
+  }
 
   h2 {
     color: $notionWhite;
   }
 
-  .weekProgressBar {
+  .progressBar {
     display: block;
     width: 95%;
     height: 2rem;
     border: 2px solid $notionWhite;
     position: relative;
 
-    
     & {
       &::after {
-        width: 5rem
+        width: 5rem;
+      }
+    }
+
+    &.year {
+      margin-bottom: 2rem;
+    }
+
+    .quarters {
+      display: flex;
+      position: absolute;
+      bottom: -17px;
+      width: 100%;
+      height: 1rem;
+      border-right: 2px solid $notionWhite;
+
+      span {
+        width: 25%;
+        text-align: center;
+
+        &:not(:last-child) {
+          border-right: 2px solid $notionWhite;
+        }
       }
     }
   }
@@ -54,8 +93,9 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
     content: "";
     display: flex;
     justify-content: flex-end;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     align-items: center;
+    max-width: 99%;
     color: $notionBackground;
     position: absolute;
     top: 0;
@@ -65,5 +105,3 @@ let dayNumber = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(new Dat
     width: 0;
   }
 </style>
-
-
