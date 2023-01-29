@@ -23,12 +23,12 @@
 			}
 		}
 		p {
-			font-size: 2rem;
+			font-size: 1.3rem;
 			font-weight: lighter;
 			margin: 0;
 
 			@media only screen and (max-width: 600px) {
-				font-size: 1.3rem;
+				font-size: 1.1rem;
 			}
 		}
 	}
