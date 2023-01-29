@@ -39,10 +39,10 @@
 <style lang="scss">
   $notionWhite: #d1d1d1;
   $notionBackground: #191919;
-
+  
   .background {
     color: $notionWhite;
-    padding-bottom: 1rem;
+    padding: 1rem;
 
     h5 {
       margin-bottom: 0;
@@ -55,7 +55,7 @@
 
   .progressBar {
     display: block;
-    width: 95%;
+    width: 100%;
     height: 2rem;
     border: 2px solid $notionWhite;
     position: relative;
@@ -94,8 +94,8 @@
     justify-content: flex-end;
     padding-right: 0.5rem;
     align-items: center;
-    max-width: 99%;
     color: $notionBackground;
+    max-width: calc(100% - 8px);
     position: absolute;
     top: 0;
     left: 0;
