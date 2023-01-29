@@ -38,10 +38,9 @@
 
 <style lang="scss">
   $notionWhite: #d1d1d1;
-  $notionBackground: #131313;
+  $notionBackground: #191919;
 
   .background {
-    background-color: $notionBackground;
     color: $notionWhite;
     padding-bottom: 1rem;
 
@@ -103,5 +102,9 @@
     height: 2rem;
     background-color: $notionWhite;
     width: 0;
+
+    .percent {
+      color: $notionBackground;
+    }
   }
 </style>
