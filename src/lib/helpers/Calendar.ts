@@ -32,7 +32,8 @@ class Calendar {
   }
 
   getWeekProgress() {
-    const progress = Math.round((this.currentDate.getDay() + 1 / 8) * 100);
+     console.log(this.currentDate.getDay() / 7)
+    const progress = Math.round((this.currentDate.getDay() / 7) * 100);
 
     if (this.currentDate.getDay() === 0) {
       return 100;
