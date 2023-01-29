@@ -5,17 +5,17 @@ let startDate = new Date(currentDate.getFullYear(), 0, 1);
 var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
 
 const daysOfTheWeek = [
+  'Sunday',
   'Monday',
   'Tuesday',
   'Wedneday',
   'Thursday',
   'Friday',
-  'Saturday',
-  'Sunday'
+  'Saturday'
 ]
       
 const weekNumber = Math.ceil(days / 7);
-const currentDay = daysOfTheWeek[today - 1]
+const currentDay = daysOfTheWeek[today]
 let progress = Math.round((today / 7) * 100) + '%'
 
 let month = new Intl.DateTimeFormat('en', { month: 'long' }).format(new Date());
