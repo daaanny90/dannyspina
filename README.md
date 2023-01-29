@@ -7,7 +7,9 @@ The currently available widgets are:
 
 <details>
   <summary>📅 Week Info (<code>/notion/weekinfo</code>)</summary>
-widget to see the information about the weeks -> <code>today is {day} {number} {month} of the week number {weeknumber}</code> with a progress bar showing the current week status.
+Information about the current day, week, year and quarter:
+
+![week info screenshot](./static/screenshots/weekinfo_widget.png)
 </details>
 
 ---
