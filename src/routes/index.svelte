@@ -7,11 +7,12 @@
 
 <style lang="scss" scoped>
   p {
-    font-size: 1.3rem;
-    display: flex;
-    vertical-align: middle;
-    margin: 0;
     font-weight: lighter;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 1.3rem;
 
     @media only screen and (max-width: 600px) {
 				font-size: 1.1rem;
