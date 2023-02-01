@@ -22,6 +22,7 @@ const config = {
 			extensions: ['.md'],
 			layout: {
 				blog: 'src/routes/blog/_post.svelte',
+				books: 'src/routes/books/_book.svelte'
 			}
 		})
 	],
