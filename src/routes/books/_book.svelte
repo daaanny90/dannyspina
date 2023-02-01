@@ -1,10 +1,12 @@
 <script>
-  import PageTitle from "$lib/components/PageTitle.svelte"
+  import PageTitle from "$lib/components/PageTitle.svelte";
+  import BackArrow from "$lib/components/BackArrow.svelte";
+
   export let title;
   export let author;
   export let amazonLink;
 </script>
-
+<BackArrow page="books" />
 <PageTitle title="{title}" subtitle="{author}" />
 <slot />
 
