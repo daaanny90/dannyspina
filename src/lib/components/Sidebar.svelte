@@ -7,6 +7,7 @@
 <div class="sidebar">
 	<div class="menu">
 		<MenuItem isSidebar={true} link="/blog" text="Blog" />
+		<MenuItem isSidebar={true} link="/books" text="Books" />
 		<MenuItem isSidebar={true} link="/about" text="About" />
 		<MenuItem isSidebar={true} link="/contact" text="Contact" />
 	</div>
@@ -57,7 +58,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
-			padding: 7rem 0 7rem 0;
+			padding: 5rem 0 5rem 0;
 			height: 100%;
 		}
 	}

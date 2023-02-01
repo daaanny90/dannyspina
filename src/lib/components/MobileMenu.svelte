@@ -23,6 +23,7 @@
 <Burger on:menuOpen={handleMessage} />
 <div class="mobile-menu light-mode" on:click={closeMenu} class:active>
   <MenuItem link="/blog" text="Blog" />
+  <MenuItem link="/books" text="Books" />
   <MenuItem link="/about" text="About" />
   <MenuItem link="/contact" text="Contact" />
 </div>
