@@ -9,7 +9,7 @@ The currently available widgets are:
   <summary>📅 Week Info (<code>/notion/weekinfo</code>)</summary>
 Information about the current day, week, year and quarter:
 
-![week info screenshot](./static/screenshots/weekinfo_widget.png)
+![week info screenshot](./static/images/weekinfo_widget.png)
 </details>
 
 ---

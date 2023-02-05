@@ -7,13 +7,16 @@ categories:
   - "Widgets"
   - "Productivity"
 ---
+<script>
+  import ImagePost from "$lib/components/ImagePost.svelte"
+</script>
 Hey everyone, I created a **basic widget for Notion**. It's really straightforward, although it does have some restrictions at the moment. Here's the lowdown:
 
 ## Week, year and quartal overview
 
 A picture is worth a thousand words; this is what the widget looks like:
 
-![week info screenshot](../../../static/screenshots/weekinfo_widget.png)
+<ImagePost file="weekinfo_widget.png" alt="Week Info Screenshot" />
 
 The widget provides an **overview of the current week** (as of the screenshot date of July 12, 2020, which is 100%), the **current year** (divided into quarters), and a breakdown of the **current quarter**.
 
