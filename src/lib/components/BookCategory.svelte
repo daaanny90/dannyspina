@@ -1,7 +1,5 @@
 <script>
-  import Rocket from "$lib/icons/Rocket.svelte";
   export let category;
-  export let icon;
 </script>
 
 <h2 id={category.toLowerCase().replaceAll(" ", "-")}>

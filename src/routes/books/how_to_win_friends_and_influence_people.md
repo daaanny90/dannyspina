@@ -2,6 +2,7 @@
 title: How to Win Friends and Influence People
 author: Dale Carnegie
 amazonLink: https://amzn.to/3l1cPxd
+category: Personal Growth
 ---
 "How to Win Friends and Influence People" by Dale Carnegie is an incredibly valuable book that focuses on establishing positive relationships and making a lasting impression on others.
 

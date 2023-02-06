@@ -2,6 +2,7 @@
 title: Building a second brain
 author: Tiago Forte
 amazonLink: https://amzn.to/3kRN0Q2
+category: Productivity
 ---
 Building a Second Brain: The Power of Thinking with a Distributed Mind is a book by Tiago Forte that explores the concept of creating a "second brain" to manage and organize personal knowledge, ideas, and information. The book explains how a second brain can help individuals better manage the overwhelming amount of information and distractions in today's digital world.
 

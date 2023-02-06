@@ -2,6 +2,7 @@
 title: Atomic Habits, An Easy & Proven Way to Build Good Habits & Break Bad Ones
 author: by James Clear
 amazonLink: https://amzn.to/3XXnNST
+category: Productivity
 ---
 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones is a book written by James Clear that explores the concept of creating positive habits and breaking negative ones in order to achieve personal and professional goals. The book focuses on how small daily actions can have a significant impact on a person's life over time.
 

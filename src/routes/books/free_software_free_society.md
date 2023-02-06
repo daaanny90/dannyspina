@@ -2,6 +2,7 @@
 title: Free Software, Free Society
 author: Sam Williams 
 amazonLink: https://github.com/pettarin/fsfs3/releases/tag/v1.0.0
+category: Technology
 ---
 "Free Software, Free Society" by Sam Williams is a must-have for anyone interested in the ethical side of software development and code. This book provides an in-depth look at the history, philosophy, and culture of the free software movement and its impact on society as a whole.
 

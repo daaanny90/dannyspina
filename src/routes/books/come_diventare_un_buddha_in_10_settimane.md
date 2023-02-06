@@ -2,6 +2,7 @@
 title: Come diventare un Buddha in 10 settimane
 author: Giulio Cesare Giacobbe
 amazonLink: https://amzn.to/3XUhhMO
+category: Personal Growth
 ---
 Il libro "Come diventare un buddha in 10 settimane" di Giulio Cesare Giacobbe ci porta alla scoperta dei concetti e delle basi del buddismo. L'autore condivide la sua personale esperienza e il suo dramma con il figlio, rendendo il libro molto introspettivo.
 
