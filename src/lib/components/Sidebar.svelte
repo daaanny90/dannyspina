@@ -15,7 +15,7 @@
 
 <style lang="scss" scoped>
   .logo {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-sans-serif;
     width: 5rem;
     text-align: center;
     font-size: 2rem;
@@ -39,7 +39,7 @@
 
   .sidebar {
     position: fixed;
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-sans-serif;
     font-weight: 200;
     top: 0;
     bottom: 0;
@@ -49,8 +49,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    @media screen and (max-width: 800px),
-      screen and (max-height: 530px) {
+    @media screen and (max-width: 800px), screen and (max-height: 530px) {
       display: none;
     }
 

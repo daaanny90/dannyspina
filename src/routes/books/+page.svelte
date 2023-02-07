@@ -11,7 +11,7 @@
   import OpenBook from "$lib/icons/OpenBook.svelte";
 
   export let data;
-  let {books} = data;
+  let { books } = data;
 
   const categories = [];
 

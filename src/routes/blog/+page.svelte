@@ -2,13 +2,10 @@
   import PostCard from "$lib/components/PostCard.svelte";
 
   export let data;
-
-  let {posts} = data;
-  console.log(data)
 </script>
 
 <ul class="blog-posts">
-  {#each posts as post}
+  {#each data.posts as post}
     <li>
       <PostCard {post} />
     </li>
@@ -25,16 +22,16 @@
       margin-bottom: 3rem;
     }
 
-    &.dark-mode {
-      li {
-        a {
-          border: 1px solid #eee;
+    // &.dark-mode {
+    //   li {
+    //     a {
+    //       border: 1px solid #eee;
 
-          &:hover {
-            border: 2px solid #eee;
-          }
-        }
-      }
-    }
+    //       &:hover {
+    //         border: 2px solid #eee;
+    //       }
+    //     }
+    //   }
+    // }
   }
 </style>

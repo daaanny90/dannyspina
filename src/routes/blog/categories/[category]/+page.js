@@ -1,6 +1,4 @@
-export let category;
 export const load = async ({ params, fetch }) => {
-  category = params.category;
   const currentCategory = params.category;
   const response = await fetch("/api/posts.json");
   const posts = await response.json();
@@ -10,7 +8,7 @@ export const load = async ({ params, fetch }) => {
   );
 
   return {
-  posts: matchingPosts,
-  currentCategory: currentCategory,
-};
+    posts: matchingPosts,
+    currentCategory: currentCategory,
+  };
 };

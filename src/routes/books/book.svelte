@@ -5,6 +5,10 @@
   export let title;
   export let author;
   export let amazonLink;
+  export let category;
+  export let form;
+
+  export let data;
 </script>
 
 <BackArrow page="books" />
@@ -12,7 +16,7 @@
 
 <slot />
 
-<a href={amazonLink} target="_blank"
+<a href={amazonLink} target="_blank" rel="noreferrer"
   ><svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"

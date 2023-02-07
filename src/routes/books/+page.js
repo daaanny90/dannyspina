@@ -3,6 +3,6 @@ export const load = async ({ fetch }) => {
   const allBooks = await books.json();
 
   return {
-  books: allBooks,
-};
+    books: allBooks,
+  };
 };

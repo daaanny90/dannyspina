@@ -3,6 +3,7 @@
   import MobileMenu from "$lib/components/MobileMenu.svelte";
   // import DarkModeSwitch from "$lib/components/DarkModeSwitch.svelte";
   import "$lib/styles/style.scss";
+  import "$lib/styles/variables.scss";
   import { blur } from "svelte/transition";
 
   const excludedRoutesFromLayout = ["/notion/weekinfo"];
@@ -17,7 +18,7 @@
   <MobileMenu />
   <!-- TODO: must be implemented correctly, now is still too buggy -> <DarkModeSwitch /> -->
 
-  {#key currentRoute}
+  {#key data.currentRoute}
     <main in:blur={{ duration: 350, delay: 450 }} out:blur={{ duration: 350 }}>
       <slot />
     </main>

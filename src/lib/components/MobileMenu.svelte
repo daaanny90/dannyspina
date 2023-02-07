@@ -21,7 +21,12 @@
 </script>
 
 <Burger on:menuOpen={handleMessage} />
-<div class="mobile-menu light-mode" on:click={closeMenu} class:active>
+<div
+  class="mobile-menu light-mode"
+  on:click={closeMenu}
+  on:keypress={() => {closeMenu}}
+  class:active
+>
   <MenuItem link="/blog" text="Blog" />
   <MenuItem link="/books" text="Books" />
   <MenuItem link="/about" text="About" />

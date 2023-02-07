@@ -1,5 +1,4 @@
 <script context="module">
-
   // export let category;
   // export const load = async ({ params, fetch }) => {
   //   category = params.category;
@@ -24,16 +23,15 @@
   import PageTitle from "$lib/components/PageTitle.svelte";
   import PostCard from "$lib/components/PostCard.svelte";
   export let data;
-  let {posts} = data;
 </script>
 
-{#if !posts.length}
+{#if !data.posts.length}
   <div>No posts for this category</div>
 {/if}
 
-<PageTitle title={category} subtitle="" />
+<PageTitle title={data.currentCategory} subtitle="" />
 <ul class="blog-posts">
-  {#each posts as post}
+  {#each data.posts as post}
     <li>
       <PostCard {post} />
     </li>
@@ -50,16 +48,16 @@
       margin-bottom: 3rem;
     }
 
-    &.dark-mode {
-      li {
-        a {
-          border: 1px solid #eee;
+    // &.dark-mode {
+    //   li {
+    //     a {
+    //       border: 1px solid #eee;
 
-          &:hover {
-            border: 2px solid #eee;
-          }
-        }
-      }
-    }
+    //       &:hover {
+    //         border: 2px solid #eee;
+    //       }
+    //     }
+    //   }
+    // }
   }
 </style>

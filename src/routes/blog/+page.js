@@ -3,6 +3,6 @@ export const load = async ({ fetch }) => {
   const allPosts = await posts.json();
 
   return {
-  posts: allPosts,
-};
+    posts: allPosts,
+  };
 };

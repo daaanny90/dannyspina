@@ -1,16 +1,13 @@
 import adapter from "@sveltejs/adapter-auto";
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import preprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
 import autoprefixer from "autoprefixer";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://github.com/sveltejs/svelte-preprocess
-  // for more information about preprocessors
   extensions: [".svelte", ".md"],
-
   preprocess: [
-    vitePreprocess({
+    preprocess({
       scss: {
         prependData: `@import 'src/lib/styles/variables.scss';`,
       },
@@ -21,12 +18,11 @@ const config = {
     mdsvex({
       extensions: [".md"],
       layout: {
-        blog: "src/routes/blog/_post.svelte",
-        books: "src/routes/books/_book.svelte",
+        blog: "src/routes/blog/post.svelte",
+        books: "src/routes/books/book.svelte",
       },
     }),
   ],
-
   kit: {
     adapter: adapter(),
   },

@@ -8,10 +8,7 @@
 </script>
 
 <li>
-  <a
-    href="{path}"
-    >{title}</a
-  >
+  <a href={path}>{title}</a>
   by {author}.
   <BookCart link={amazonLink} />
 </li>

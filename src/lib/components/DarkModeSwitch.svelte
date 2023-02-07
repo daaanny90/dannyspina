@@ -16,7 +16,7 @@
 </script>
 
 <div class="toggle">
-  <div class="mask" on:click={toggle}>
+  <div class="mask" on:click={toggle} on:keypress={() => {toggle}}>
     <div class="icon-wrap active">
       <div class="icon sun" />
     </div>
