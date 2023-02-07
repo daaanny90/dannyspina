@@ -39,7 +39,7 @@
    'Productivity': Rocket,
    'Personal Growth': Power, 
    'Technology': Technology,
-   'Art & Entertainment': Art
+   'Arts & Entertainment': Art
   }
 </script>
 
