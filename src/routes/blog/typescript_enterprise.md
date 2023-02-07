@@ -2,7 +2,7 @@
 title: Optimizing Typescript for Enterprise Projects with tsconfig and eslint
 subtitle: Maximizing Productivity and Code Quality with Best Practices for Configuration
 date: "2022-12-20"
-categories: 
+categories:
   - "typescript"
   - "enterprise development"
   - "best practicess"

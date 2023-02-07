@@ -47,7 +47,9 @@ class Calendar {
     const quarterStartMonth = Math.floor(currentMonth / 3) * 3;
     const quarterStart = new Date(now.getFullYear(), quarterStartMonth, 1);
     const quarterEnd = new Date(now.getFullYear(), quarterStartMonth + 2, 31);
-    const progress = (now.getTime() - quarterStart.getTime()) / (quarterEnd.getTime() - quarterStart.getTime());
+    const progress =
+      (now.getTime() - quarterStart.getTime()) /
+      (quarterEnd.getTime() - quarterStart.getTime());
     return Math.round(progress * 100);
   }
 

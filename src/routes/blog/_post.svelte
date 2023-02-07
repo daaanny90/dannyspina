@@ -41,16 +41,14 @@
     margin-bottom: 5rem;
   }
 
-	.back-arrow-container {
-		color: #333;
-		display: flex;
-		align-items: center;
-		margin-bottom: 2rem;
-
-	}
+  .back-arrow-container {
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
   .back-arrow {
     max-width: 2rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
-
 </style>

@@ -2,7 +2,9 @@
 title: Super You
 author: Claudio Belotti
 amazonLink: https://amzn.to/3DzKMeL
+category: Personal Growth
 ---
+
 Super You di Claudio Belotti è un libro che tratta il tema del raggiungimento del proprio potenziale e della realizzazione personale. Pur essendo un tema di grande interesse e importanza, il libro non mi ha del tutto convinto.
 
 Innanzitutto, ho trovato che l'approccio dell'autore sia piuttosto superficiale e che non vada a fondo nell'esplorazione delle tecniche e delle strategie per raggiungere i propri obiettivi. Inoltre, ho ritenuto che alcune delle affermazioni fatte nella parte iniziale del libro siano piuttosto generiche e non apportino alcun contributo significativo all'argomento.

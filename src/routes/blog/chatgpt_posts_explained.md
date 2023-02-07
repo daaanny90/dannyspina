@@ -2,7 +2,7 @@
 title: My experience with ChatGPT
 subtitle: I tried it out, here there are my thoughts.
 date: "2023-01-20"
-categories: 
+categories:
   - "ChatGPT"
   - "Artificial Intelligence"
   - "Content creation"
@@ -37,7 +37,6 @@ By the way, this is another interesting point: **how can you get the best result
 I started with a simple question, like
 
 > Generate a blog post about Firebase.
-> 
 
 And the answer was too generic, short, and not like I wanted to have a blog post on my blog.
 
@@ -46,12 +45,13 @@ Then I started to fine-tune my question, trying to be more specific.
 **The question I came up with at the end, looks like this**:
 
 > Generate a blog post about Firebase. Consider the following:
+
 - The blog post is written for expert software developers, do not explain simple things
 - The blog post is intended to explain technical things, not to sell something
 - Include some code examples that people can copy and paste
 - The blog post conclusions must include a funny phrase
 - before the content, put a tl;dr to summarize the post. Maximum 50 words.
-> 
+  >
 
 Why those specific indications?
 
@@ -67,7 +67,7 @@ I just wanted to put something **more appealing for the developers** reading the
 
 > The blog post conclusions must include a funny phrase
 
-**The tone of voice of the first posts was quite cold**. I wanted to put some “humanity” by inserting a joke at the end. It did not always work, sometimes the jokes were quite awkward 😅  I gave ChatGPT the chance to generate something better, but it looks like **the humor of ChatGPT is a bit cringe**. I removed it from the final result, only [Optimizing Typescript for Enterprise Projects](https://dannyspina.com/blog/typescript_enterprise) has an example of those jokes. And this was the best one 😅
+**The tone of voice of the first posts was quite cold**. I wanted to put some “humanity” by inserting a joke at the end. It did not always work, sometimes the jokes were quite awkward 😅 I gave ChatGPT the chance to generate something better, but it looks like **the humor of ChatGPT is a bit cringe**. I removed it from the final result, only [Optimizing Typescript for Enterprise Projects](https://dannyspina.com/blog/typescript_enterprise) has an example of those jokes. And this was the best one 😅
 
 > before the content, put a tl;dr to summarize the post. Maximum 50 words.
 

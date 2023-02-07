@@ -2,7 +2,7 @@
 title: Real World Use Cases for Firestore
 subtitle: Explore how this powerful NoSQL database can be used in a variety of software projects
 date: "2022-12-21"
-categories: 
+categories:
   - "Firestore"
   - "NoSQL"
   - "Database"

@@ -2,14 +2,16 @@
 title: Notion widget for week, year and quartal overview
 subtitle: I made a simple notion widget
 date: "2023-02-05"
-categories: 
+categories:
   - "Notion"
   - "Widgets"
   - "Productivity"
 ---
+
 <script>
   import ImagePost from "$lib/components/ImagePost.svelte"
 </script>
+
 Hey everyone, I created a **basic widget for Notion**. It's really straightforward, although it does have some restrictions at the moment. Here's the lowdown:
 
 ## Week, year and quartal overview

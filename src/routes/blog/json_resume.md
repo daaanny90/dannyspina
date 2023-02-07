@@ -2,7 +2,7 @@
 title: My side project JSON.resume
 subtitle: Manage the CV on GitHub with a single JSON config file.
 date: "2023-01-26"
-categories: 
+categories:
   - "Side project"
   - "JSON.resume"
   - "Curriculum vitae"

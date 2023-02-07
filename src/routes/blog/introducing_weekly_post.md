@@ -2,13 +2,13 @@
 title: Introducing the weekly post
 subtitle: Can a weekly review make me consistent posting on the blog?
 date: "2023-01-13"
-categories: 
+categories:
   - "weekly"
   - "blog"
   - "review"
 ---
 
-Browsing the Blog of [Emanuele Bartolesi](https://www.emanuelebartolesi.com/) I was flashed by his series “Weekly”. 
+Browsing the Blog of [Emanuele Bartolesi](https://www.emanuelebartolesi.com/) I was flashed by his series “Weekly”.
 
 He makes a Review of his week posting just a concise summary of each day of the week with a mood emoji at the end, to express the overall feeling of that day.
 

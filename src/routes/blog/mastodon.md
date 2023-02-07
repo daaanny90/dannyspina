@@ -2,7 +2,7 @@
 title: Mastodon - A Decentralized Social Networking Alternative
 subtitle: Exploring the technical, ethical, and practical differences between Mastodon and traditional platforms
 date: "2022-12-22"
-categories: 
+categories:
   - "Mastodon"
   - "Social network"
   - "Decentralized"
