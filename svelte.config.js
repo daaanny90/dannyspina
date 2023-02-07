@@ -1,5 +1,5 @@
 import adapter from "@sveltejs/adapter-auto";
-import preprocess from "svelte-preprocess";
+import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from "mdsvex";
 import autoprefixer from "autoprefixer";
 
@@ -10,7 +10,7 @@ const config = {
   extensions: [".svelte", ".md"],
 
   preprocess: [
-    preprocess({
+    vitePreprocess({
       scss: {
         prependData: `@import 'src/lib/styles/variables.scss';`,
       },

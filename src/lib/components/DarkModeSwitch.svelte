@@ -46,7 +46,7 @@
     width: $size;
     cursor: pointer;
 
-    @media screen and (max-width: $breakpoint-mobile) {
+    @media screen and (max-width: 800px) {
       right: 7rem;
     }
     .mask {
@@ -83,11 +83,11 @@
       }
 
       .sun {
-        background-color: $white;
+        background-color: #eee;
       }
 
       .moon {
-        background-color: $black;
+        background-color: #333;
       }
     }
 
@@ -95,11 +95,11 @@
       width: 40%;
       height: 5px;
       margin: 0 auto;
-      background-color: $white;
+      background-color: #eee;
       transition: all 300ms 100ms ease;
 
       &.light-mode {
-        background-color: $black;
+        background-color: #333;
       }
     }
   }

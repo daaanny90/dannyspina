@@ -15,7 +15,7 @@
 
 <style lang="scss" scoped>
   .logo {
-    font-family: $font-sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 5rem;
     text-align: center;
     font-size: 2rem;
@@ -27,7 +27,7 @@
     text-decoration: none;
     z-index: 100;
 
-    @media screen and (max-width: $breakpoint-mobile) {
+    @media screen and (max-width: 800px) {
       position: absolute;
       top: 1.5rem;
     }
@@ -39,7 +39,7 @@
 
   .sidebar {
     position: fixed;
-    font-family: $font-sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     top: 0;
     bottom: 0;
@@ -49,7 +49,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    @media screen and (max-width: $breakpoint-mobile),
+    @media screen and (max-width: 800px),
       screen and (max-height: 530px) {
       display: none;
     }

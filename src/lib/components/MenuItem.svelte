@@ -30,8 +30,8 @@
   a {
     text-decoration: none;
     font-size: 1.3rem;
-    color: $black;
-    font-weight: $font-weight-normal;
+    color: #333;
+    font-weight: 400;
 
     &:visited {
       color: inherit;

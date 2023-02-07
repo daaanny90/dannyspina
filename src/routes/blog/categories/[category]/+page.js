@@ -1,0 +1,16 @@
+export let category;
+export const load = async ({ params, fetch }) => {
+  category = params.category;
+  const currentCategory = params.category;
+  const response = await fetch("/api/posts.json");
+  const posts = await response.json();
+
+  const matchingPosts = posts.filter((post) =>
+    post.meta.categories.includes(currentCategory)
+  );
+
+  return {
+  posts: matchingPosts,
+  currentCategory: currentCategory,
+};
+};

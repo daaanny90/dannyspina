@@ -13,7 +13,7 @@
 <style lang="scss">
   .title-center {
     .page-title {
-      font-family: $font-sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 4rem;
       margin: 0 0 1rem 0;
       line-height: 1.1;

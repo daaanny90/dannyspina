@@ -1,28 +1,30 @@
 <script context="module">
-  export let category;
-  export const load = async ({ params, fetch }) => {
-    category = params.category;
-    const currentCategory = params.category;
-    const response = await fetch("/api/posts.json");
-    const posts = await response.json();
 
-    const matchingPosts = posts.filter((post) =>
-      post.meta.categories.includes(currentCategory)
-    );
+  // export let category;
+  // export const load = async ({ params, fetch }) => {
+  //   category = params.category;
+  //   const currentCategory = params.category;
+  //   const response = await fetch("/api/posts.json");
+  //   const posts = await response.json();
 
-    return {
-      props: {
-        posts: matchingPosts,
-        currentCategory: currentCategory,
-      },
-    };
-  };
+  //   const matchingPosts = posts.filter((post) =>
+  //     post.meta.categories.includes(currentCategory)
+  //   );
+
+  //   return {
+  //     props: {
+  //       posts: matchingPosts,
+  //       currentCategory: currentCategory,
+  //     },
+  //   };
+  // };
 </script>
 
 <script>
   import PageTitle from "$lib/components/PageTitle.svelte";
   import PostCard from "$lib/components/PostCard.svelte";
-  export let posts;
+  export let data;
+  let {posts} = data;
 </script>
 
 {#if !posts.length}
@@ -51,10 +53,10 @@
     &.dark-mode {
       li {
         a {
-          border: 1px solid $white;
+          border: 1px solid #eee;
 
           &:hover {
-            border: 2px solid $white;
+            border: 2px solid #eee;
           }
         }
       }
