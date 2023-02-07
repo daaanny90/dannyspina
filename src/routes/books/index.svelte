@@ -16,10 +16,12 @@
   import BookCategory from "$lib/components/BookCategory.svelte";
   import BookList from "$lib/components/BookList.svelte";
   import Book from "$lib/components/Book.svelte";
+
   import Rocket from "$lib/icons/Rocket.svelte";
   import Power from "$lib/icons/Power.svelte";
   import Art from "$lib/icons/Art.svelte";
   import Technology from "$lib/icons/Technology.svelte";
+  import OpenBook from "$lib/icons/OpenBook.svelte";
 
   export let books;
 
@@ -50,20 +52,7 @@
 
 <div class="container-reading">
   <h2>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="w-6 h-6"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
-      />
-    </svg>
+    <OpenBook style="max-width: 2rem; margin-right: .5rem;"/>
     I'm reading
   </h2>
   <strong>Wim Hof method</strong> by Wim Hof. <br />
@@ -101,9 +90,5 @@
   h2 {
     display: flex;
     align-items: center;
-  }
-  svg {
-    max-width: 2rem;
-    margin-right: 0.5rem;
   }
 </style>
