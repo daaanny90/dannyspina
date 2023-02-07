@@ -1,6 +1,6 @@
 ---
 title: Atomic Habits, An Easy & Proven Way to Build Good Habits & Break Bad Ones
-author: by James Clear
+author: James Clear
 amazonLink: https://amzn.to/3XXnNST
 category: Productivity
 ---
