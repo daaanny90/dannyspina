@@ -1,24 +1,3 @@
-<script context="module">
-  // export let category;
-  // export const load = async ({ params, fetch }) => {
-  //   category = params.category;
-  //   const currentCategory = params.category;
-  //   const response = await fetch("/api/posts.json");
-  //   const posts = await response.json();
-
-  //   const matchingPosts = posts.filter((post) =>
-  //     post.meta.categories.includes(currentCategory)
-  //   );
-
-  //   return {
-  //     props: {
-  //       posts: matchingPosts,
-  //       currentCategory: currentCategory,
-  //     },
-  //   };
-  // };
-</script>
-
 <script>
   import PageTitle from "$lib/components/PageTitle.svelte";
   import PostCard from "$lib/components/PostCard.svelte";
@@ -42,7 +21,7 @@
   .blog-posts {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 3rem;
 
     li {
       margin-bottom: 3rem;
