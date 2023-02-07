@@ -29,7 +29,7 @@
   <!-- TODO: must be implemented correctly, now is still too buggy -> <DarkModeSwitch /> -->
 
   {#key currentRoute}
-    <main in:blur={{ duration: 250, delay: 350 }} out:blur={{ duration: 250 }}>
+    <main in:blur={{ duration: 350, delay: 450 }} out:blur={{ duration: 350 }}>
       <slot />
     </main>
   {/key}
