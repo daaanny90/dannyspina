@@ -81,6 +81,7 @@
         title={book.meta.metadata.title}
         author={book.meta.metadata.author}
         amazonLink={book.meta.metadata.amazonLink}
+        path={book.path}
       />
     {/each}
   </BookList>

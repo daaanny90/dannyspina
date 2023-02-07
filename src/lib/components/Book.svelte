@@ -4,11 +4,12 @@
   export let title;
   export let author;
   export let amazonLink;
+  export let path;
 </script>
 
 <li>
   <a
-    href="/books/{title.toLowerCase().replaceAll(' ', '_').replaceAll(',', '')}"
+    href="{path}"
     >{title}</a
   >
   by {author}.
