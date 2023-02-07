@@ -29,7 +29,7 @@
   .cross {
     position: relative;
 
-    @media screen and (min-width: $breakpoint-mobile) and (orientation: portrait) {
+    @media screen and (min-width: 800px) and (orientation: portrait) {
       display: none;
     }
 
@@ -64,10 +64,10 @@
     &.line--1,
     &.line--2,
     &.line--3 {
-      stroke: $white;
+      stroke: #eee;
 
       &.light-mode {
-        stroke: $black;
+        stroke: #333;
       }
     }
   }
@@ -83,7 +83,7 @@
   }
 
   .menu--1 {
-    background-color: $white;
+    background-color: #eee;
     .line--1,
     .line--3 {
       --total-length: 126.64183044433594;

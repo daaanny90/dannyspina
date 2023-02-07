@@ -2,7 +2,7 @@
   export let link;
 </script>
 
-<a class="affiliate_link" href={link} target="_blank"
+<a class="affiliate_link" href={link} target="_blank" rel="noreferrer"
   ><svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"

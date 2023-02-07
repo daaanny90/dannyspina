@@ -1,4 +1,3 @@
-<!-- _post.svelte -->
 <script>
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BackArrow from "$lib/components/BackArrow.svelte";
@@ -7,6 +6,9 @@
   export let subtitle;
   export let date;
   export let categories;
+
+  export let data;
+  export let form;
 
   let dateOptions = {
     weekday: "long",
@@ -39,16 +41,5 @@
 <style lang="scss">
   .date {
     margin-bottom: 5rem;
-  }
-
-  .back-arrow-container {
-    color: #333;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  .back-arrow {
-    max-width: 2rem;
-    margin-right: 0.5rem;
   }
 </style>

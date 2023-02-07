@@ -1,16 +1,3 @@
-<script context="module">
-  export const load = async ({ fetch }) => {
-    const books = await fetch("/api/books.json");
-    const allBooks = await books.json();
-
-    return {
-      props: {
-        books: allBooks,
-      },
-    };
-  };
-</script>
-
 <script lang="ts">
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BookCategory from "$lib/components/BookCategory.svelte";
@@ -23,7 +10,8 @@
   import Technology from "$lib/icons/Technology.svelte";
   import OpenBook from "$lib/icons/OpenBook.svelte";
 
-  export let books;
+  export let data;
+  let { books } = data;
 
   const categories = [];
 

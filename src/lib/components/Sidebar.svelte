@@ -27,7 +27,7 @@
     text-decoration: none;
     z-index: 100;
 
-    @media screen and (max-width: $breakpoint-mobile) {
+    @media screen and (max-width: 800px) {
       position: absolute;
       top: 1.5rem;
     }
@@ -49,8 +49,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    @media screen and (max-width: $breakpoint-mobile),
-      screen and (max-height: 530px) {
+    @media screen and (max-width: 800px), screen and (max-height: 530px) {
       display: none;
     }
 

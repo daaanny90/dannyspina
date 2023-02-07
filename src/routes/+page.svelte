@@ -2,7 +2,7 @@
   import PageTitle from "$lib/components/PageTitle.svelte";
 </script>
 
-<PageTitle title="DANNY SPINA" />
+<PageTitle title="DANNY SPINA" subtitle="" />
 <p>
   DIGITAL CRAFTSMAN AND BUG HUNTER AT <a href="https://www.ostec.de"
     ><img class="company-logo" src="ostec_logo.png" alt="Ostec GmbH" /></a
