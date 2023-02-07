@@ -1,6 +1,7 @@
 # dannyspina.com
 
 ## 📝 Notion Widgets
+
 Under `/notion` are located the notion widgets.
 
 The currently available widgets are:
@@ -10,6 +11,7 @@ The currently available widgets are:
 Information about the current day, week, year and quarter:
 
 ![week info screenshot](./static/images/weekinfo_widget.png)
+
 </details>
 
 ---

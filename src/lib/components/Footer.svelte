@@ -1,7 +1,5 @@
 <!-- Footer.svelte -->
-<footer>
-Footer
-</footer>
+<footer>Footer</footer>
 
 <style>
   footer {
@@ -13,8 +11,5 @@ Footer
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}                                                                                                                                                                          
+  }
 </style>
-
-
-

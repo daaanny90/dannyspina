@@ -7,6 +7,10 @@
 </script>
 
 <li>
-  <a href="/books/{title.toLowerCase().replaceAll(' ', '_').replaceAll(',','')}">{title}</a> by {author}.
+  <a
+    href="/books/{title.toLowerCase().replaceAll(' ', '_').replaceAll(',', '')}"
+    >{title}</a
+  >
+  by {author}.
   <BookCart link={amazonLink} />
 </li>

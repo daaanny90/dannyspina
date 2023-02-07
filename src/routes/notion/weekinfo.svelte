@@ -6,9 +6,11 @@
 
 <div class="background">
   <h2>
-    Today is <u>{calendar.getDayName()}
-    {calendar.getDayNumber()}
-    {calendar.getMonthName()}</u>. <br>
+    Today is <u
+      >{calendar.getDayName()}
+      {calendar.getDayNumber()}
+      {calendar.getMonthName()}</u
+    >. <br />
   </h2>
   <h5>Week {calendar.getWeekNumber()}</h5>
   <span class="progressBar">
@@ -19,7 +21,7 @@
   <h5>{calendar.currentDate.getFullYear()}</h5>
   <span class="progressBar year">
     <span class="progress" style="width: {calendar.getYearProgress()}%;"
-    ><span class="percent">{calendar.getYearProgress()}%</span></span
+      ><span class="percent">{calendar.getYearProgress()}%</span></span
     >
     <span class="quarters">
       <span>Q1</span>
@@ -39,7 +41,7 @@
 <style lang="scss">
   $notionWhite: #d1d1d1;
   $notionBackground: #191919;
-  
+
   .background {
     color: $notionWhite;
     padding: 1rem;

@@ -4,6 +4,7 @@ author: Giulio Cesare Giacobbe
 amazonLink: https://amzn.to/3XUhhMO
 category: Personal Growth
 ---
+
 Il libro "Come diventare un buddha in 10 settimane" di Giulio Cesare Giacobbe ci porta alla scoperta dei concetti e delle basi del buddismo. L'autore condivide la sua personale esperienza e il suo dramma con il figlio, rendendo il libro molto introspettivo.
 
 Sebbene alcune parti del libro possano sembrare superficiali e poco concrete, il libro è un'ottima introduzione al buddismo. L'obiettivo dell'autore non è di rendere qualcuno un buddha in poco tempo, ma di fornire una comprensione dei concetti fondamentali del buddismo e di come essi possono essere applicati nella vita quotidiana.

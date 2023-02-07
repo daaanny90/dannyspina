@@ -14,6 +14,6 @@
   }
 
   span {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 </style>

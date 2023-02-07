@@ -2,7 +2,7 @@
 title: Weekly0523
 subtitle: Weekly Retro
 date: "2023-02-03"
-categories: 
+categories:
   - "weekly"
   - "blog"
   - "weeklyretro"

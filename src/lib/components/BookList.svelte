@@ -1,6 +1,6 @@
 <ul class="books">
   <li class="book">
-   <slot /> 
+    <slot />
   </li>
 </ul>
 

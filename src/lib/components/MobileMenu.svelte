@@ -3,9 +3,9 @@
   import Burger from "./Burger.svelte";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
-  let active: boolean = false;
+  let active = false;
 
-  function handleMessage(event): void {
+  function handleMessage(): void {
     active = !active;
   }
 

@@ -1,14 +1,14 @@
 <script context="module">
-	export const load = async ({ fetch }) => {
-		const books = await fetch('/api/books.json');
-		const allBooks = await books.json();
+  export const load = async ({ fetch }) => {
+    const books = await fetch("/api/books.json");
+    const allBooks = await books.json();
 
-		return {
-			props: {
-				books: allBooks
-			}
-		};
-	};
+    return {
+      props: {
+        books: allBooks,
+      },
+    };
+  };
 </script>
 
 <script lang="ts">
@@ -32,17 +32,17 @@
     r[book.meta.metadata.category].push(book);
     return r;
   }, Object.create(null));
-  
-  for (let i = 0; i<Object.entries(booksCategorized).length; i++) {
-    categories.push(Object.entries(booksCategorized)[i])
+
+  for (let i = 0; i < Object.entries(booksCategorized).length; i++) {
+    categories.push(Object.entries(booksCategorized)[i]);
   }
 
   const icons = {
-   'Productivity': Rocket,
-   'Personal Growth': Power, 
-   'Technology': Technology,
-   'Arts & Entertainment': Art
-  }
+    Productivity: Rocket,
+    "Personal Growth": Power,
+    Technology: Technology,
+    "Arts & Entertainment": Art,
+  };
 </script>
 
 <PageTitle
@@ -52,7 +52,7 @@
 
 <div class="container-reading">
   <h2>
-    <OpenBook style="max-width: 2rem; margin-right: .5rem;"/>
+    <OpenBook style="max-width: 2rem; margin-right: .5rem;" />
     I'm reading
   </h2>
   <strong>Wim Hof method</strong> by Wim Hof. <br />
@@ -63,23 +63,28 @@
 {#each categories as category}
   <ul>
     <li>
-      <a href="#{category[0].toLowerCase().replaceAll(' ', '-')}">{category[0]}</a>
+      <a href="#{category[0].toLowerCase().replaceAll(' ', '-')}"
+        >{category[0]}</a
+      >
     </li>
   </ul>
 {/each}
 
 {#each categories as category}
-  <BookCategory category="{category[0]}">
-    <svelte:component this={icons[category[0]]} maxWidth="2rem"/>
+  <BookCategory category={category[0]}>
+    <svelte:component this={icons[category[0]]} maxWidth="2rem" />
   </BookCategory>
-  
+
   <BookList>
     {#each category[1] as book}
-      <Book title="{book.meta.metadata.title}" author="{book.meta.metadata.author}" amazonLink={book.meta.metadata.amazonLink} />
+      <Book
+        title={book.meta.metadata.title}
+        author={book.meta.metadata.author}
+        amazonLink={book.meta.metadata.amazonLink}
+      />
     {/each}
   </BookList>
 {/each}
-
 
 <style lang="scss" scoped>
   .container-reading {
