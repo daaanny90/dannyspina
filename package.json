@@ -2,11 +2,10 @@
   "name": "dannyspina",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "vite dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
     "test": "playwright test",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -17,7 +16,7 @@
     "@playwright/test": "^1.20.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/adapter-static": "^1.0.0-next.29",
-    "@sveltejs/kit": "next",
+    "@sveltejs/kit": "1.0.0-next.405",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^7.32.0",
@@ -31,7 +30,8 @@
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.3.1",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "vite": "^3.2.5"
   },
   "type": "module",
   "dependencies": {
