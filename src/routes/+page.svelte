@@ -4,8 +4,8 @@
 
 <PageTitle title="DANNY SPINA" subtitle="" />
 <p>
-  DIGITAL CRAFTSMAN AND BUG HUNTER AT <a href="https://www.ostec.de"
-    ><img class="company-logo" src="ostec_logo.png" alt="Ostec GmbH" /></a
+  DIGITAL CRAFTSMAN AND BUG HUNTER AT <a href="https://www.zalari.de"
+    ><img class="company-logo" src="https://www.zalari.de/assets/icons/icon.png" alt="Ostec GmbH" /></a
   >
 </p>
 
@@ -24,9 +24,11 @@
   }
   .company-logo {
     max-width: 5rem;
+    padding: 0 .5rem;
 
     @media only screen and (max-width: 600px) {
       max-width: 5rem;
+      padding: 0;
     }
   }
 </style>
