@@ -13,6 +13,8 @@
 <style lang="scss" scoped>
   .sidebar {
     transform: rotate(270deg);
+    margin: 0;
+    
     &:hover {
       a {
         text-decoration: line-through;

@@ -15,7 +15,7 @@
 
 <style lang="scss" scoped>
   .logo {
-    font-family: $font-sans-serif;
+    font-family: 'PressStart2P';
     width: 5rem;
     text-align: center;
     font-size: 2rem;
@@ -39,7 +39,7 @@
 
   .sidebar {
     position: fixed;
-    font-family: $font-sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     top: 0;
     bottom: 0;
@@ -47,6 +47,7 @@
     display: flex;
     width: 5rem;
     flex-direction: column;
+    align-items: center; 
     justify-content: space-around;
 
     @media screen and (max-width: 800px), screen and (max-height: 530px) {

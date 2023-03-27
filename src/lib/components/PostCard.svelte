@@ -53,7 +53,6 @@
     padding: 1rem;
     box-shadow: 2px 1px 30px -1px transparent;
     transition: box-shadow 0.1s linear;
-    border-radius: 2px;
 
     &:visited,
     &:hover {

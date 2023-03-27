@@ -4,7 +4,7 @@
 
 <PageTitle title="DANNY SPINA" subtitle="" />
 <p>
-  DIGITAL CRAFTSMAN AND BUG HUNTER AT <a href="https://www.zalari.de"
+  CODE MONKEY AT <a href="https://www.zalari.de"
     ><img class="company-logo" src="https://www.zalari.de/assets/icons/icon.png" alt="Ostec GmbH" /></a
   >
 </p>

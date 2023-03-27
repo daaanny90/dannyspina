@@ -13,12 +13,13 @@
 <style lang="scss">
   .title-center {
     .page-title {
+      font-family: "PressStart2P";
       font-size: 4rem;
       margin: 0 0 1rem 0;
       line-height: 1.1;
 
       @media only screen and (max-width: 600px) {
-        font-size: 2.6rem;
+        font-size: 2rem;
       }
     }
     p {

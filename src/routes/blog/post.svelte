@@ -30,7 +30,7 @@
 
 {#if categories.length}
   <aside class="categories">
-    <h3>{@html cat}</h3>
+    <div>{@html cat}</div>
   </aside>
 {/if}
 
@@ -39,6 +39,15 @@
 <slot />
 
 <style lang="scss">
+  .categories {
+    div {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+  
   .date {
     margin-bottom: 5rem;
   }
