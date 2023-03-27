@@ -17,7 +17,7 @@
   <h2>
     {post.meta.title}
   </h2>
-  <h4>{post.meta.subtitle}</h4>
+  <p>{post.meta.subtitle}</p>
   <div class="card-footer">
     <span class="cat">{pusblishDate}</span>
     <div class="categories">

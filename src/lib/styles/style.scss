@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./../fonts/SpaceGrotesk-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./../fonts/SpaceGrotesk-Bold.woff2") format("woff2");
+  font-weight: bolder;
+}
 body {
   margin: 0;
   color: #333;
@@ -7,6 +30,10 @@ body {
   &.dark-mode {
     color: #ffffff;
   }
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'SpaceGrotesk', sans-serif;
 }
 
 main {
@@ -35,7 +62,6 @@ a {
   color: #eee;
   background-color: #333;
   padding: 0.3rem;
-  // border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
 }
