@@ -39,15 +39,13 @@
 <slot />
 
 <style lang="scss">
-  .categories {
-    div {
-      margin: 1rem 0;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-    }
+  .categories > div {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
-  
+
   .date {
     margin-bottom: 5rem;
   }
