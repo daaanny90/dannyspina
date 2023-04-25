@@ -42,6 +42,10 @@
   $notionWhite: #d1d1d1;
   $notionBackground: #191919;
 
+  h2, h5 {
+    font-family: sans-serif;
+  }
+
   .background {
     color: $notionWhite;
     padding: 1rem;
