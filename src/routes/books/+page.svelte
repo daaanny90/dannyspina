@@ -43,8 +43,8 @@
     <OpenBook style="max-width: 2rem; margin-right: .5rem;" />
     I'm reading
   </h2>
-  <strong>Wim Hof method</strong> by Wim Hof. <br />
-  <strong>The Art of Taking Action</strong> by Gregg Krech. <br />
+  <strong>Dopamine Nation</strong> by Anna Lembke <br />
+  <strong>The Art of Taking Action</strong> by Gregg Krech <br />
   <strong>Clean Code</strong> by Robert C. Martin <br />
 </div>
 
