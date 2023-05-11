@@ -10,6 +10,9 @@
 <PageTitle title="About Me" subtitle="" />
 
 <p>
+  Interested in my CV? <a href="https://cv.dannyspina.com">Get it here</a>
+  <br />
+  <br />
   <strong>I'm Danny</strong>, a web developer with a focus on building scalable
   and maintainable web applications.
   <br />
