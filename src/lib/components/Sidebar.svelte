@@ -15,7 +15,7 @@
 
 <style lang="scss" scoped>
   .logo {
-    font-family: 'PressStart2P';
+    font-family: 'JetBrains Mono';
     width: 5rem;
     text-align: center;
     font-size: 2rem;
@@ -39,7 +39,7 @@
 
   .sidebar {
     position: fixed;
-    font-family: "Montserrat", sans-serif;
+    font-family: "JetBrains Mono", sans-serif;
     font-weight: 200;
     top: 0;
     bottom: 0;

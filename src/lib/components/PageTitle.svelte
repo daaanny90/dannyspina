@@ -13,10 +13,11 @@
 <style lang="scss">
   .title-center {
     .page-title {
-      font-family: "PressStart2P";
+      font-family: "JetBrains Mono";
       font-size: 4rem;
       margin: 0 0 1rem 0;
       line-height: 1.1;
+      letter-spacing: 1px;
 
       @media only screen and (max-width: 600px) {
         font-size: 2rem;

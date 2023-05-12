@@ -34,6 +34,7 @@
     font-size: 1.3rem;
     color: #333;
     font-weight: 400;
+    font-family: 'JetBrains Mono';
 
     &:visited {
       color: inherit;
