@@ -3,6 +3,7 @@
   "compilerOptions": {
     "lib": [
       "dom.iterable" //Here is a new item
-    ]
+    ],
+    "ignoreDeprecations": "5.0"
   }
 }
