@@ -1,10 +1,22 @@
 <script>
+  import { onMount } from "svelte";
   import Calendar from "$lib/helpers/Calendar";
 
   const calendar = new Calendar();
+  let widget;
+
+  onMount(() => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams();
+    const lightTheme = urlParams.entries;
+
+    if (queryString.includes("light")) {
+      widget.classList.add("light");
+    }
+  });
 </script>
 
-<div class="background">
+<div bind:this={widget} class="background">
   <h2>
     Today is <u
       >{calendar.getDayName()}
@@ -39,78 +51,83 @@
 </div>
 
 <style lang="scss">
-  $notionWhite: #d1d1d1;
-  $notionBackground: #191919;
-
-  h2, h5 {
+  h2,
+  h5 {
     font-family: sans-serif;
   }
+  $notionPrimary: #d1d1d1;
+  $notionSecondary: #191919;
 
   .background {
-    color: $notionWhite;
+    color: $notionPrimary;
     padding: 1rem;
 
     h5 {
       margin-bottom: 0;
     }
-  }
 
-  h2 {
-    color: $notionWhite;
-  }
-
-  .progressBar {
-    display: block;
-    width: 100%;
-    height: 2rem;
-    border: 2px solid $notionWhite;
-    position: relative;
-
-    & {
-      &::after {
-        width: 5rem;
-      }
+    h2 {
+      color: $notionPrimary;
     }
 
-    &.year {
-      margin-bottom: 2rem;
-    }
-
-    .quarters {
-      display: flex;
-      position: absolute;
-      bottom: -17px;
+    .progressBar {
+      display: block;
       width: 100%;
-      height: 1rem;
-      border-right: 2px solid $notionWhite;
+      height: 2rem;
+      border: 2px solid $notionPrimary;
+      position: relative;
 
-      span {
-        width: 25%;
-        text-align: center;
+      & {
+        &::after {
+          width: 5rem;
+        }
+      }
 
-        &:not(:last-child) {
-          border-right: 2px solid $notionWhite;
+      &.year {
+        margin-bottom: 2rem;
+      }
+
+      .quarters {
+        display: flex;
+        position: absolute;
+        bottom: -17px;
+        width: 100%;
+        height: 1rem;
+        border-right: 2px solid $notionPrimary;
+
+        span {
+          width: 25%;
+          text-align: center;
+
+          &:not(:last-child) {
+            border-right: 2px solid $notionPrimary;
+          }
         }
       }
     }
-  }
-  .progress {
-    content: "";
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 0.5rem;
-    align-items: center;
-    color: $notionBackground;
-    max-width: calc(100% - 8px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2rem;
-    background-color: $notionWhite;
-    width: 0;
+    .progress {
+      content: "";
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0.5rem;
+      align-items: center;
+      color: $notionSecondary;
+      max-width: calc(100% - 8px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2rem;
+      background-color: $notionPrimary;
+      width: 0;
 
-    .percent {
-      color: $notionBackground;
+      .percent {
+        color: $notionSecondary;
+      }
     }
+  }
+
+  .light {
+    color: $notionSecondary;
+    border: 2px solid red;
   }
 </style>

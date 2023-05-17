@@ -20,21 +20,23 @@ A picture is worth a thousand words; this is what the widget looks like:
 
 <ImagePost file="weekinfo_widget.png" alt="Week Info Screenshot" />
 
-The widget provides an **overview of the current week** (as of the screenshot date of July 12, 2020, which is 100%), the **current year** (divided into quarters), and a breakdown of the **current quarter**.
+The widget provides an **overview of the current week** (as of the screenshot date of January 29, Sunday, which is 100%), the **current year** (divided into quarters), and a breakdown of the **current quarter**.
 
 Other than the **current day**.
 
 ## Limitations
 
-Currently, the widget **only works in dark mode**. This means that if you're using Notion in light mode, you won't be able to use the widget (although it may be difficult to read).
+~~Currently, the widget **only works in dark mode**. This means that if you're using Notion in light mode, you won't be able to use the widget (although it may be difficult to read)~~
 
-Implementing it is quite simple; I can do it, just give me some time. 😊
+**Light mode implemented! See below under "How to use it"!**
 
 There are also other minor issues to address, such as the **spacing not fitting perfectly** on mobile and not being consistent with other elements (it leaves a small gap on the sides, which is more than other elements leave. If you're a perfectionist, you'll notice it).
 
 ## How to use it
 
 You can find the widget [here](https://dannyspina.com/notion/weekinfo). Copy the URL and add an embed element to your Notion page, then paste the URL. You may need to adjust the width and height of the element based on your page layout. The widget **is responsive**, so it will work in two-column page structures or on mobile devices.
+
+If you use Notion in light mode (Why?) then just add `?light` to the widget url. [I did it for you if you want](https://dannyspina.com/notion/weekinfo?light)
 
 ## Why
 
