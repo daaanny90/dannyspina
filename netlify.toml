@@ -9,3 +9,11 @@
   to = "https://drive.google.com/drive/folders/1RLIvcuNHttHNKaBhWDU5GqQr4qFuH6ca"
   status = 301
   force = true
+
+
+[[redirects]]
+  from = "/meet"
+  to = "https://meet.jit.si/DannyMeetingRoom_ID23891234"
+  status = 301
+  force = true
+
