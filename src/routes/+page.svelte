@@ -2,7 +2,7 @@
   import PageTitle from "$lib/components/PageTitle.svelte";
 </script>
 
-<PageTitle title="< DANNY SPINA />" subtitle="" />
+<PageTitle title="DANNY SPINA" subtitle="" />
 <p>
   CODE MONKEY AT <a href="https://www.zalari.de"
     ><img class="company-logo" src="https://www.zalari.de/assets/icons/icon.png" alt="Ostec GmbH" /></a
