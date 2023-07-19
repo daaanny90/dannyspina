@@ -2,11 +2,15 @@
   function toggle(): void {
    const html = document.documentElement
    const theme = html.getAttribute("data-theme");
+   const soundOn: HTMLAudioElement = document.querySelector('#switch-on');
+   const soundOff: HTMLAudioElement = document.querySelector('#switch-off');
 
    if (theme === "light") {
     html.setAttribute("data-theme", "dark");
+    soundOff.play()
    } else {
     html.setAttribute("data-theme", "light")
+    soundOn.play()
    }
 
   const wraps = document.querySelectorAll(".icon-wrap");
@@ -15,6 +19,9 @@
     }
   }
 </script>
+
+<audio id="switch-on" src="/sounds/switch-on.mp3"></audio>
+<audio id="switch-off" src="/sounds/switch-off.mp3"></audio>
 
 <div class="toggle">
   <div class="mask" on:click={toggle} on:keypress={() => {toggle}}>

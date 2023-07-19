@@ -54,9 +54,9 @@ a {
 
   &:hover {
     animation-duration: 0.3s;
-    border-bottom: 1px dashed green;
+    border-bottom: 1px dashed var(--accent-color);
     transition: all 0.3s linear;
-    color: green;
+    color: var(--accent-color);
   }
 
   &.cat {
@@ -75,9 +75,14 @@ pre {
   width: 100%;
   min-width: 100%;
   overflow: auto;
-  background: #d2d2d2;
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 1rem;
 }
 code {
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 0 0.3rem;
   display: inline-block;
 }
 
@@ -87,18 +92,18 @@ code {
 blockquote {
   margin: 50px auto;
   font-style: italic;
-  color: #555555;
+  color: hsl(var(--accent-color), 1, 0.8);
   padding: 1.2em 30px 1.2em 35px;
-  border-left: 8px solid forestgreen;
+  border-left: 8px solid var(--accent-color);
   line-height: 1.6;
   position: relative;
-  background: #ededed;
+  background-color: var(--background-color);
 }
 
 blockquote::before {
   font-family: Arial;
   content: "“";
-  color: forestgreen;
+  color: var(--accent-color);
   font-size: 4em;
   position: absolute;
   left: 10px;

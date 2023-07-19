@@ -28,7 +28,7 @@
 {#if categories.length}
   <aside class="categories">
     {#each categories as cat}
-      <a class="cat" href="/blog/categories/${cat}">#{cat}</a>
+      <a class="cat" href="/blog/categories/{cat}">#{cat}</a>
     {/each}
   </aside>
 {/if}

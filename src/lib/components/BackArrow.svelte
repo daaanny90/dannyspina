@@ -20,11 +20,9 @@
 </a>
 
 <style lang="scss" scoped>
-  a {
-    @include unstyledLink;
-  }
-
   .back-arrow-container {
+    @include unstyledLink;
+    
     color: var(--text-color);
     display: flex;
     align-items: center;

@@ -33,8 +33,10 @@
   Buy it</a
 >
 
-<style>
+<style lang="scss">
   a {
+    @include unstyledLink;
+    
     display: flex;
     align-items: center;
   }

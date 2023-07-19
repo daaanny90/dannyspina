@@ -14,6 +14,11 @@
   .sidebar {
     transform: rotate(270deg);
     margin: 0;
+
+    // the menu items in the sidebar must be the normal color of the text...
+    a {
+      color: var(--text-color);
+    }
     
     &:hover {
       a {
@@ -34,7 +39,8 @@
     
     text-decoration: none;
     font-size: 1.3rem;
-    color: var(--text-color);
+    // ...but in the mobile menu must be the opposite
+    color: var(--background-color);
     font-weight: 400;
     font-family: 'JetBrains Mono';
 
