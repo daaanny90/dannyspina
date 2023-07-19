@@ -15,6 +15,8 @@
 
 <style lang="scss" scoped>
   .logo {
+    @include unstyledLink;
+
     font-family: 'JetBrains Mono';
     width: 5rem;
     text-align: center;
@@ -50,7 +52,7 @@
     align-items: center; 
     justify-content: space-around;
 
-    @media screen and (max-width: 800px), screen and (max-height: 530px) {
+    @media screen and (max-width: 900px), screen and (max-height: 530px) {
       display: none;
     }
 

@@ -5,8 +5,25 @@ $font-weight-normal: 400;
 $font-weight-bold: 600;
 
 // breakpoints
-$breakpoint-mobile: 800px;
+$breakpoint-mobile: 900px;
 
 // colors
 $white: #eee;
 $black: #333;
+
+html[data-theme="dark"] {
+  --text-color: #{$white};
+  --background-color: #{$black};
+}
+
+html[data-theme="light"] {
+  --text-color: #{$black};
+  --background-color: #{$white};
+}
+
+// mixins
+@mixin unstyledLink {
+  border-bottom: none;
+  animation: none;
+  padding-bottom: none;
+}

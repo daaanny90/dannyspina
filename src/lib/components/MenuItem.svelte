@@ -30,9 +30,11 @@
   }
 
   a {
+    @include unstyledLink;
+    
     text-decoration: none;
     font-size: 1.3rem;
-    color: #333;
+    color: var(--text-color);
     font-weight: 400;
     font-family: 'JetBrains Mono';
 

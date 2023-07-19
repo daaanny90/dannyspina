@@ -22,7 +22,7 @@
 
 <Burger on:menuOpen={handleMessage} />
 <div
-  class="mobile-menu light-mode"
+  class="mobile-menu"
   on:click={closeMenu}
   on:keypress={() => {closeMenu}}
   class:active
@@ -48,19 +48,16 @@
     justify-content: center;
     flex-direction: column;
     z-index: -200;
-    background: #333;
+    background: var(--text-color);
+    color: var(--background-color);
     transition: all 0.3s ease-out;
-
-    &.light-mode {
-      background: #eee;
-    }
 
     &.active {
       right: 0;
       z-index: 200;
       transition: all 0.3s ease-in;
 
-      @media screen and (min-width: 800px) and (orientation: portrait) {
+      @media screen and (min-width: $breakpoint-mobile) and (orientation: portrait) {
         right: -100vw;
       }
 

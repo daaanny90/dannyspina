@@ -19,9 +19,13 @@
   </svg> <span>Back to {page}</span>
 </a>
 
-<style>
+<style lang="scss" scoped>
+  a {
+    @include unstyledLink;
+  }
+
   .back-arrow-container {
-    color: #333;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
