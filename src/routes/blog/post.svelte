@@ -35,18 +35,18 @@
 
 <slot />
 
-<style lang="scss" scoped>
+<style scoped>
   .categories {
     width: 100%;
     display: flex;
 
-    .cat {
-      font-weight: lighter;
-      text-decoration: none;
-      font-size: .9rem;
-      margin: 0 1rem 0 0;
-    }
     margin-bottom: 5rem;
+  }
+  .cat {
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: .9rem;
+    margin: 0 1rem 0 0;
   }
   .date {
     align-self: flex-start;
