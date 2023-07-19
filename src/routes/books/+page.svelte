@@ -78,7 +78,8 @@
 
 <style lang="scss" scoped>
   .container-reading {
-    background-color: lightgray;
+    background-color: var(--text-color);
+    color: var(--background-color);
     padding: 1rem 0 2rem 1rem;
     margin-top: 2rem;
   }

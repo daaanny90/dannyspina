@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @font-face {
   font-family: "JetBrains Mono";
   src: url("./../fonts/JetBrainsMono[wght].ttf") format("truetype-variations");
@@ -6,54 +8,65 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./../fonts/Montserrat-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("./../fonts/Montserrat-VariableFont_wght.ttf")
+    format("truetype-variations");
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-  color: #333;
+  color: var(--text-color);
+  background-color: var(--background-color);
   overflow-x: hidden;
-
-  &.dark-mode {
-    color: #ffffff;
-  }
 }
 
-h1,h2,h3,h4,h5 {
-  font-family: 'JetBrains Mono', sans-serif;
-}
-
-main {
-  padding: 1rem;
-  margin: 8rem 0 0 10rem;
-  max-width: 45rem;
-  line-height: 1.7;
-
-  @media screen and (max-width: 800px), screen and (max-height: 530px) {
-    margin: 8rem 2rem 0 2rem;
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "JetBrains Mono", sans-serif;
 }
 
 /*
  *  Links
  */
+@keyframes linkBorder {
+  0% {
+    padding-bottom: 0;
+  }
+  100% {
+    padding-bottom: 0.2rem;
+  }
+}
+
 a {
-  color: forestgreen;
+  color: var(--text-color);
   text-decoration: none;
+  border-bottom: 1px dashed var(--text-color);
+  animation-name: linkBorder;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-duration: 0;
+  transition: all 0.3s linear;
+
+  position: relative;
+
+  &:hover {
+    animation-duration: 0.3s;
+    border-bottom: 1px dashed var(--accent-color);
+    transition: all 0.3s linear;
+    color: var(--accent-color);
+  }
+
+  &.cat {
+    @include unstyledLink;
+  }
 }
 
 /*
  *  Category Tags
  */
-.cat {
-  color: #eee;
-  background-color: #333;
-  padding: 0.3rem;
-  text-decoration: none;
-  font-size: 1rem;
-  margin: 0 0.2rem 0.2rem 0;
-}
 
 /*
  *  Code blocks and Code inline
@@ -62,9 +75,14 @@ pre {
   width: 100%;
   min-width: 100%;
   overflow: auto;
-  background: #d2d2d2;
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 1rem;
 }
 code {
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 0 0.3rem;
   display: inline-block;
 }
 
@@ -74,18 +92,18 @@ code {
 blockquote {
   margin: 50px auto;
   font-style: italic;
-  color: #555555;
+  color: hsl(var(--accent-color), 1, 0.8);
   padding: 1.2em 30px 1.2em 35px;
-  border-left: 8px solid forestgreen;
+  border-left: 8px solid var(--accent-color);
   line-height: 1.6;
   position: relative;
-  background: #ededed;
+  background-color: var(--background-color);
 }
 
 blockquote::before {
   font-family: Arial;
   content: "“";
-  color: forestgreen;
+  color: var(--accent-color);
   font-size: 4em;
   position: absolute;
   left: 10px;
@@ -98,7 +116,7 @@ blockquote::after {
 
 blockquote span {
   display: block;
-  color: #333333;
+  color: var(--text-color);
   font-style: normal;
   font-weight: bold;
   margin-top: 1em;

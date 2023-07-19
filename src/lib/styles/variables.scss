@@ -5,8 +5,29 @@ $font-weight-normal: 400;
 $font-weight-bold: 600;
 
 // breakpoints
-$breakpoint-mobile: 800px;
+$breakpoint-mobile: 900px;
 
 // colors
 $white: #eee;
 $black: #333;
+$accent-color-dark: #c5d86d;
+$accent-color-light: #3685b5;
+
+html[data-theme="dark"] {
+  --text-color: #{$white};
+  --background-color: #{$black};
+  --accent-color: #{$accent-color-dark};
+}
+
+html[data-theme="light"] {
+  --text-color: #{$black};
+  --background-color: #{$white};
+  --accent-color: #{$accent-color-light};
+}
+
+// mixins
+@mixin unstyledLink {
+  border-bottom: none;
+  animation: none;
+  padding-bottom: none;
+}

@@ -1,26 +1,34 @@
 <script lang="ts">
   function toggle(): void {
-    const wraps = document.querySelectorAll(".icon-wrap");
+   const html = document.documentElement
+   const theme = html.getAttribute("data-theme");
+   const soundOn: HTMLAudioElement = document.querySelector('#switch-on');
+   const soundOff: HTMLAudioElement = document.querySelector('#switch-off');
+
+   if (theme === "light") {
+    html.setAttribute("data-theme", "dark");
+    soundOff.play()
+   } else {
+    html.setAttribute("data-theme", "light")
+    soundOn.play()
+   }
+
+  const wraps = document.querySelectorAll(".icon-wrap");
     for (const wrap of wraps) {
       wrap.classList.toggle("active");
     }
-    document.querySelector(".bar").classList.toggle("light-mode");
-    document.querySelector("body").classList.toggle("dark-mode");
-    document.querySelector(".line--1").classList.toggle("light-mode");
-    document.querySelector(".line--2").classList.toggle("light-mode");
-    document.querySelector(".line--3").classList.toggle("light-mode");
-    document.querySelector(".mobile-menu").classList.toggle("light-mode");
-    document.querySelector(".bg-container").classList.toggle("light-mode");
-    document.querySelector(".blog-posts").classList.toggle("dark-mode");
   }
 </script>
 
+<audio id="switch-on" src="/sounds/switch-on.mp3"></audio>
+<audio id="switch-off" src="/sounds/switch-off.mp3"></audio>
+
 <div class="toggle">
   <div class="mask" on:click={toggle} on:keypress={() => {toggle}}>
-    <div class="icon-wrap active">
+    <div class="icon-wrap">
       <div class="icon sun" />
     </div>
-    <div class="icon-wrap">
+    <div class="icon-wrap active">
       <svg
         copy="icon"
         data-name="Layer 1"
@@ -33,21 +41,22 @@
       >
     </div>
   </div>
-  <div class="bar light-mode" />
+  <!-- <div class="bar" /> -->
 </div>
 
 <style lang="scss">
   $size: 60px;
 
   .toggle {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 10px;
     right: 0;
+    z-index: 251;
     width: $size;
     cursor: pointer;
 
-    @media screen and (max-width: 800px) {
-      right: 7rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+      right: 5rem;
     }
     .mask {
       width: $size;
@@ -56,7 +65,7 @@
 
       .icon-wrap {
         padding: 18px;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
         transition: all 300ms 400ms ease;
 
         &:last-child {
@@ -82,12 +91,8 @@
         }
       }
 
-      .sun {
-        background-color: #eee;
-      }
-
-      .moon {
-        background-color: #333;
+      .sun, .moon {
+        background-color: var(--text-color);
       }
     }
 
@@ -95,12 +100,8 @@
       width: 40%;
       height: 5px;
       margin: 0 auto;
-      background-color: #eee;
+      background-color: var(--text-color);
       transition: all 300ms 100ms ease;
-
-      &.light-mode {
-        background-color: #333;
-      }
     }
   }
 </style>

@@ -14,9 +14,9 @@
   <label>
     <input type="checkbox" on:click={toggleMenu} />
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <path class="line--1 light-mode" d="M0 40h62c13 0 6 28-4 18L35 35" />
-      <path class="line--2 light-mode" d="M0 50h70" />
-      <path class="line--3 light-mode" d="M0 60h62c13 0 6-28-4-18L35 65" />
+      <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+      <path class="line--2" d="M0 50h70" />
+      <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
     </svg>
   </label>
 </div>
@@ -29,7 +29,7 @@
   .cross {
     position: relative;
 
-    @media screen and (min-width: 800px) and (orientation: portrait) {
+    @media screen and (min-width: $breakpoint-mobile) and (orientation: portrait) {
       display: none;
     }
 
@@ -64,11 +64,7 @@
     &.line--1,
     &.line--2,
     &.line--3 {
-      stroke: #eee;
-
-      &.light-mode {
-        stroke: #333;
-      }
+      stroke: var(--text-color);
     }
   }
 
@@ -76,14 +72,16 @@
     .line--1,
     .line--3 {
       --length: 22.627416998;
+      stroke: var(--background-color);
     }
     .line--2 {
       --length: 0;
+      stroke: var(--background-color);
     }
   }
 
   .menu--1 {
-    background-color: #eee;
+    background-color: var(--background-color);
     .line--1,
     .line--3 {
       --total-length: 126.64183044433594;

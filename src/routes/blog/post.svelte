@@ -17,36 +17,38 @@
     day: "numeric",
   };
   let pusblishDate = new Date(date).toLocaleDateString("gb-GB", dateOptions);
-  let cat = categories.map(
-    (category) =>
-      `<a class="cat" href="/blog/categories/${category}">${category}</a>`
-  );
-  cat = cat.join(" ");
 </script>
 
 <BackArrow page="blog" />
 
 <PageTitle {title} {subtitle} />
 
+<p class="date">{pusblishDate}</p>
+
 {#if categories.length}
   <aside class="categories">
-    <div>{@html cat}</div>
+    {#each categories as cat}
+      <a class="cat" href="/blog/categories/{cat}">#{cat}</a>
+    {/each}
   </aside>
 {/if}
 
-<p class="date">{pusblishDate}</p>
-
 <slot />
 
-<style lang="scss">
-  .categories > div {
-    margin: 1rem 0;
+<style scoped>
+  .categories {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
 
-  .date {
     margin-bottom: 5rem;
+  }
+  .cat {
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: .9rem;
+    margin: 0 1rem 0 0;
+  }
+  .date {
+    align-self: flex-start;
   }
 </style>
