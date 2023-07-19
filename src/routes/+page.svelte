@@ -1,7 +1,3 @@
-<script>
-  import PageTitle from "$lib/components/PageTitle.svelte";
-</script>
-
 <section>
   <h1>Hi! I'm Danny.</h1>
   <p>I am a web developer with some <a href="/about">passions</a>.</p>
@@ -11,6 +7,10 @@
 <style lang="scss" scoped>
 section {
   text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
   p {
     font-weight: lighter;
