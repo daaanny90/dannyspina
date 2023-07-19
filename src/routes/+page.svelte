@@ -1,5 +1,5 @@
 <section>
-  <h1>Hi! I'm Danny.</h1>
+  <h1>Hi! I'm <span>Danny.</span></h1>
   <p>I am a web developer with some <a href="/about">passions</a>.</p>
   <p>Currently @ <a href="http://zalari.de">Zalari</a>.</p>
 </section>
@@ -11,6 +11,10 @@ section {
 
 h1 {
   font-size: 3rem;
+}
+
+span {
+  color: var(--accent-color);
 }
   p {
     font-weight: lighter;
