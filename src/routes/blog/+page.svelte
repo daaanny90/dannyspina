@@ -18,13 +18,11 @@
     }, 1000);
   };
   
-  onMount(async () => {
-    await tick().then(() => {
-      const containerHeigth = window.innerHeight - 128; // remove margint top of the page
+  onMount(() => {
+      const containerHeigth = window.innerHeight - 128; // remove margin top of the page
       const postCardHeight = outerHeight(".post-card");
       postsNumber = Math.round(containerHeigth / postCardHeight);
     });
-  });
 </script>
 
 <ul class="blog-posts">
@@ -41,7 +39,7 @@
   {#if loading}
     <Loader />
   {:else if postsNumber < data.posts.length}
-    <Button text="Load more" clickFunc={loadPosts} position="centered" />
+    <Button text="Load more" clickFunc={loadPosts} position="centered" styling="full-width" />
   {/if}
 </section>
 
