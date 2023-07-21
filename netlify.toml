@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "/tempo"
-  to = "https://dannyspina.notion.site/Gestione-del-tempo-dc2fc185a3f64a928f5ed53aca034fd5"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/library"
   to = "https://drive.google.com/drive/folders/1RLIvcuNHttHNKaBhWDU5GqQr4qFuH6ca"
   status = 301
