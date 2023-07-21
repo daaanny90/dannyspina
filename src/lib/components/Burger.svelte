@@ -46,7 +46,7 @@
     font-size: 2rem;
     position: absolute;
     top: -9rem;
-    right: 0;
+    right: -15px;
     z-index: 250;
   }
 

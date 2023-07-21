@@ -50,7 +50,7 @@
   .toggle {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 15px;
     z-index: 251;
     width: $size;
     cursor: pointer;

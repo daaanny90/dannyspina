@@ -41,7 +41,7 @@
     flex-direction: column;
 
     @media screen and (max-width: 800px), screen and (max-height: 530px) {
-      margin: 8rem 2rem 0 2rem;
+      margin: 8rem 1rem 0 1rem;
     }
   }
 </style>

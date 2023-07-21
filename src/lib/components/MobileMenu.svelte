@@ -40,7 +40,7 @@
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: -100vw;
+    right: -200vw;
     width: 100%;
     height: 100%;
     display: flex;
@@ -50,12 +50,12 @@
     z-index: -200;
     background: var(--text-color);
     color: var(--background-color);
-    transition: all 0.3s ease-out;
+    transition: all 0.6s ease-out;
 
     &.active {
       right: 0;
       z-index: 200;
-      transition: all 0.3s ease-in;
+      transition: all 0.6s ease-in;
 
       @media screen and (min-width: $breakpoint-mobile) and (orientation: portrait) {
         right: -100vw;
