@@ -40,6 +40,8 @@
     justify-content: center;
     flex-direction: column;
 
+    overflow-x: hidden;
+
     @media screen and (max-width: 800px), screen and (max-height: 530px) {
       margin: 8rem 1rem 0 1rem;
     }
