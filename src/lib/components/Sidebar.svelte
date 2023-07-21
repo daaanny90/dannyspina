@@ -3,7 +3,6 @@
   import MenuItem from "./MenuItem.svelte";
 </script>
 
-<a class="logo" href="/">DS</a>
 <div class="sidebar">
   <div class="menu">
     <MenuItem isSidebar={true} link="/blog" text="Blog" />
@@ -14,31 +13,6 @@
 </div>
 
 <style lang="scss" scoped>
-  .logo {
-    @include unstyledLink;
-
-    font-family: 'JetBrains Mono';
-    width: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    position: fixed;
-    top: 1rem;
-    margin: 0;
-    color: black;
-    font-weight: normal;
-    text-decoration: none;
-    z-index: 100;
-
-    @media screen and (max-width: 800px) {
-      position: absolute;
-      top: 1.5rem;
-    }
-
-    &:visited {
-      color: inherit;
-    }
-  }
-
   .sidebar {
     position: fixed;
     font-family: "JetBrains Mono", sans-serif;

@@ -5,6 +5,12 @@
   import "$lib/styles/style.scss";
   import "$lib/styles/variables.scss";
   import { blur } from "svelte/transition";
+  import Navbar from "$lib/components/Navbar.svelte";
+  import { menuOpen } from "./../store";
+
+  menuOpen.subscribe(value => {
+    console.log(value)
+  })
 
   const excludedRoutesFromLayout = ["/notion/weekinfo"];
 
@@ -13,9 +19,9 @@
 </script>
 
 {#if !excludedRoutesFromLayout.includes(currentRoute)}
+  <Navbar />
   <Sidebar />
   <MobileMenu />
-  <DarkModeSwitch />
 
   {#key data.currentRoute}
     <main in:blur={{ duration: 350, delay: 450 }} out:blur={{ duration: 350 }}>
