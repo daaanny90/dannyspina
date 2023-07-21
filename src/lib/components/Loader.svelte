@@ -9,7 +9,7 @@
   -webkit-mask: var(--_g),var(--_g),var(--_g);
   -webkit-mask-size: 25% 40%;
   background: var(--accent-color);
-  animation: load 2s infinite;
+  animation: load 1s infinite;
 }
 
 @keyframes load {

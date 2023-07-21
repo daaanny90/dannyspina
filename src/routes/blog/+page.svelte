@@ -3,40 +3,30 @@
   import { onMount, tick } from "svelte";
   import { outerHeight } from "$lib/helpers/utils.js";
   import Loader from "$lib/components/Loader.svelte";
+  import Button from "$lib/components/Button.svelte";
 
   export let data;
 
   let postsNumber: number;
   let loading = false;
 
-  const infiniteScroll = () => {
-    if (postsNumber >= data.posts.length) {
+  const loadPosts = () => {
+    loading = true;
+    setTimeout(() => {
+      postsNumber = postsNumber * 2;
       loading = false;
-      return;
-    }
-
-    const scrollableHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-      
-      if (window.scrollY >= scrollableHeight) {
-        loading = true
-        setTimeout(() => {
-          postsNumber = postsNumber * 2;
-          loading = false
-        }, 1000);
-      }
+    }, 1000);
   };
-
+  
   onMount(async () => {
     await tick().then(() => {
-      const containerHeigth = window.innerHeight - 128 // remove margint top of the page
-      const postCardHeight = outerHeight('.post-card')
-      postsNumber = Math.round(containerHeigth / postCardHeight)
-    })
-  })
+      const containerHeigth = window.innerHeight - 128; // remove margint top of the page
+      const postCardHeight = outerHeight(".post-card");
+      postsNumber = Math.round(containerHeigth / postCardHeight);
+    });
+  });
 </script>
 
-<svelte:window on:scroll={infiniteScroll} />
 <ul class="blog-posts">
   {#each data.posts.slice(0, postsNumber) as post}
     <li>
@@ -48,7 +38,11 @@
 </ul>
 
 <section>
-  {#if loading}<Loader />{/if}
+  {#if loading}
+    <Loader />
+  {:else if postsNumber < data.posts.length}
+    <Button text="Load more" clickFunc={loadPosts} position="centered" />
+  {/if}
 </section>
 
 <style lang="scss">
