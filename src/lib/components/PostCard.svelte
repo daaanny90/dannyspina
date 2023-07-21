@@ -13,7 +13,7 @@
   );
 </script>
 
-<a href={post.path}>
+<a class="post-card" href={post.path}>
   <h2>
     {post.meta.title}
   </h2>
