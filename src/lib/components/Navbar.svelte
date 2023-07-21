@@ -1,14 +1,6 @@
 <script lang="ts">
   import DarkModeSwitch from "./DarkModeSwitch.svelte";
   import Burger from "./Burger.svelte";
-  import { menuOpen } from "../../store";
-
-  const toggleMenu = () => {
-    menuOpen.set(!menuOpen)
-  }
-
-
-
 </script>
 
 <nav>
