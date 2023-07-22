@@ -1,16 +1,10 @@
 <script charset="utf-8">
   import Sidebar from "$lib/components/Sidebar.svelte";
   import MobileMenu from "$lib/components/MobileMenu.svelte";
-  import DarkModeSwitch from "$lib/components/DarkModeSwitch.svelte";
   import "$lib/styles/style.scss";
   import "$lib/styles/variables.scss";
   import { blur } from "svelte/transition";
   import Navbar from "$lib/components/Navbar.svelte";
-  import { menuOpen } from "./../store";
-
-  menuOpen.subscribe(value => {
-    console.log(value)
-  })
 
   const excludedRoutesFromLayout = ["/notion/weekinfo"];
 

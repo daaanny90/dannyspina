@@ -7,25 +7,7 @@
   let isMenuOpen: boolean;
   menuOpen.subscribe(state => {
     isMenuOpen = state
-    console.log(isMenuOpen)
   })
-
-  // const dispatch = createEventDispatcher();
-  // let active = false;
-
-  // function handleMessage(): void {
-  //   active = !active;
-  // }
-
-  // function closeMenu(): void {
-  //   setTimeout(() => {
-  //     active = !active;
-  //     dispatch("menuOpen", false);
-  //     if (document.querySelector(".cross input").checked) {
-  //       document.querySelector(".cross input").checked = false;
-  //     }
-  //   }, 250);
-  // }
 </script>
 
 <!-- <Burger on:menuOpen={handleMessage} /> -->

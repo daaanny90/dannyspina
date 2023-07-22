@@ -1,12 +1,17 @@
 <script lang="ts">
   import { page } from "$app/stores";
+  import { menuOpen } from "../../store";
+
+  const manageMenu = () => {
+    menuOpen.set(false);
+  }
 
   export let link: string;
   export let text: string;
   export let isSidebar = false;
 </script>
 
-<p class:sidebar={isSidebar} class:active={$page.url.pathname.includes(link)}>
+<p class:sidebar={isSidebar} class:active={$page.url.pathname.includes(link)} on:click={manageMenu}>
   <a href={link}>{text}</a>
 </p>
 
@@ -23,6 +28,7 @@
     &:hover {
       a {
         text-decoration: line-through;
+        text-decoration-color: var(--accent-color);
       }
     }
   }
@@ -30,9 +36,8 @@
   .active {
     a {
       text-decoration: line-through;
-    }
-    text-decoration-color: forestgreen;
-  }
+      text-decoration-color: var(--accent-color);
+    }  }
 
   a {
     @include unstyledLink;

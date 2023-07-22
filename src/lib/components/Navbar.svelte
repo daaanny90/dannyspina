@@ -1,10 +1,26 @@
 <script lang="ts">
   import DarkModeSwitch from "./DarkModeSwitch.svelte";
+  import BackArrow from "./BackArrow.svelte";
   import Burger from "./Burger.svelte";
+  import { isArrowUnderHeader, backArrowPage } from "../../store";
+
+  let currentPage;
+  let show;
+
+  backArrowPage.subscribe(page => {
+    currentPage = page
+  })
+
+  isArrowUnderHeader.subscribe(status => {
+    show = status
+  })
 </script>
 
 <nav>
   <a class="logo" href="/">DS</a>
+  <div class="backArrow" class:show>
+    <BackArrow page={currentPage} />
+  </div>
   <div class="buttonsContainer">
     <DarkModeSwitch />
     <Burger />
@@ -22,7 +38,6 @@
     top: 0;
     width: 100%;
     backdrop-filter: blur(7px);
-    box-shadow: 0 0 10px 0 var(--background-color);
   }
 
   .buttonsContainer {
@@ -47,6 +62,17 @@
 
     &:visited {
       color: var(--accent-color);
+    }
+  }
+
+  .backArrow {
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+    margin-right: auto;
+
+    &.show {
+      opacity: 1;
+   transition: opacity .1s ease-in-out;
     }
   }
 </style>

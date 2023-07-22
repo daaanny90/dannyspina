@@ -21,6 +21,7 @@
 <style>
   figure {
     margin: 0;
+    z-index: 100;
   }
 
   figcaption {
