@@ -11,7 +11,7 @@
   export let data;
 </script>
 
-<BackArrow page="books" />
+<BackArrow page="books" hideUnderHeader/>
 <PageTitle {title} subtitle={author} />
 
 <slot />

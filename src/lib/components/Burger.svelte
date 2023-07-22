@@ -1,18 +1,29 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
+  import { onMount } from "svelte";
+  import { menuOpen } from "../../store";
 
-  let isMenuOpen = false;
+  let status
+  let input
 
-  function toggleMenu() {
-    isMenuOpen = !isMenuOpen;
-    dispatch("menuOpen", isMenuOpen);
+  const toggleMenu = () => {
+    status = !status
+    menuOpen.set(status)
   }
+
+  menuOpen.subscribe(value => {
+    status = value
+  })
+  
+  onMount(() => {
+    menuOpen.subscribe(isOpen => {
+      input.checked = isOpen
+    })
+  })
 </script>
 
 <div class="menu cross menu--1">
   <label>
-    <input type="checkbox" on:click={toggleMenu} />
+    <input type="checkbox" on:click={toggleMenu} bind:this={input}/>
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
       <path class="line--2" d="M0 50h70" />
@@ -44,10 +55,9 @@
     width: 7rem;
     height: 7rem;
     font-size: 2rem;
-    position: absolute;
-    top: -9rem;
+    position: relative;
     right: -15px;
-    z-index: 250;
+    z-index: 251;
   }
 
   path {
@@ -59,7 +69,7 @@
     --offset: -38;
     stroke-dasharray: var(--length) var(--total-length);
     stroke-dashoffset: var(--offset);
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
     &.line--1,
     &.line--2,
@@ -81,7 +91,6 @@
   }
 
   .menu--1 {
-    background-color: var(--background-color);
     .line--1,
     .line--3 {
       --total-length: 126.64183044433594;

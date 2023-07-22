@@ -1,31 +1,19 @@
 <script lang="ts">
   import MenuItem from "./MenuItem.svelte";
   import Burger from "./Burger.svelte";
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
-  let active = false;
+  // import { createEventDispatcher } from "svelte";
+  import { menuOpen } from "../../store";
 
-  function handleMessage(): void {
-    active = !active;
-  }
-
-  function closeMenu(): void {
-    setTimeout(() => {
-      active = !active;
-      dispatch("menuOpen", false);
-      if (document.querySelector(".cross input").checked) {
-        document.querySelector(".cross input").checked = false;
-      }
-    }, 250);
-  }
+  let isMenuOpen: boolean;
+  menuOpen.subscribe(state => {
+    isMenuOpen = state
+  })
 </script>
 
-<Burger on:menuOpen={handleMessage} />
+<!-- <Burger on:menuOpen={handleMessage} /> -->
 <div
   class="mobile-menu"
-  on:click={closeMenu}
-  on:keypress={() => {closeMenu}}
-  class:active
+  class:active={isMenuOpen}
 >
   <MenuItem link="/blog" text="Blog" />
   <MenuItem link="/books" text="Books" />
@@ -40,7 +28,7 @@
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: -200vw;
+    right: -100vw;
     width: 100%;
     height: 100%;
     display: flex;
@@ -50,12 +38,12 @@
     z-index: -200;
     background: var(--text-color);
     color: var(--background-color);
-    transition: all 0.6s ease-out;
+    transition: all 0.3s ease-out;
 
     &.active {
       right: 0;
-      z-index: 200;
-      transition: all 0.6s ease-in;
+      z-index: 250;
+      transition: all 0.3s ease-in;
 
       @media screen and (min-width: $breakpoint-mobile) and (orientation: portrait) {
         right: -100vw;

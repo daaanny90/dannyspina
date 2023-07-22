@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BackArrow from "$lib/components/BackArrow.svelte";
 
@@ -19,7 +19,7 @@
   let pusblishDate = new Date(date).toLocaleDateString("gb-GB", dateOptions);
 </script>
 
-<BackArrow page="blog" />
+<BackArrow page="blog" hideUnderHeader/>
 
 <PageTitle {title} {subtitle} />
 
@@ -35,7 +35,7 @@
 
 <slot />
 
-<style scoped>
+<style lang="scss" scoped>
   .categories {
     width: 100%;
     display: flex;
