@@ -1,6 +1,6 @@
-<script>
-  export let title;
-  export let subtitle;
+<script lang="ts">
+  export let title: string;
+  export let subtitle = "" ;
 </script>
 
 <div class="title-center">

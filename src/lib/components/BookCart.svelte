@@ -1,5 +1,5 @@
-<script>
-  export let link;
+<script lang="ts">
+  export let link: string;
 </script>
 
 <a class="affiliate_link" href={link} target="_blank" rel="noreferrer"

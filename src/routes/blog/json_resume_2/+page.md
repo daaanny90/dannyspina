@@ -3,9 +3,7 @@ title: Introducing JSON.resume, Simplify CV Generation with Ease
 subtitle: Manage the CV on GitHub with a single JSON config file.
 date: "2023-05-18"
 categories:
-  - "Side project"
-  - "JSON.resume"
-  - "Curriculum vitae"
+  - "Projects"
 ---
 
 I'm thrilled to share that the [JSON.resume](https://github.com/daaanny90/JSON.resume) project has reached an important milestone—the proof of concept (POC) is now complete and ready for testing! I have successfully utilized JSON.resume to generate my own CV, which you can explore at [cv.dannyspina.com](https://cv.dannyspina.com). While there is still work to be done to refine and polish the project, the journey thus far has been both enjoyable and educational, particularly in the realm of PDF generation.

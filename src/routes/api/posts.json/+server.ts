@@ -1,4 +1,5 @@
 import { json } from "@sveltejs/kit";
+import { sortedPosts } from "$lib/helpers/utils";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
@@ -18,9 +19,7 @@ export const GET = async () => {
     })
   );
 
-  const sortedPosts = allPosts.sort((a, b) => {
-    return new Date(b.meta.date) - new Date(a.meta.date);
-  });
+  const sorted = sortedPosts(allPosts);
 
-  return json(sortedPosts);
+  return json(sorted);
 };

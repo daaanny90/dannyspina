@@ -31,3 +31,26 @@ html[data-theme="light"] {
   animation: none;
   padding-bottom: none;
 }
+
+@mixin invertedLink {
+  :global(a) {
+    color: var(--background-color);
+    border-bottom: 1px dashed var(--background-color);
+  }
+
+  html[data-theme="light"] {
+    :global(a) {
+      &:hover {
+        border-bottom: 1px dashed $accent-color-dark;
+      }
+    }
+  }
+
+  html[data-theme="dark"] {
+    :global(a) {
+      &:hover {
+        border-bottom: 1px dashed $accent-color-light;
+      }
+    }
+  }
+}

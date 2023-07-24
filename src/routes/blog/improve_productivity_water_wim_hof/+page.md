@@ -3,9 +3,7 @@ title: Unlocking My Productivity, How I Improved My Performance with Water and C
 subtitle: Drinking two liters of water each day and starting with the wim hof method changed my professional and private life
 date: "2023-02-22"
 categories:
-  - "Productivity"
-  - "Cold showers"
-  - "Water"
+  - "Personal Growth"
 ---
 
 ## Introduction

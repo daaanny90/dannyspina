@@ -1,5 +1,5 @@
 <!-- Header.svelte -->
-<script>
+<script lang="ts">
   import MenuItem from "./MenuItem.svelte";
 </script>
 

@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import PageTitle from "$lib/components/PageTitle.svelte";
 </script>
 
-<PageTitle title="Get in touch" subtitle="" />
+<PageTitle title="Get in touch" />
 <p>
   Thank you for visiting my website!
   <br />

@@ -16,6 +16,7 @@
     month: "long",
     day: "numeric",
   };
+
   let pusblishDate = new Date(date).toLocaleDateString("gb-GB", dateOptions);
 </script>
 

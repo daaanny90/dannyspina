@@ -3,9 +3,7 @@ title: My side project JSON.resume
 subtitle: Manage the CV on GitHub with a single JSON config file.
 date: "2023-01-26"
 categories:
-  - "Side project"
-  - "JSON.resume"
-  - "Curriculum vitae"
+  - "Projects"
 ---
 
 Some time ago I started a little project called **resume.json**
