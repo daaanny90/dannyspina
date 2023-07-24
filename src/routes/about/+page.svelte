@@ -1,8 +1,9 @@
 <script>
   import PageTitle from "$lib/components/PageTitle.svelte";
+  import Accordion from "$lib/components/Accordion.svelte";
 
   const today = new Date();
-  const startCodingDate = new Date("2017-01-01");
+  const startCodingDate = new Date("2017-09-01");
 
   const yearsOfExperience = today.getFullYear() - startCodingDate.getFullYear();
 </script>
@@ -78,8 +79,8 @@
 <h2>My passions</h2>
 
 <p>I have some passions outside the tech world:</p>
-<details>
-  <summary><h3>Cooking</h3></summary>
+
+<Accordion title="Cooking">
   <p>
     I don't know if the reason is that I am italian (let's confirm some cliches)
     but I am really in love with food, the meaning that food has and the act of
@@ -116,11 +117,9 @@
     a moment and be present. Try to enjoiy eat, put attention on you sensation
     while doing it. And try to do it the best way you can.
   </p>
-</details>
+</Accordion>
 
-<details>
-  <summary><h3>Movies</h3></summary>
-
+<Accordion title="Movies">
   <p>
     Movies are a wonderful form of storytelling that captivates me. They have
     the power to transport us to different worlds, evoke emotions, and broaden
@@ -164,10 +163,9 @@
     on the lookout for more masterpieces that will captivate my imagination and
     deepen my appreciation for the art of filmmaking.
   </p>
-</details>
+</Accordion>
 
-<details>
-  <summary><h3>Astronomy</h3></summary>
+<Accordion title="Astronomy">
   <p>
     The vastness and mysteries of the universe have always fascinated me. One of
     the aspects that intrigues me the most is space exploration. The idea of
@@ -220,11 +218,9 @@
     perspectives and inspire a sense of wonder and awe that will forever remain
     with us, guiding our pursuit of knowledge and understanding.
   </p>
-</details>
+</Accordion>
 
-<details>
-  <summary><h3>Photography</h3></summary>
-
+<Accordion title="Photography">
   <p>
     Photography has been an evolving passion for me, transforming from an art
     form to a way of capturing precious moments, especially those spent with my
@@ -278,25 +274,113 @@
     age, it will be fascinating to observe the long-term effects of this
     photographic revolution on our culture and the generations to come.
   </p>
-</details>
+</Accordion>
 
-<style lang="scss" scoped>
-  details {
-    h3 {
-      margin: 0 0 0 0.5rem;
-      display: inline-block;
-    }
+<Accordion title="Reading">
+  <p>
+    Reading is a passion that holds a special place in my heart. It is an
+    integral part of my life, and I find myself immersed in a diverse range of
+    books, from non-fiction and personal growth to novels. It is a constant
+    journey of exploration and growth, both intellectually and emotionally.
+  </p>
 
-    summary {
-      cursor: pointer;
+  <p>
+    I have a particular fondness for non-fiction and personal development books,
+    as they offer valuable insights and knowledge that contribute to my
+    continuous self-improvement. These books provide me with valuable tools to
+    navigate life's challenges and strive to be a better version of myself each
+    day.
+  </p>
 
-      &:hover {
-        color: var(--accent-color);
-      }
+  <p>
+    Lately, I have also delved into the world of science fiction, starting with
+    Isaac Asimov's "Foundation" and now being captivated by "Dune." Exploring
+    the realms of imagination and futuristic worlds adds a new dimension to my
+    reading experience, keeping me eagerly glued to the pages.
+  </p>
 
-      &::marker {
-        color: var(--accent-color);
-      }
-    }
-  }
-</style>
+  <p>
+    Reading, to me, is an essential aspect of personal growth. It allows me to
+    gain new perspectives, broaden my horizons, and deepen my understanding of
+    the world and humanity. The knowledge and wisdom found in books serve as
+    guiding lights on my life's journey.
+  </p>
+
+  <p>
+    While I have a strong affinity for physical books and appreciate the
+    tangible experience they offer, I must admit my love for ebooks as well. My
+    Kindle has become an invaluable companion, enabling me to read even more.
+    The invention of e-ink is revolutionary, providing the convenience of
+    carrying countless books in a compact device. The e-ink magic allows me to
+    highlight passages, add notes, refer to the dictionary, and even translate
+    text with a simple touch of my finger. It feels like having superpowers at
+    my fingertips, making the reading experience even more enriching and
+    interactive.
+  </p>
+
+  <p>
+    Reading has become an inseparable part of my daily routine, and I cannot
+    fathom a life without it. The knowledge and joy I gain from books
+    continuously shape my thoughts, beliefs, and actions. It is a lifelong
+    pursuit that enriches my soul and brings meaning to my existence.
+  </p>
+
+  <p>
+    In the world of books, I find solace, inspiration, and the courage to embark
+    on new adventures in life. It is a journey that will continue to unfold, and
+    I eagerly anticipate the discoveries that lie ahead in the boundless realms
+    of literature.
+  </p>
+</Accordion>
+
+<Accordion title="Gaming">
+  <p>
+    Gaming has been an important part of my life, even though I have mostly
+    stepped away from it in recent times. To me, video games are not just
+    trivial pastimes for children; they are a form of art. Comparable to cinema,
+    but with the added dimension of interactivity, video games can be profound
+    and thought-provoking experiences.
+  </p>
+
+  <p>
+    Video games with compelling storylines have the power to make me reflect on
+    significant themes in life, challenge my perspectives, and inspire action in
+    various directions. Unfortunately, there is still a prevalent perception
+    that video games are frivolous, but I firmly believe that one day they will
+    be recognized as a serious and profound art form on par with cinema.
+  </p>
+
+  <p>
+    Gaming has the potential to engage me emotionally and intellectually, just
+    like any other art form. Those with excellent storytelling can leave a
+    lasting impact and resonate deeply with me. For example, games like Hideo
+    Kojima's "Metal Gear" series, the "Mass Effect" trilogy, and "The Last of
+    Us" have had a profound influence on my thoughts and emotions.
+  </p>
+
+  <p>
+    While I used to be a slow and deliberate gamer, often picking up titles
+    years after their release, I found immense enjoyment in immersing myself in
+    games with elaborate and deep narratives. The complex characters and
+    thought-provoking dilemmas in these games have left a lasting impression on
+    me, and I cherish the experiences they provided.
+  </p>
+
+  <p>
+    Regarding "The Last of Us 2," I share my apprehension about sequels,
+    especially when the first installment ended so perfectly. I can understand
+    the fear of potentially tainting a masterpiece. However, there is a
+    lingering hope that one day I might rediscover my passion for gaming and
+    venture into new experiences, including the sequel. If I do, I'm sure it
+    will be a journey filled with emotions and introspection.
+  </p>
+
+  <p>
+    Gaming, in its essence, is an interactive form of art that can elicit a
+    range of emotions and provoke meaningful contemplation. Despite my current
+    break from gaming, its impact on my life and perspectives remains evident.
+    Perhaps one day, when the time feels right, I will return to this beloved
+    hobby and discover new stories and experiences that will reignite my passion
+    for gaming once more.
+  </p>
+</Accordion>
