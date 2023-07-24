@@ -74,3 +74,229 @@
   <strong>If you share my passion</strong> for creating meaningful technology
   and want to connect, <strong>I would be happy to hear from you</strong>.
 </p>
+
+<h2>My passions</h2>
+
+<p>I have some passions outside the tech world:</p>
+<details>
+  <summary><h3>Cooking</h3></summary>
+  <p>
+    I don't know if the reason is that I am italian (let's confirm some cliches)
+    but I am really in love with food, the meaning that food has and the act of
+    cooking. I could not imagine a life eating stuff withouit thinking or
+    tasteless stuff.
+  </p>
+
+  <p>
+    The food and the way we cook it is part of our culture, is what we are (we
+    are what we eat, right?).
+  </p>
+
+  <p>
+    Food is important. It tells a lot about the people who crafted the recipe,
+    and if I think to travel somewhere without eating local food, I feel I miss
+    50% of the experience. I miss that big part of culture that the food can
+    tell.
+  </p>
+
+  <p>
+    It says a lot about how the people manage poverty, what grows there, how the
+    people conserve the food. It shows the rituals that the people has.
+  </p>
+
+  <p>
+    Eating is also an extreme good experience if done properly. I always
+    confront eating with making love. Yes, you could make love only for survive
+    purposes or doing bad sex just to do it. But why? Why avoid to enjoy this
+    beautiful experience?
+  </p>
+
+  <p>
+    So, do me a favour: next time you are eating (or making love), just stop for
+    a moment and be present. Try to enjoiy eat, put attention on you sensation
+    while doing it. And try to do it the best way you can.
+  </p>
+</details>
+
+<details>
+  <summary><h3>Movies</h3></summary>
+
+  <p>
+    Movies are a wonderful form of storytelling that captivates me. They have
+    the power to transport us to different worlds, evoke emotions, and broaden
+    our perspectives. I am drawn to various genres, from thought-provoking
+    dramas to thrilling adventures. Watching movies allows me to experience the
+    creativity and imagination of filmmakers, and I always find inspiration in
+    their craft.
+  </p>
+
+  <p>
+    In my top 3 favorite movies, I have to mention the mind-bending "Matrix,"
+    which revolutionized the sci-fi genre and left a lasting impact on cinema.
+    "Blade Runner" is another all-time favorite, with its mesmerizing dystopian
+    world and philosophical themes that continue to resonate. And of course,
+    "The Lord of the Rings" trilogy holds a special place in my heart, with its
+    epic storytelling and remarkable filmmaking.
+  </p>
+
+  <p>
+    As for potential additions to my top 10 favorites, "Dune" and "Interstellar"
+    have excellent chances of securing a spot. I am drawn to the grandeur and
+    depth of "Dune," and "Interstellar" captivated me with its awe-inspiring
+    exploration of space and time.
+  </p>
+
+  <p>
+    My admiration for the art of filmmaking extends to the directors who bring
+    these cinematic wonders to life. Currently, my favorite directors include
+    Denis Villeneuve, whose visionary storytelling in films like "Blade Runner
+    2049" and "Arrival" leaves me in awe. Christopher Nolan's ability to craft
+    mind-bending narratives in movies like "Inception" and "The Dark Knight" is
+    simply exceptional. David Lynch's surreal and thought-provoking style, seen
+    in "Mulholland Drive" and "Twin Peaks," continues to intrigue me. And of
+    course, Martin Scorsese's masterful storytelling in classics like
+    "Goodfellas" and "Taxi Driver" leaves a lasting impact on cinema.
+  </p>
+
+  <p>
+    These directors' works inspire me, and I eagerly anticipate their future
+    projects. As I continue my journey through the world of cinema, I am always
+    on the lookout for more masterpieces that will captivate my imagination and
+    deepen my appreciation for the art of filmmaking.
+  </p>
+</details>
+
+<details>
+  <summary><h3>Astronomy</h3></summary>
+  <p>
+    The vastness and mysteries of the universe have always fascinated me. One of
+    the aspects that intrigues me the most is space exploration. The idea of
+    venturing beyond our planet and exploring the cosmos ignites a sense of
+    wonder and curiosity in me. I make sure to stay updated on the latest
+    missions and discoveries, as they represent humanity's quest to unravel the
+    secrets of the universe.
+  </p>
+
+  <p>
+    Beyond the scientific aspects, astronomy also sparks profound philosophical
+    questions about our existence and our place in the cosmos. Contemplating the
+    vastness of space and the countless stars and galaxies raises fundamental
+    questions about who we are and where we are headed, both as a species and as
+    individuals. Exploring these questions generates awareness and a deeper
+    understanding of ourselves and our role in the universe.
+  </p>
+
+  <p>
+    I am excited to share this fascination with my passion for astronomy with my
+    daughters. I plan to begin observing the night sky with a telescope, hoping
+    that this experience will ignite their curiosity and inspire them to ask
+    profound questions like "Who are we?" and "What lies beyond?" Encouraging
+    their curiosity and nurturing their interest in astronomy can open doors to
+    a world of knowledge and a lifelong journey of exploration.
+  </p>
+
+  <p>
+    Observing the cosmos with a telescope not only allows us to appreciate the
+    beauty of celestial objects but also serves as a reminder of our connection
+    to the universe. It is a humbling experience that can spark curiosity and
+    inspire a sense of responsibility to protect and preserve our planet and the
+    wonders of space for future generations.
+  </p>
+
+  <p>
+    By instilling a passion for astronomy in my daughters, I hope to plant the
+    seeds of curiosity and wonder that will accompany them throughout their
+    lives. I envision a future where they continue to explore the mysteries of
+    the universe, ask meaningful questions, and seek understanding of the world
+    around them. Their journey of exploration and discovery can lead to new
+    insights, awareness, and a greater appreciation for the beauty and
+    complexity of the cosmos.
+  </p>
+
+  <p>
+    As we ponder the vastness of the universe and the questions it poses, we
+    embark on a journey of self-discovery and connection to something greater
+    than ourselves. It is a journey that has the potential to shape our
+    perspectives and inspire a sense of wonder and awe that will forever remain
+    with us, guiding our pursuit of knowledge and understanding.
+  </p>
+</details>
+
+<details>
+  <summary><h3>Photography</h3></summary>
+
+  <p>
+    Photography has been an evolving passion for me, transforming from an art
+    form to a way of capturing precious moments, especially those spent with my
+    family. As time passed and my daughters came into my life, my approach to
+    photography shifted. I moved away from creating artistic images myself and
+    instead focused on using photography as a means to freeze cherished
+    memories.
+  </p>
+
+  <p>
+    With age and the responsibilities of parenthood, I found joy in capturing
+    the everyday moments with my family. The arrival of my daughters brought a
+    new perspective to my photography journey, as I discovered the profound
+    beauty in candid shots that captured genuine emotions and connections. These
+    are the moments I treasure the most, as they carry a heartfelt narrative of
+    love and togetherness.
+  </p>
+
+  <p>
+    As my priorities shifted, I set aside the professional equipment and
+    embraced the convenience of using a smartphone as my primary camera. The
+    advancements in smartphone technology have reached a level of quality that
+    allows me to be content with the technical aspect of the photographs. Some
+    of my most beautiful images were taken with a mid-range smartphone, proving
+    that it's not solely about the gear but the emotion and story behind each
+    picture.
+  </p>
+
+  <p>
+    The accessibility of a capable camera in my pocket at all times has been a
+    game-changer. It allows me to capture art wherever I go or to continually
+    freeze moments from my life. It's a wonderful stroke of luck to have this
+    tool, as it means I can document my journey and create meaningful memories
+    with ease.
+  </p>
+
+  <p>
+    Reflecting on this evolution of photography, I wonder how the abundance of
+    visual documentation will impact our personalities and those of future
+    generations. The generations before us had to grapple with the limitations
+    of film or even lacked access to photography altogether due to technological
+    constraints. In contrast, we now have an enormous reservoir of material that
+    documents our lives at our fingertips.
+  </p>
+
+  <p>
+    This unprecedented access to visual memories may reshape how we perceive our
+    past and influence how we view the world. It's an intriguing thought to
+    consider how this abundance of images will shape our collective identity and
+    understanding of our shared human experience. As we progress in this digital
+    age, it will be fascinating to observe the long-term effects of this
+    photographic revolution on our culture and the generations to come.
+  </p>
+</details>
+
+<style lang="scss" scoped>
+  details {
+    h3 {
+      margin: 0 0 0 0.5rem;
+      display: inline-block;
+    }
+
+    summary {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+
+      &::marker {
+        color: var(--accent-color);
+      }
+    }
+  }
+</style>
