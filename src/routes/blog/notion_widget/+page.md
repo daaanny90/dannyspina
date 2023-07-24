@@ -32,13 +32,13 @@ There are also other minor issues to address, such as the **spacing not fitting 
 
 ## How to use it
 
-You can find the widget [here](https://dannyspina.com/notion/weekinfo). Copy the URL and add an embed element to your Notion page, then paste the URL. You may need to adjust the width and height of the element based on your page layout. The widget **is responsive**, so it will work in two-column page structures or on mobile devices.
+You can find the widget [here](/notion/weekinfo). Copy the URL and add an embed element to your Notion page, then paste the URL. You may need to adjust the width and height of the element based on your page layout. The widget **is responsive**, so it will work in two-column page structures or on mobile devices.
 
-If you use Notion in light mode (Why?) then just add `?light` to the widget url. [I did it for you if you want](https://dannyspina.com/notion/weekinfo?light)
+If you use Notion in light mode (Why?) then just add `?light` to the widget url. [I did it for you if you want](/notion/weekinfo?light)
 
 ## Why
 
-I use Notion as my "[second brain](https://dannyspina.com/books/building_a_second_brain)." I have a page I use daily, which includes my weekly to-do list, notes, morning checklist, and other items.
+I use Notion as my "[second brain](/books/building_a_second_brain)." I have a page I use daily, which includes my weekly to-do list, notes, morning checklist, and other items.
 
 **I needed a quick, visible way** to track my progress for the week, year, and quarter.
 
@@ -46,6 +46,6 @@ I set yearly goals, as well as intermediate quarterly goals, and organize my to-
 
 ## Hope it can help!
 
-I hope you find this widget to be a useful and valuable tool. If you have any **questions, concerns, suggestions, or discover any unexpected bugs**, please don't hesitate to [reach out to me directly](https://dannyspina.com/contact) or [open an issue on GitHub](https://github.com/daaanny90/dannyspina) so that I can address them. I am committed to **continuing to update it over time** with improvements and new features. Your feedback is essential for me to ensure that this widget is of the highest quality and remains as useful as possible.
+I hope you find this widget to be a useful and valuable tool. If you have any **questions, concerns, suggestions, or discover any unexpected bugs**, please don't hesitate to [reach out to me directly](/contact) or [open an issue on GitHub](https://github.com/daaanny90/dannyspina) so that I can address them. I am committed to **continuing to update it over time** with improvements and new features. Your feedback is essential for me to ensure that this widget is of the highest quality and remains as useful as possible.
 
 Ciao! 😊
