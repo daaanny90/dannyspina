@@ -67,7 +67,7 @@
 
   .backArrow {
     opacity: 0;
-    width: 720px;
+    flex-grow: 1;
     max-width: 720px;
     transition: opacity .1s ease-in-out;
     margin: 0 auto;
