@@ -15,7 +15,7 @@
     .page-title {
       font-family: "JetBrains Mono";
       font-size: 4rem;
-      margin: 0 0 1rem 0;
+      margin: 1rem 0;
       line-height: 1.1;
       letter-spacing: 1px;
 
