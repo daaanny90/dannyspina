@@ -1,0 +1,13 @@
+During the pandemic, Oliviero Toscani's Instagram was buzzing with activity as he conducted numerous live sessions. Being an enthusiastic follower, I never missed a single one, and little did I know that one of those sessions would reignite my passion for photography. At that time, I had set my photography hobby aside, but the excitement of this unique contest prompted me to participate once again.
+
+I may not have been a professional photographer anymore, but I couldn't resist the chance to showcase my creativity. The theme of the contest was "What does quarantine mean to you?" and the twist was that all entries had to be self-portraits. Inspired by the challenge, I decided to capture different expressions on my face, playing with exposure times to convey the emotions of those challenging times. Additionally, I clicked a portrait of my wife while she yawned, symbolizing the boredom of quarantine.
+
+As I submitted my photos, doubts lingered in my mind. Oliviero Toscani was known for his exacting standards, and I wondered if my shots would meet his discerning eye. Nevertheless, I held onto a glimmer of hope, eager to see the selected photographs that would grace the front page of Repubblica.
+
+Then, during one of his live sessions with Gad Lerner, Oliviero decided to showcase the intriguing contest entries. He playfully acknowledged that there were many mediocre submissions but also a few exceptional ones. My heart raced as he began to scroll through the pictures.
+
+And there it was – my wife's portrait, frozen in time, captivating both Oliviero Toscani and Gad Lerner. I couldn't believe my eyes! I immediately took a screenshot to cherish the unforgettable moment. Seeing two creative geniuses appreciate my photograph was a validation that reignited my passion for photography.
+
+It's incredible how a single moment of appreciation can have such a profound impact. Every time I think back to that incredible encounter, the desire to take my camera in hand returns, pulling me back into the world of photography. The joy and recognition I experienced during that live session have become a source of inspiration, reminding me of the artistic flame that still burns within me.
+
+Since that incredible event, life has brought changes and responsibilities, and my photography journey has taken a back seat. Yet, the memory of Oliviero Toscani and Gad Lerner admiring my photo reminds me that creativity never truly fades away. As I navigate life's twists and turns, I know that the passion for photography will always be there, waiting for the perfect moment to capture life's beautiful stories once again.
