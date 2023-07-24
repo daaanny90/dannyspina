@@ -1,4 +1,6 @@
 <script lang="ts">
+  // TODO: also if the script is marked as TS, the dev server cannot start if the types of the variable are set.Accordioni
+  // "Unexpected token" pointing on the double point of type declaration of variables.
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BackArrow from "$lib/components/BackArrow.svelte";
 
