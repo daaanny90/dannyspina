@@ -76,7 +76,7 @@ But... it lacked the allure of a Mac. It couldn't replicate the sensation of typ
 
 A MacBook Pro feels solid, stable, and substantial. Its cold, metallic edges, reflective color, and clean lines are all part of its meticulously crafted design.
 
-Regrettably, the X1 possesses these distinctive characteristics; its primary focus is on performance, leaving some design aspects to chance.
+Regrettably, the X1 does not possesses these distinctive characteristics; its primary focus is on performance, leaving some design aspects to chance.
 
 It appears that this illustrates the difference between tools for professionals and those for enthusiasts. According to this observation (or my interpretation of it), a MacBook Pro should be more appealing to enthusiasts, given the pleasure derived from its design, while an X1 Carbon should appeal more to professionals, considering its performance-focused approach.
 
