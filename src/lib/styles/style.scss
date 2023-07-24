@@ -4,12 +4,14 @@
   font-family: "JetBrains Mono";
   src: url("./../fonts/JetBrainsMono[wght].ttf") format("truetype-variations");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
   src: url("./../fonts/Montserrat-VariableFont_wght.ttf")
     format("truetype-variations");
+  font-display: swap;
 }
 
 html {
