@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Post } from "$lib/helpers/types";
 
-  export let category: String;
+  export let category: string;
   export let posts: Post[];
 </script>
 <article>
