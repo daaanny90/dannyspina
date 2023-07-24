@@ -8,6 +8,7 @@ export interface Post {
   path: string;
 }
 
-export interface CategorizedPosts {
-  [key, string]: Post[];
+export interface BlogData {
+  posts: Post[];
+  currentCategory: string;
 }

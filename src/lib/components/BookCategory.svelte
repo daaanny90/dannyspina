@@ -1,5 +1,5 @@
-<script>
-  export let category;
+<script lang="ts">
+  export let category: string;
 </script>
 
 <h2 id={category.toLowerCase().replaceAll(" ", "-")}>

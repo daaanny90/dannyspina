@@ -1,8 +1,8 @@
-<script>
-  export let file;
-  export let alt;
+<script lang="ts">
+  export let file: string;
+  export let alt: string;
   export let caption = "";
-  export let credits;
+  export let credits = "";
 
   credits = credits ? `<span>${credits}</span>` : ''
 

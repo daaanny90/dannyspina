@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
   import BookCart from "$lib/components/BookCart.svelte";
 
-  export let title;
-  export let author;
-  export let amazonLink;
-  export let path;
+  export let title: string;
+  export let author: string;
+  export let amazonLink: string;
+  export let path: string;
 </script>
 
 <li>

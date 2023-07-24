@@ -3,7 +3,8 @@
   "compilerOptions": {
     "lib": [
       "dom.iterable", //Here is a new item
-      "DOM"
+      "DOM",
+      "ES2021"
     ],
     "ignoreDeprecations": "5.0"
   }

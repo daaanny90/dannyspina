@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import { menuOpen } from "../../store";
 
-  let status
-  let input
+  let status: boolean;
+  let input: HTMLInputElement;
 
   const toggleMenu = () => {
     status = !status

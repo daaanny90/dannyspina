@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import PageTitle from "$lib/components/PageTitle.svelte";
   import Accordion from "$lib/components/Accordion.svelte";
 
@@ -8,7 +8,7 @@
   const yearsOfExperience = today.getFullYear() - startCodingDate.getFullYear();
 </script>
 
-<PageTitle title="About Me" subtitle="" />
+<PageTitle title="About Me" />
 
 <p>
   Interested in my CV? <a href="https://cv.dannyspina.com">Get it here</a>

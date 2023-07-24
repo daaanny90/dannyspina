@@ -1,12 +1,15 @@
-<script>
-  export let post;
+<script lang="ts">
+  import type { Post } from "$lib/helpers/types";
+
+  export let post: Post;
 
   let dateOptions = {
     weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
-  };
+  } as Intl.DateTimeFormatOptions;
+  
   let pusblishDate = new Date(post.meta.date).toLocaleDateString(
     "gb-GB",
     dateOptions

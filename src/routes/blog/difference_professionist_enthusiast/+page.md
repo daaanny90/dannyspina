@@ -6,7 +6,7 @@ categories:
   - "Thoughts"
 ---
 
-<script>
+<script lang="ts">
   import ImagePost from "$lib/components/ImagePost.svelte"
 </script>
 

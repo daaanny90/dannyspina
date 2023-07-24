@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import Calendar from "$lib/helpers/Calendar";
 
@@ -69,6 +69,11 @@
     h2 {
       color: $notionPrimary;
     }
+    
+    &.light {
+      color: $notionSecondary;
+      border: 2px solid red;
+    }
 
     .progressBar {
       display: block;
@@ -126,8 +131,4 @@
     }
   }
 
-  .light {
-    color: $notionSecondary;
-    border: 2px solid red;
-  }
 </style>
