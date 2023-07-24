@@ -3,9 +3,7 @@ title: My love for aesthetics
 subtitle: The struggle between professionalism and the love for beautiful things
 date: "2023-07-21"
 categories:
-  - "Desing"
-  - "Professionalism"
-  - "Beautiful Things"
+  - "Thoughts"
 ---
 
 <script>

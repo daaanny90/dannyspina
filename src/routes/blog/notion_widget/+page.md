@@ -3,9 +3,7 @@ title: Notion widget for week, year and quartal overview
 subtitle: I made a simple notion widget
 date: "2023-02-05"
 categories:
-  - "Notion"
-  - "Widgets"
-  - "Productivity"
+  - "Projects"
 ---
 
 <script>

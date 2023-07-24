@@ -15,7 +15,8 @@
     year: "numeric",
     month: "long",
     day: "numeric",
-  };
+  } as Intl.DateTimeFormatOptions;
+  
   let pusblishDate = new Date(date).toLocaleDateString("gb-GB", dateOptions);
 </script>
 

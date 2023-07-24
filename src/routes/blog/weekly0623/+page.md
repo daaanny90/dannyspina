@@ -3,9 +3,7 @@ title: Weekly0623
 subtitle: Weekly Retro
 date: "2023-02-10"
 categories:
-  - "weekly"
-  - "blog"
-  - "weeklyretro"
+  - "Weekly"
 ---
 
 ### Monday

@@ -3,9 +3,7 @@ title: My experience with ChatGPT
 subtitle: I tried it out, here there are my thoughts.
 date: "2023-01-20"
 categories:
-  - "ChatGPT"
-  - "Artificial Intelligence"
-  - "Content creation"
+  - "Thoughts"
 ---
 
 During the hype for ChatGPT, I had a moment where I played with it A LOT.

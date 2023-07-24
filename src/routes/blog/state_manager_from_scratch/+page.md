@@ -3,10 +3,9 @@ title: Writing a state manager from scratch
 subtitle: In a POC with almost no dependencies, I had to reinvent the wheel and write a simple state manager.
 date: "2023-03-01"
 categories:
-  - "State manager"
-  - "Frameworkless"
-  - "Window"
+  - "Learning"
 ---
+
 <script>
   import ImagePost from "$lib/components/ImagePost.svelte"
 </script>

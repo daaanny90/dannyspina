@@ -3,9 +3,7 @@ title: Optimizing Typescript for Enterprise Projects with tsconfig and eslint
 subtitle: Maximizing Productivity and Code Quality with Best Practices for Configuration
 date: "2022-12-20"
 categories:
-  - "typescript"
-  - "enterprise development"
-  - "best practicess"
+  - "Learning"
 ---
 
 Typescript is a popular programming language that provides strong typing and other features to JavaScript. It is particularly useful for enterprise and complex projects, where codebase size and complexity can make maintaining and extending the code difficult.

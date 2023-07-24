@@ -3,9 +3,7 @@ title: Introducing the weekly post
 subtitle: Can a weekly review make me consistent posting on the blog?
 date: "2023-01-13"
 categories:
-  - "weekly"
-  - "blog"
-  - "review"
+  - "Weekly"
 ---
 
 Browsing the Blog of [Emanuele Bartolesi](https://www.emanuelebartolesi.com/) I was flashed by his series “Weekly”.
