@@ -3,12 +3,12 @@
   import BookCategory from "$lib/components/BookCategory.svelte";
   import BookList from "$lib/components/BookList.svelte";
   import Book from "$lib/components/Book.svelte";
+  import Callout from "$lib/components/Callout.svelte";
 
   import Rocket from "$lib/icons/Rocket.svelte";
   import Power from "$lib/icons/Power.svelte";
   import Art from "$lib/icons/Art.svelte";
   import Technology from "$lib/icons/Technology.svelte";
-  import OpenBook from "$lib/icons/OpenBook.svelte";
 
   export let data;
   let { books } = data;
@@ -38,15 +38,11 @@
   subtitle="My Reading Adventure: A Collection of Books I've Read and Currently Reading, with Quick Amazon Buy Links"
 />
 
-<div class="container-reading">
-  <h2>
-    <OpenBook style="max-width: 2rem; margin-right: .5rem;" />
-    I'm reading
-  </h2>
+<Callout title="I'm reading">
   <strong>Dopamine Nation</strong> by Anna Lembke <br />
   <strong>The Art of Taking Action</strong> by Gregg Krech <br />
   <strong>Clean Code</strong> by Robert C. Martin <br />
-</div>
+</Callout>
 
 <h2>Categories</h2>
 {#each categories as category}
