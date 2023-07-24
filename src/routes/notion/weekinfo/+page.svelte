@@ -4,19 +4,22 @@
 
   const calendar = new Calendar();
   let widget;
+  let light = false;
 
   onMount(() => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams();
     const lightTheme = urlParams.entries;
 
+    console.log(queryString)
+
     if (queryString.includes("light")) {
-      widget.classList.add("light");
+      light = true
     }
   });
 </script>
 
-<div bind:this={widget} class="background">
+<div bind:this={widget} class="background" class:light>
   <h2>
     Today is <u
       >{calendar.getDayName()}
@@ -51,15 +54,25 @@
 </div>
 
 <style lang="scss">
+  // manage theme palette
+  .background {
+    --notion-primary: #d1d1d1;
+    --notion-secondary: #191919;
+  }
+  
+  .background.light {
+    --notion-primary: #191919;
+    --notion-secondary: #d1d1d1;
+  }
+
   h2,
   h5 {
     font-family: sans-serif;
+    color: var(--notion-primary);
   }
-  $notionPrimary: #d1d1d1;
-  $notionSecondary: #191919;
 
   .background {
-    color: $notionPrimary;
+    color: var(--notion-primary);
     padding: 1rem;
 
     h5 {
@@ -67,19 +80,18 @@
     }
 
     h2 {
-      color: $notionPrimary;
+      color: var(--notion-primary);
     }
     
     &.light {
-      color: $notionSecondary;
-      border: 2px solid red;
+      color: var(--notion-secondary);
     }
 
     .progressBar {
       display: block;
       width: 100%;
       height: 2rem;
-      border: 2px solid $notionPrimary;
+      border: 2px solid var(--notion-primary);
       position: relative;
 
       & {
@@ -98,14 +110,15 @@
         bottom: -17px;
         width: 100%;
         height: 1rem;
-        border-right: 2px solid $notionPrimary;
+        border-right: 2px solid var(--notion-primary);
 
         span {
           width: 25%;
           text-align: center;
+          color: var(--notion-primary);
 
           &:not(:last-child) {
-            border-right: 2px solid $notionPrimary;
+            border-right: 2px solid var(--notion-primary);
           }
         }
       }
@@ -116,17 +129,17 @@
       justify-content: flex-end;
       padding-right: 0.5rem;
       align-items: center;
-      color: $notionSecondary;
+      color: var(--notion-secondary);
       max-width: calc(100% - 8px);
       position: absolute;
       top: 0;
       left: 0;
       height: 2rem;
-      background-color: $notionPrimary;
+      background-color: var(--notion-primary);
       width: 0;
 
       .percent {
-        color: $notionSecondary;
+        color: var(--notion-secondary);
       }
     }
   }
