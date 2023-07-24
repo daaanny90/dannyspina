@@ -72,7 +72,7 @@ In my professional work, I rely on Apple products. (However, I still harbor a so
 
 I've occasionally attempted to switch from Apple and use other tools to explore Linux. During one experiment, I migrated from my MacBook Pro to a Lenovo X1 Carbon for several months. An impressive machine, incredibly lightweight, and Linux ran seamlessly on it.
 
-But... it lacked the allure of a Mac. It couldn't replicate the sensation of typing on a MacBook's keyboard (which, objectively speaking, is superior to the X1's) or the feeling of touching the MacBook's metal casing. Even the smoothness of the MacBook's trackpad was missing.
+But... it lacked the allure of a Mac. It couldn't replicate the sensation of typing on a MacBook's keyboard (which, objectively speaking, is inferior to the X1's) or the feeling of touching the MacBook's metal casing. Even the smoothness of the MacBook's trackpad was missing.
 
 A MacBook Pro feels solid, stable, and substantial. Its cold, metallic edges, reflective color, and clean lines are all part of its meticulously crafted design.
 
