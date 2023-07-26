@@ -66,23 +66,30 @@ program
                   "../src/routes/blog",
                   postName
                 );
-                const postFilePath = path.join(postDirectory, `${postName}.md`);
+                const postFilePath = path.join(postDirectory, `+page.md`);
 
                 const postContent = `
-                ---
-                title: ${title}
-                subtitle: ${subtitle}
-                date: "${postDate}"
-                categories:
-                  - "${category}"
-                ---
+---
+title: ${title}
+subtitle: ${subtitle}
+date: "${postDate}"
+categories:
+  - "${category}"
+---
 
-                <script lang="ts">
-                  import ImagePost from "$lib/components/ImagePost.svelte"
-                </script>
+<script lang="ts">
+  import ImagePost from "$lib/components/ImagePost.svelte"
+  import Gallery from "$lib/components/Gallery.svelte"
 
-                <ImagePost file="image.jpg" alt="alt" caption="caption" credits='credits' />
-                `;
+  const imagesPath = "blog/${postName}"
+</script>
+
+<ImagePost file="{imagesPath}/image.jpg" alt="alt" caption="caption" credits='credits' />
+
+<Gallery>
+ <ImagePost file="{imagesPath}/image.jpg" alt="alt" caption="caption" credits='credits' gallery /> 
+</Gallery>
+`;
 
                 fs.ensureDirSync(postDirectory);
                 fs.writeFileSync(postFilePath, postContent);
@@ -138,13 +145,13 @@ program
                   );
 
                   const bookContent = `
-                  ---
-                  title: ${title}
-                  author: ${author}
-                  amazonLink: ${amazonLink}
-                  category: ${category}
-                  ---
-                  `;
+---
+title: ${title}
+author: ${author}
+amazonLink: ${amazonLink}
+category: ${category}
+---
+`;
 
                   fs.ensureDirSync(postDirectory);
                   fs.writeFileSync(postFilePath, bookContent);
