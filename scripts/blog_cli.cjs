@@ -80,6 +80,7 @@ categories:
 <script lang="ts">
   import ImagePost from "$lib/components/ImagePost.svelte"
   import Gallery from "$lib/components/Gallery.svelte"
+  import Sidenote from "$lib/components/Sidenote.svelte"
 
   const imagesPath = "blog/${postName}"
 </script>
@@ -89,6 +90,8 @@ categories:
 <Gallery>
  <ImagePost file="{imagesPath}/image.jpg" alt="alt" caption="caption" credits='credits' gallery /> 
 </Gallery>
+
+<Sidenote number=1 text="This is a sidenote"/>
 `;
 
                 fs.ensureDirSync(postDirectory);
