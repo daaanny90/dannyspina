@@ -66,6 +66,13 @@ program
                   "../src/routes/blog",
                   postName
                 );
+
+                const postImagesDirectory = path.join(
+                  __dirname,
+                  "../static/images/blog",
+                  postName
+                );
+
                 const postFilePath = path.join(postDirectory, `+page.md`);
 
                 const postContent = `
@@ -91,10 +98,11 @@ categories:
  <ImagePost file="{imagesPath}/image.jpg" alt="alt" caption="caption" credits='credits' gallery /> 
 </Gallery>
 
-<Sidenote number=1 text="This is a sidenote"/>
+<Sidenote text="This is a sidenote"/>
 `;
 
                 fs.ensureDirSync(postDirectory);
+                fs.ensureDirSync(postImagesDirectory);
                 fs.writeFileSync(postFilePath, postContent);
 
                 console.log(`New post '${postName}' created successfully!`);
