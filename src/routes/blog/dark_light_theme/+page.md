@@ -21,7 +21,7 @@ It all started when I began using a wallpaper created by [Arun](https://arun.is)
 
 He's a designer <Sidenote text="I highly recommend reading <a href='https://arun.is/'>his blog and subscribing to his newsletter</a>; they are always very insightful and well-crafted." />, who's passionate about Apple and [has designed these wallpapers](https://arun.is/blog/os9-wallpaper/) specifically for iMac.
 
-<ImagePost file="{imagesPath}/screenshot_dark.png" alt="screenshot of my desktop with dark theme" />
+<ImagePost file="{imagesPath}/screenshot_dark.jpg" alt="screenshot of my desktop with dark theme" />
 
 These wallpapers feature a stylized face of the Finder icon in various colors, and he even created a dynamic version.
 
@@ -37,7 +37,7 @@ This could serve as a mental switch, enhancing focus and productivity during wor
 
 So here I am, writing on Notion in light mode, and this is now my desktop.
 
-<ImagePost file="{imagesPath}/screenshot_light.png" alt="screenshot of my desktop with light theme" />
+<ImagePost file="{imagesPath}/screenshot_light.jpg" alt="screenshot of my desktop with light theme" />
 
 I haven't opened VSCode yet, so I'm uncertain if I'll be able to write code with the light theme. Nevertheless, I'll certainly give it a try for a while. After all, I spend eight hours a day in front of a dark-themed IDE, so programming for a few hours a week with a light theme should prove an interesting change.
 
@@ -61,7 +61,7 @@ To mitigate this, I've activated the night mode, which should reduce blue light 
 
 In connection with this, I've also changed the color of the wallpaper.
 
-<ImagePost file="{imagesPath}/screenshot_light_new_wallpaper.png" alt="screenshot of my desktop with light theme but with a more red wallpaper" />
+<ImagePost file="{imagesPath}/screenshot_light_new_wallpaper.jpg" alt="screenshot of my desktop with light theme but with a more red wallpaper" />
 
 ## The History of Dark Mode
 
