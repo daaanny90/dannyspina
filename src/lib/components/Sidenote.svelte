@@ -1,21 +1,40 @@
 <script lang="ts">
-  export let number: number;
+  import { onMount } from "svelte";
+
   export let text: string;
 
   let active = false;
+  let sidenote: HTMLElement;
+  let noteNumber = 1;
+
+  // necessary for web accessibility purposes
+  const keyDownFunc = (e: KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      active = !active;
+    }
+  }
+
+  onMount(() => {
+    const sidenotes = document.querySelectorAll('.sidenote');
+    const sidenotesArray = Array.from(sidenotes);
+    noteNumber = sidenotesArray.indexOf(sidenote, 0) + 1
+  })
 </script>
 
-<span class="sidenote">
+<span bind:this={sidenote} class="sidenote">
+  <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+  <!-- svelte-ignore a11y-label-has-associated-control -->
   <label 
     on:click={() => active = !active}
     tabindex="0"
-    title="Sidenote number {number}"
-    aria-describedby="sidenote-{number}"
-    on:keypress={() => {if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); active = !active}}}
-    aria-label="Show sidenote number {number}">
-      [ {number} ]
+    title="Sidenote number {noteNumber}"
+    aria-describedby="sidenote-{noteNumber}"
+    on:keydown={keyDownFunc}
+    aria-label="Show sidenote number {noteNumber}">
+      [ {noteNumber} ]
 </label>
-  <small class:active><span class="sidenote__content-parenthesis"> (sidenote: </span>{text}<span class="sidenote__content-parenthesis">)</span></small>
+  <small class:active><span class="sidenote__content-parenthesis"> (sidenote: </span>{@html text}<span class="sidenote__content-parenthesis">)</span></small>
 </span>
 
 <style lang="scss" scoped>
