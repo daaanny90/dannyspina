@@ -58,7 +58,7 @@ There are other UX elements I could talk about, but they blend together with the
 
 ### The Sidebar
 
-<ImagePost file="{imagesPath}/sidebar.png" alt="the arc sidebar" caption="The Arc sidebar" />
+<ImagePost file="{imagesPath}/sidebar.png" alt="the arc sidebar" caption="The Arc sidebar" position="center"/>
 
 I've already mentioned it, but let's delve into the details.
 
@@ -72,7 +72,7 @@ The tabs are divided into three main groups:
 
 ### Spaces
 
-<ImagePost file="{imagesPath}/sidebar_scroll.gif" alt="the side scroll movement of the sidebar" caption="Scrolling the spaces" />
+<ImagePost file="{imagesPath}/sidebar_scroll.gif" alt="the side scroll movement of the sidebar" caption="Scrolling the spaces" position="center"/>
 
 The sidebar has a horizontal scrolling mode. You can scroll left and right with the mouse. Scrolling to the left will take you to the space where downloads and the latest saved or used multimedia files, downloads, space management, boosts, and easels are visible (we'll get to them shortly).
 
