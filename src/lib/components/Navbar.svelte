@@ -38,7 +38,6 @@
 
   <!-- for accessibility, the back arrow must not be present on all pages due to redundant links -->
   {#if !backArrowExcludedPaths.includes(currentUrl)}
-  <h1>show backarrow</h1>
   <div class="backArrow" class:show>
     <BackArrow page={currentPage} />
   </div>
