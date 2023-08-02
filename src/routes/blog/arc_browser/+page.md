@@ -1,26 +1,17 @@
 ---
 title: Arc browser review - redefining the way I browse the web
 subtitle: After a few months, I can draw my conclusions on this new and unconventional browser
-date: "2023-07-27"
+date: "2023-08-02"
 categories:
   - "Various"
 ---
 
 <script lang="ts">
   import ImagePost from "$lib/components/ImagePost.svelte"
-  import Gallery from "$lib/components/Gallery.svelte"
   import Sidenote from "$lib/components/Sidenote.svelte"
 
   const imagesPath = "blog/arc_browser"
 </script>
-
-<ImagePost file="{imagesPath}/image.jpg" alt="alt" caption="caption" credits='credits' />
-
-<Gallery>
- <ImagePost file="{imagesPath}/image.jpg" alt="alt" caption="caption" credits='credits' gallery /> 
-</Gallery>
-
-<Sidenote text="This is a sidenote"/>
 
 For several months now, I've been using a different browser.
 
@@ -94,7 +85,7 @@ Pressing the Tab key enables the actions mode to give you an overview of actiona
 
 ### Easels
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/easel.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/easel.png)
+<ImagePost file="{imagesPath}/easel.png" alt="example of easel" caption="(Ugly) example of an Easel" />
 
 With Arc, you can create notes in an infinite canvas and share them as if they were web pages.
 
@@ -108,21 +99,19 @@ The boosts in Arc are browser extensions that you can generate with a couple of 
 
 The idea is ingenious.
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screenshot_2023-07-27_at_15.10.07.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screenshot_2023-07-27_at_15.10.07.png)
+<ImagePost file="{imagesPath}/boost.png" alt="activation button of arc boost" caption="Just click the button to start the magic" />
 
 By clicking the Boosts button near the URL, you can modify and customize the user experience of a web page. You can change colors, hide elements, and even write your own JavaScript and CSS to inject into the page.
 
-![Screen Shot 2023-07-27 at 15.11.29 PM.png]([https://s3-us-west-2.amazonaws.com/secure.notion-static](https://s3-us-west-2.amazonaws.com/secure.notion-static)
+<ImagePost file="{imagesPath}/boost_before.jpg" alt="MDN webpage before boost customization" caption="MDN before" />
 
-.com/161aab9f-a071-482d-baec-c8a460149ac9/Screen_Shot_2023-07-27_at_15.11.29_PM.png)
-
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_15.36.16_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_15.36.16_PM.png)
+<ImagePost file="{imagesPath}/boost_after.png" alt="MDN webpage after boost customization" caption="MDN after" />
 
 Boosts can also be shared (if they don't contain JS).
 
 ### Split View
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.25.01_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.25.01_PM.png)
+<ImagePost file="{imagesPath}/split_view.png" alt="two tabs in split view" caption="Example of vertical split view" />
 
 The main area where we view web pages can be split vertically and horizontally to display multiple pages simultaneously.
 
@@ -130,7 +119,7 @@ It's a sort of tiling but for browser tabs.
 
 ### Popup View
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Kapture_2023-07-27_at_15.03.37.gif](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Kapture_2023-07-27_at_15.03.37.gif)
+<ImagePost file="{imagesPath}/link_preview.gif" alt="link preview popup" caption="I love the link preview feature" />
 
 The management of link openings is fantastic. Clicking on a link will open the page in a popup version, without leaving the main web page you were browsing. Then the popup can be closed instantly, or it can be opened in a separate tab.
 
@@ -138,29 +127,29 @@ This preview feature works only within the pinned tabs.
 
 ### Little Arc
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Kapture_2023-07-27_at_15.06.15.gif](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Kapture_2023-07-27_at_15.06.15.gif)
+<ImagePost file="{imagesPath}/little_arc.gif" alt="little arc window" caption="Little arc is a minimal new window" />
 
 You can also open links and web pages in a new minimal version of Arc, as a floating window with a web page. Then, you can decide whether to transform that floating window into a tab in the current space or another space.
 
 ### Development Mode
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.32.58_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.32.58_PM.png)
+<ImagePost file="{imagesPath}/dev_mode.png" alt="highlight of a tab in dev mode" caption="Visual highlight of a tab in dev mode" />
 
-Opening [localhost](http://localhost/) in Arc automatically activates the development mode, providing tools at your fingertips.
+Opening localhost in Arc automatically activates the development mode, providing tools at your fingertips.
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.33.33_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.33.33_PM.png)
+<ImagePost file="{imagesPath}/dev_mode_tools.png" alt="dev tools bar of arc" caption="Little bar always visible" />
 
 It wasn't necessarily indispensable, but I appreciated the attention to detail. I must admit I also use the provided tools (though I can open dev tools with a keyboard shortcut, having the icon to click doesn't hurt).
 
 ### Picture in Picture
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.36.19_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.36.19_PM.png)
+<ImagePost file="{imagesPath}/pip.png" alt="pip in the corner fo screen" caption="PiP as we know it" />
 
 The picture-in-picture functionality works flawlessly out of the box, without having to click anywhere. As soon as you leave YouTube, for example, the PiP appears in a corner and follows you across all desktops or workspaces.
 
 If you minimize the PiP player, this section is added to the sidebar to control the audio. It also works with meetings!
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.36.57_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_14.36.57_PM.png)
+<ImagePost file="{imagesPath}/pip_minified.png" alt="pip minified in sidebar" caption="Media controls always reachable in the sidebar" />
 
 ## Native or Web?
 
@@ -172,11 +161,11 @@ For example, I've already stopped using the native versions of Slack and Notion,
 
 Furthermore, Arc has many integrations that enable quick access to some functionalities of these pinned web apps, which activate on hover.
 
-![Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_16.03.39_PM.png](Post%20su%20Arc%2022dee4c5515f4326b45e3ae0f40ead8d/Screen_Shot_2023-07-27_at_16.03.39_PM.png)
+<ImagePost file="{imagesPath}/tab_hover.jpg" alt="little popup for extra tab functionalities" caption="This is not always visible, it depends on the Arc integrations" />
 
 ## Version 1.0
 
-Arc was initially available only through invitations from other Arc users. However, now Arc has reached stable version 1.0, and [it's finally available for everyone on their website.](https://arc.net/) (Sidenote: I love the design of their website.)
+Arc was initially available only through invitations from other Arc users. However, now Arc has reached stable version 1.0, and [it's finally available for everyone on their website.](https://arc.net/) <Sidenote text="I love the design of their website." />
 
 Since I tried it, I haven't stopped trying to convince everyone I know to give Arc a try.
 
