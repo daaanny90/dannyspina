@@ -1,8 +1,8 @@
 <script lang="ts">
   import type Post from "./post.svelte";
+  import PageTitle from "$lib/components/PageTitle.svelte";
   import { sortedPosts, groupPostsByCategory } from "$lib/helpers/utils.js";
   import PostGroup from "$lib/components/PostGroup.svelte";
-  import Callout from "$lib/components/Callout.svelte";
 
   export let data;
 
@@ -10,11 +10,7 @@
   const lastPost: Post = data.posts[0]
 </script>
 
-<section>
-  <Callout title="Last post">
-    <a href="{lastPost.path}">{lastPost.meta.title}</a>
-  </Callout>
-</section>
+<PageTitle title="Blog" />
 
 <section id="categories">
   {#each Object.keys(posts) as cat}
