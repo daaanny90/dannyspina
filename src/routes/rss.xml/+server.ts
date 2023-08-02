@@ -1,9 +1,10 @@
-import { URL } from "url";
 import type { Post } from "$lib/helpers/types.js";
 import { create } from "xmlbuilder2";
 
-export const GET = async ({ url }) => {
-  const response = await fetch(`${url.origin}/api/posts.json`);
+export const prerender = true;
+
+export const GET = async () => {
+  const response = await fetch(`https://dannyspina.com/api/posts.json`);
   const posts: Post[] = await response.json();
 
   const feed = create({
@@ -17,20 +18,20 @@ export const GET = async ({ url }) => {
   const channel = feed.ele("channel");
   channel
     .ele("atom:link")
-    .att("href", `${url.origin}/rss.xml`)
+    .att("href", `https://dannyspina.com/rss.xml`)
     .att("rel", "self")
     .att("type", "application/rss+xml");
   channel.ele("title").txt("Il tuo titolo del feed"); // Inserisci il titolo come testo invece che come elemento
   channel.ele("description").txt("Il tuo titolo del feed");
-  channel.ele("link").txt(url.origin);
+  channel.ele("link").txt("https://dannyspina.com");
   channel.ele("language").txt("en"); // Imposta la lingua del feed
 
   posts.forEach((post) => {
     const item = channel.ele("item");
     item.ele("title").txt(post.meta.title);
     item.ele("description").txt(post.meta.subtitle);
-    item.ele("link").txt(`${url.origin}/posts/${post.path}`); // Crea l'URL del post utilizzando l'URL corrente
-    item.ele("guid").txt(`${url.origin}/posts/${post.path}`);
+    item.ele("link").txt(`https://dannyspina.com/posts/${post.path}`); // Crea l'URL del post utilizzando l'URL corrente
+    item.ele("guid").txt(`https://dannyspina.com/posts/${post.path}`);
     item.ele("pubDate").txt(new Date(post.meta.date).toUTCString());
   });
 
