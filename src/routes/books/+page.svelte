@@ -40,8 +40,7 @@
 
 <Callout title="I'm reading">
   <strong>Dopamine Nation</strong> by Anna Lembke <br />
-  <strong>The Art of Taking Action</strong> by Gregg Krech <br />
-  <strong>Clean Code</strong> by Robert C. Martin <br />
+  <strong>Dune</strong> by Frank Herbert <br />
 </Callout>
 
 <h2>Categories</h2>
