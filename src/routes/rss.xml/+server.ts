@@ -21,17 +21,20 @@ export const GET = async () => {
     .att("href", `https://dannyspina.com/rss.xml`)
     .att("rel", "self")
     .att("type", "application/rss+xml");
-  channel.ele("title").txt("Il tuo titolo del feed"); // Inserisci il titolo come testo invece che come elemento
-  channel.ele("description").txt("Il tuo titolo del feed");
+  channel.ele("title").txt("Danny Spina");
+  channel
+    .ele("description")
+    .txt(
+      "Danny's blog about coding, books, design, and some personal thoughts."
+    );
   channel.ele("link").txt("https://dannyspina.com");
-  channel.ele("language").txt("en"); // Imposta la lingua del feed
-
+  channel.ele("language").txt("en");
   posts.forEach((post) => {
     const item = channel.ele("item");
     item.ele("title").txt(post.meta.title);
     item.ele("description").txt(post.meta.subtitle);
-    item.ele("link").txt(`https://dannyspina.com/posts/${post.path}`); // Crea l'URL del post utilizzando l'URL corrente
-    item.ele("guid").txt(`https://dannyspina.com/posts/${post.path}`);
+    item.ele("link").txt(`https://dannyspina.com/posts${post.path}`);
+    item.ele("guid").txt(`https://dannyspina.com/posts${post.path}`);
     item.ele("pubDate").txt(new Date(post.meta.date).toUTCString());
   });
 
