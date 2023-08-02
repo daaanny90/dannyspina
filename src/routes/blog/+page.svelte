@@ -7,10 +7,9 @@
   export let data;
 
   const posts = groupPostsByCategory(data.posts);
-  const lastPost: Post = data.posts[0]
 </script>
 
-<PageTitle title="Blog" />
+<PageTitle title="Blog" subtitle="<a href='/rss.xml'>RSS feed</a>"/>
 
 <section id="categories">
   {#each Object.keys(posts) as cat}
