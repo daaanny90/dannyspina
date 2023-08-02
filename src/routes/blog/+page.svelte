@@ -10,12 +10,6 @@
   const lastPost: Post = data.posts[0]
 </script>
 
-<section>
-  <Callout title="Last post">
-    <a href="{lastPost.path}">{lastPost.meta.title}</a>
-  </Callout>
-</section>
-
 <section id="categories">
   {#each Object.keys(posts) as cat}
     <PostGroup posts={sortedPosts(posts[cat])} category={cat}/>

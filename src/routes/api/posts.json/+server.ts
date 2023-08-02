@@ -15,11 +15,14 @@ export const GET = async () => {
       return {
         meta: metadata,
         path: postPath,
+        latest: false,
       };
     })
   );
 
   const sorted = sortedPosts(allPosts);
+
+  sorted[0].latest = true;
 
   return json(sorted);
 };
