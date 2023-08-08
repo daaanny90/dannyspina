@@ -151,7 +151,7 @@ program
                   );
                   const postFilePath = path.join(
                     postDirectory,
-                    `${bookName}.md`
+                    `+page.md`
                   );
 
                   const bookContent = `---
