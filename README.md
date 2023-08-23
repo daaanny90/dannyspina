@@ -16,13 +16,13 @@ The currently available widgets are:
 
 ---
 
-## 🚀 CLI for Generating Blog Posts and Books
+## 🚀 CLI for Generating Blog Posts, Books and Weekly
 
 This repository includes a simple Node.js CLI script that helps you generate blog posts and book posts for your static website. The script allows you to create a new blog post or book post, providing the necessary details like title, subtitle, category, author, Amazon link, and URL name.
 
 ### Usage
 
-To use the CLI script for generating blog posts and books, you can run it directly using Node.js as follows:
+To use the CLI script for generating blog posts, books and weekly, you can run it directly using Node.js as follows:
 
 ```bash
 node ./scripts/blog_cli.cjs new-post
@@ -38,6 +38,12 @@ To create a new book post, use the new-book command. The script will prompt you 
 
 Additionally, the script will create and checkout a new Git branch with the name 'blog*{postName}' for blog posts and 'book*{bookName}' for book posts, allowing you to work on the post separately.
 
+```bash
+node ./scripts/blog_cli.cjs new-weekly
+```
+
+To create a new weekly post, use the new-weekly command. The script will prompt you to enter the necessary details for each day of the week (from Monday to Friday). After providing these details, the script will create a new weekly post file under the 'src/routes/blog' directory with the specified content.
+
 ### Zsh alias
 
 Add this to the `.zshrc`:
@@ -47,21 +53,3 @@ alias <your-alias>='node ~/<path-to-this-repo>/scripts/blog_cli.cjs'
 ```
 
 Replace `<your-alias>` with your preferred alias and `<path-to-this-repo>` with the actual path to this repository. This will allow you to use the CLI script more conveniently.
-
-### Examples
-
-Here's an example of how to use the CLI script to create a new blog post:
-
-```bash
-node ./scripts/blog_cli.cjs new-post
-```
-
-The script will prompt for post details, and then create the post file and branch.
-
-Here's an example of how to use the CLI script to create a new book post:
-
-```bash
-node ./scripts/blog_cli.cjs new-book
-```
-
-The script will prompt for book details, and then create the book post file and branch.

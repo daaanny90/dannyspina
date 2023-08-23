@@ -6,6 +6,7 @@ export interface Post {
     categories: string[];
   };
   path: string;
+  latest: boolean;
 }
 
 export interface BlogData {

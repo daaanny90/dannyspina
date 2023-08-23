@@ -36,8 +36,8 @@ const bookCategoryOptions = [
 ];
 
 program
-  .version("1.0.0")
-  .description("CLI for generating blog posts and books.");
+  .version("1.1.1")
+  .description("CLI for generating blog posts, books and weekly.");
 
 program
   .command("new-post")
@@ -75,8 +75,7 @@ program
 
                 const postFilePath = path.join(postDirectory, `+page.md`);
 
-                const postContent = `
----
+                const postContent = `---
 title: ${title}
 subtitle: ${subtitle}
 date: "${postDate}"
@@ -155,8 +154,7 @@ program
                     `+page.md`
                   );
 
-                  const bookContent = `
----
+                  const bookContent = `---
 title: ${title}
 author: ${author}
 amazonLink: ${amazonLink}
@@ -186,15 +184,92 @@ category: ${category}
     );
   });
 
+program
+  .command('new-weekly')
+  .description('create a new weekly post')
+  .action(() => {
+    rl.question('how was your moday?', (monday) => {
+      rl.question('how was your thuesday?', (tuesday) => {
+        rl.question('how was your wednesday?', (wednesday) => {
+          rl.question('how was your thursday?', (thursday) => {
+            rl.question('how was yout friday?', (friday) => {
+              rl.close();
+
+              const currentDate = new Date();
+              const postDate = new Date().toISOString().slice(0, 10);
+
+              const year = currentDate.toLocaleDateString('en', { year: '2-digit' })
+              const startDate = new Date(currentDate.getFullYear(), 0, 1);
+              const days = Math.floor((currentDate - startDate) /
+                (24 * 60 * 60 * 1000));
+
+              const weekNumber = Math.ceil(days / 7);
+
+              const weeklyName = `weekly${weekNumber}${year}`
+
+              const weeklyDirectory = path.join(
+                __dirname,
+                "../src/routes/blog",
+                weeklyName
+              );
+              const weeklyFilePath = path.join(
+                weeklyDirectory,
+                `+page.md`
+              );
+
+              const weeklyContent = `---
+title: weekly${weekNumber}${year}
+subtitle: Weekly Retro
+date: "${postDate}"
+categories:
+- "Weekly"
+---
+
+## Monday
+
+${monday}
+
+## Tuesday
+
+${tuesday}
+
+## Wednesday
+
+${wednesday}
+
+## Thursday
+
+${thursday}
+
+## Friday
+
+${friday}
+
+`;
+
+              fs.ensureDirSync(weeklyDirectory);
+              fs.writeFileSync(weeklyFilePath, weeklyContent);
+
+              console.log(`New weekly post created successfully!`);
+            })
+          })
+        })
+      })
+    })
+  })
+
 program.addHelpText(
   "after",
   `
-Examples:
-  $ node ./scripts/blog_cli.cjs new-post
-    - This command will create a new blog post, prompt for post details, and create a new branch with the post name.
+              Examples:
+  $ node./ scripts / blog_cli.cjs new-post
+                - This command will create a new blog post, prompt for post details, and create a new branch with the post name.
 
-  $ node ./scripts/blog_cli.cjs new-book
-    - This command will create a new book post, prompt for book details, and create the book file.
+  $ node./ scripts / blog_cli.cjs new-book
+                - This command will create a new book post, prompt for book details, and create the book file.
+  
+$ node./ scripts / blog_cli.cjs new-weekly
+                - This command will create a new weekly post, prompt for week days details, and create the weekly file.
 `
 );
 

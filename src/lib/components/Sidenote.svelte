@@ -25,7 +25,7 @@
 <span bind:this={sidenote} class="sidenote">
   <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
   <!-- svelte-ignore a11y-label-has-associated-control -->
-  <label 
+  <span class="label" 
     on:click={() => active = !active}
     tabindex="0"
     title="Sidenote number {noteNumber}"
@@ -33,8 +33,8 @@
     on:keydown={keyDownFunc}
     aria-label="Show sidenote number {noteNumber}">
       [ {noteNumber} ]
-</label>
-  <small class:active><span class="sidenote__content-parenthesis"> (sidenote: </span>{@html text}<span class="sidenote__content-parenthesis">)</span></small>
+</span>
+  <small id="sidenote-{noteNumber}" class:active><span class="sidenote__content-parenthesis"> (sidenote: </span>{@html text}<span class="sidenote__content-parenthesis">)</span></small>
 </span>
 
 <style lang="scss" scoped>
@@ -63,7 +63,7 @@
   }
 }
 
-label {
+span.label {
   position: relative;
   cursor: pointer;
   color: var(--accent-color);

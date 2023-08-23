@@ -40,7 +40,7 @@
 
 <Callout title="I'm reading">
   <strong>The Comfort Crisis</strong> by Michael Easter <br />
-  <strong>Clean Code</strong> by Robert C. Martin <br />
+  <strong>Dune</strong> by Frank Herbert <br />
 </Callout>
 
 <h2>Categories</h2>
