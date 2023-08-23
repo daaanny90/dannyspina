@@ -1,13 +1,12 @@
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Chromium",
-      "type": "chrome",
-      "request": "launch",
-      "url": "http://localhost:5173",
-      "webRoot": "${workspaceRoot}",
-      "runtimeExecutable": "/Applications/Chromium.app/Contents/MacOS/chromium"
-    }
-  ]
-}
+  {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:5173",
+        "webRoot": "${workspaceFolder}"
+      },
+    ]
+  }

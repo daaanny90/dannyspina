@@ -4,6 +4,7 @@
   export let caption = "";
   export let credits = "";
   export let info = "";
+  export let position: '' | 'center' = ''
   export let gallery = false; // use it if the image must be part of a gallery (image grid)
 
   credits = credits ? `${credits}` : ''
@@ -11,7 +12,10 @@
   const separator = caption && credits ? "~" : "";
 </script>
 
-<figure class:gallery>
+<figure 
+  class:gallery 
+  class={position}
+>
   <img src="../images/{file}" {alt} />
   <figcaption>
     <div id="caption-credits-container">
@@ -28,9 +32,17 @@
     margin: 0;
     z-index: 100;
 
+    img {
+      max-height: 80rem;
+    }
+
     &.gallery {
       width: 48%;
       margin-bottom: 1rem;
+    }
+
+    &.center {
+      margin: 0 auto;
     }
   }
 
