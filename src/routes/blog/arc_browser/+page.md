@@ -1,7 +1,7 @@
 ---
 title: Arc browser review - redefining the way I browse the web
 subtitle: After a few months, I can draw my conclusions on this new and unconventional browser
-date: "2023-08-02"
+date: "2023-08-23"
 categories:
   - "Various"
 ---
