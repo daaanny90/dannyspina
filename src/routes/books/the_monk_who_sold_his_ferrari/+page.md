@@ -1,7 +1,7 @@
 ---
 title: The monk who sold his Ferrari
 author: Robin Sharma
-amazonLink: https://amzn.to/3YjnKRq
+amazonLink:
 category: Personal Growth
 ---
 

@@ -35,12 +35,11 @@
 
 <PageTitle
   title="Books I've Read & Currently Reading"
-  subtitle="My Reading Adventure: A Collection of Books I've Read and Currently Reading, with Quick Amazon Buy Links"
+  subtitle="My Reading Adventure: A Collection of Books I've Read and Currently Reading"
 />
 
 <Callout title="I'm reading">
-  <strong>Dopamine Nation</strong> by Anna Lembke <br />
-  <strong>The Art of Taking Action</strong> by Gregg Krech <br />
+  <strong>The Comfort Crisis</strong> by Michael Easter <br />
   <strong>Clean Code</strong> by Robert C. Martin <br />
 </Callout>
 

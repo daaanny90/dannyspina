@@ -1,7 +1,7 @@
 ---
 title: Building a second brain
 author: Tiago Forte
-amazonLink: https://amzn.to/3kRN0Q2
+amazonLink:
 category: Productivity
 ---
 

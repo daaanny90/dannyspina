@@ -1,10 +1,9 @@
 ---
 title: Wim Hof Method
 author: Wim Hof
-amazonLink: https://amzn.to/41TTpKX
+amazonLink:
 category: Personal Growth
 ---
-
 
 The "Wim Hof Method" by Wim Hof is an enlightening book that details the titular method that has gained widespread popularity in recent years. The book explains the method and its effects, including its potential to help individuals increase their overall health and well-being.
 
