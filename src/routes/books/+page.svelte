@@ -39,7 +39,7 @@
 />
 
 <Callout title="I'm reading">
-  <strong>The Comfort Crisis</strong> by Michael Easter <br />
+  <strong>A philosophy of a software design</strong> by John Ousterhout <br />
   <strong>Dune</strong> by Frank Herbert <br />
 </Callout>
 
