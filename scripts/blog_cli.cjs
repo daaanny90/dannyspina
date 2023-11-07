@@ -168,6 +168,7 @@ category: ${category}
                   console.log(`New book '${bookName}' created successfully!`);
 
                   // Create and checkout a new branch
+                  /*
                   const git = simpleGit();
                   const branchName = `book_${bookName}`;
                   git.checkoutLocalBranch(branchName, () => {
@@ -175,6 +176,7 @@ category: ${category}
                       `New branch '${branchName}' created and checked out!`
                     );
                   });
+                  */
                 })
                 .catch(console.error);
             });
