@@ -5,32 +5,23 @@
 </section>
 
 <style lang="scss" scoped>
-section {
-  text-align: center;
-}
+  section {
+    text-align: center;
+  }
 
-h1 {
-  font-size: 3rem;
-}
+  h1 {
+    font-size: 3rem;
+  }
 
-span {
-  color: var(--accent-color);
-}
+  span {
+    color: var(--accent-color);
+  }
   p {
     font-weight: lighter;
     font-size: 1.3rem;
 
     @media only screen and (max-width: 600px) {
       font-size: 1.1rem;
-    }
-  }
-  .company-logo {
-    max-width: 1rem;
-    padding: 0 .5rem;
-
-    @media only screen and (max-width: 600px) {
-      max-width: 5rem;
-      padding: 0;
     }
   }
 </style>
