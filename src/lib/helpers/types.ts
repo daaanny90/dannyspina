@@ -13,3 +13,11 @@ export interface BlogData {
   posts: Post[];
   currentCategory: string;
 }
+
+export interface InstaImageType {
+  currentRoute: any;
+  [key: string]: {
+    imgUrl: string;
+    folder: string;
+  };
+}
