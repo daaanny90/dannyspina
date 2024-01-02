@@ -3,7 +3,7 @@ interface Image {
   imgUrl: string;
 }
 
-const groupBy = (input, key) => {
+const groupBy = (input: unknown[], key: string) => {
   return input.reduce((acc, currentValue) => {
     let groupKey = currentValue[key];
     if (!acc[groupKey]) {
@@ -26,17 +26,5 @@ export const load = async () => {
     return { folder: folder, imgUrl: img }
   })
 
-  console.log(imgObj)
-  /*
-    const images = imgObj.reduce((group: any, img: Image): any => {
-      const { folder, imgUrl } = img;
-      group[folder] = group[folder] ?? [];
-      group[folder].push(imgUrl);
-  
-      return group;
-    }, {})
-  
-    console.log(imgObj)
-    */
   return { images: groupBy(imgObj, 'folder') }
 }
