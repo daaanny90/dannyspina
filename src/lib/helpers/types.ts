@@ -14,10 +14,14 @@ export interface BlogData {
   currentCategory: string;
 }
 
+export interface Image {
+  folder: string;
+  imgUrl: string;
+}
+
 export interface InstaImageType {
   currentRoute: any;
-  [key: string]: {
-    imgUrl: string;
-    folder: string;
-  };
+  [key: string]: Image;
 }
+
+

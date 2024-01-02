@@ -66,3 +66,14 @@ export const groupPostsByCategory = (posts: Post[]): {
 
   return groupedPosts;
 }
+
+export const groupBy = (input: unknown[], key: string) => {
+  return input.reduce((acc, currentValue) => {
+    let groupKey = currentValue[key];
+    if (!acc[groupKey]) {
+      acc[groupKey] = [];
+    }
+    acc[groupKey].push(currentValue);
+    return acc;
+  }, {});
+};
