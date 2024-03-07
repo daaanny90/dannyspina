@@ -17,9 +17,12 @@
   }
 
   .insta-grid {
+    width: 100%;
+    height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 28px;
   }
 </style>
