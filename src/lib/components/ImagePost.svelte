@@ -3,25 +3,24 @@
   export let alt: string;
   export let caption = "";
   export let credits = "";
-  export let info = "";
-  export let position: '' | 'center' = ''
+  export let info = ""; // like the camera used to shoot the picture
+  export let position: "" | "center" = "";
   export let gallery = false; // use it if the image must be part of a gallery (image grid)
+  export let external = false; // use it if the image is an external link
 
-  credits = credits ? `${credits}` : ''
+  credits = credits ? `${credits}` : "";
 
   const separator = caption && credits ? "~" : "";
+  const src = external ? `${file}` : `../images/${file}`;
 </script>
 
-<figure 
-  class:gallery 
-  class={position}
->
-  <img src="../images/{file}" {alt} />
+<figure class:gallery class={position}>
+  <img {src} {alt} />
   <figcaption>
     <div id="caption-credits-container">
       {caption}
       <span id="separator">{separator}</span>
-     {@html credits}
+      {@html credits}
     </div>
     <span id="info">{info}</span>
   </figcaption>
@@ -54,7 +53,7 @@
     flex-wrap: wrap;
 
     #separator {
-      margin: 0 .2rem;
+      margin: 0 0.2rem;
     }
 
     #caption-credits-container {
