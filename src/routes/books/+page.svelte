@@ -35,13 +35,12 @@
 
 <PageTitle
   title="Books I've Read & Currently Reading"
-  subtitle="My Reading Adventure: A Collection of Books I've Read and Currently Reading, with Quick Amazon Buy Links"
+  subtitle="My Reading Adventure: A Collection of Books I've Read and Currently Reading"
 />
 
 <Callout title="I'm reading">
-  <strong>Dopamine Nation</strong> by Anna Lembke <br />
-  <strong>The Art of Taking Action</strong> by Gregg Krech <br />
-  <strong>Clean Code</strong> by Robert C. Martin <br />
+  <strong>A philosophy of a software design</strong> by John Ousterhout <br />
+  <strong>Dune</strong> by Frank Herbert <br />
 </Callout>
 
 <h2>Categories</h2>

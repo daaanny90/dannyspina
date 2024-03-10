@@ -34,7 +34,7 @@
 
 <svelte:window on:scroll={positionY}/>
 
-<a class="back-arrow-container" href="/{page}" bind:this={backArrow} class:hide>
+<a class="back-arrow-container" href="/{page}" bind:this={backArrow} class:hide on:click={() => isArrowUnderHeader.set(false)}>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"

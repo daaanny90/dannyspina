@@ -1,7 +1,7 @@
 ---
 title: Alla ricerca delle coccole perdute
 author: Giulio Cesare Giacobbe
-amazonLink: https://amzn.to/3Y3GBjx
+amazonLink:
 category: Personal Growth
 ---
 

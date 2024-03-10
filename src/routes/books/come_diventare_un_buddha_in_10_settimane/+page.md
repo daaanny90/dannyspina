@@ -1,7 +1,7 @@
 ---
 title: Come diventare un Buddha in 10 settimane
 author: Giulio Cesare Giacobbe
-amazonLink: https://amzn.to/3XUhhMO
+amazonLink:
 category: Personal Growth
 ---
 

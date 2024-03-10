@@ -18,7 +18,7 @@
   <MobileMenu />
 
   {#key data.currentRoute}
-    <main in:blur={{ duration: 350, delay: 450 }} out:blur={{ duration: 350 }}>
+    <main in:blur={{ duration: 350, delay: 450 }} out:blur={{ duration: 350 }} on:outroend={() => {window.scroll(0, 0)}}>
       <slot />
     </main>
   {/key}

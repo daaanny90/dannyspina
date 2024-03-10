@@ -1,7 +1,7 @@
 ---
 title: Come smettere di farsi le seghe mentali e godersi la vita
 author: Giulio Cesare Giacobbe
-amazonLink: https://amzn.to/3wNO3Dh
+amazonLink:
 category: Personal Growth
 ---
 

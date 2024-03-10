@@ -1,7 +1,7 @@
 ---
 title: Tutto cinema
 author: various authors
-amazonLink: https://amzn.to/3DvM6z5
+amazonLink:
 category: Arts & Entertainment
 ---
 

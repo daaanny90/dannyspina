@@ -1,7 +1,7 @@
 ---
 title: Story
 author: Robert McKee
-amazonLink: https://amzn.to/3XXbaaD
+amazonLink:
 category: Arts & Entertainment
 ---
 

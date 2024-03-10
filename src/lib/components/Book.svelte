@@ -10,5 +10,5 @@
 <li>
   <a href={path}>{title}</a>
   by {author}.
-  <BookCart link={amazonLink} />
+  {#if amazonLink}<BookCart link={amazonLink} />{/if}
 </li>

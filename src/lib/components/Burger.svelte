@@ -23,6 +23,7 @@
 
 <div class="menu cross menu--1">
   <label>
+    <span>Menu burger</span>
     <input type="checkbox" on:click={toggleMenu} bind:this={input}/>
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
@@ -50,6 +51,11 @@
   }
 
   label {
+    span {
+      position: absolute;
+      left: -99999px;
+    }
+
     display: block;
     cursor: pointer;
     width: 7rem;

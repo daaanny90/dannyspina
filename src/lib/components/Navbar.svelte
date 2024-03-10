@@ -2,32 +2,54 @@
   import DarkModeSwitch from "./DarkModeSwitch.svelte";
   import BackArrow from "./BackArrow.svelte";
   import Burger from "./Burger.svelte";
+  import Logo from "./Logo.svelte";
   import { isArrowUnderHeader, backArrowPage } from "../../store";
+  import { onMount } from 'svelte';
+  import { afterNavigate } from '$app/navigation';
 
   let currentPage;
   let show;
-
+  let currentUrl: string;
+  const backArrowExcludedPaths = [
+    '/',
+    '/blog',
+    '/books',
+    '/about',
+    '/contact'
+  ]
+  
   backArrowPage.subscribe(page => {
     currentPage = page
   })
-
+  
   isArrowUnderHeader.subscribe(status => {
     show = status
+  })
+  
+  onMount(() => currentUrl = window.location.pathname);
+
+  afterNavigate(() => {
+    currentUrl = window.location.pathname
   })
 </script>
 
 <nav>
-  <a class="logo" href="/">DS</a>
+  <Logo />
+
+  <!-- for accessibility, the back arrow must not be present on all pages due to redundant links -->
+  {#if !backArrowExcludedPaths.includes(currentUrl)}
   <div class="backArrow" class:show>
     <BackArrow page={currentPage} />
   </div>
+  {/if}
+
   <div class="buttonsContainer">
     <DarkModeSwitch />
     <Burger />
   </div>
 </nav>
 
-<style lang="scss">
+<style lang="scss" scoped>
   nav {
     z-index: 955;
     display: flex;
@@ -44,24 +66,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .logo {
-    @include unstyledLink;
-
-    animation: none;
-    font-family: "JetBrains Mono";
-    width: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    color: var(--accent-color);
-    font-weight: normal;
-    text-decoration: none;
-    z-index: 100;
-
-    &:visited {
-      color: var(--accent-color);
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding-right: 6px;
     }
   }
 

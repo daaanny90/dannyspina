@@ -3,7 +3,7 @@
 </script>
 
 <a class="affiliate_link" href={link} target="_blank" rel="noreferrer"
-  ><svg
+  ><span>Amazon link to buy the book</span><svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -26,6 +26,11 @@
     position: absolute;
     width: 2rem;
     padding-left: 0.5rem;
+
+    span {
+      position: absolute;
+      left: -999999px;
+    }
   }
   svg {
     max-width: 1.5rem;

@@ -1,7 +1,7 @@
 ---
 title: Super You
 author: Claudio Belotti
-amazonLink: https://amzn.to/3DzKMeL
+amazonLink:
 category: Personal Growth
 ---
 
