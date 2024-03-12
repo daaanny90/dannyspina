@@ -15,7 +15,7 @@ categories:
 
 For several months now, I've been using a different browser.
 
-It's called Arc, and it promises to revolutionize the way we browse online.
+It's called Arc, and it promises to revolutionize the way we browse  online.
 
 Apart from all the initial hype, I must say that... it's true. Arc is the best browser I've ever used so far, and going back is no longer an option.
 
