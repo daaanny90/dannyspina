@@ -1,6 +1,6 @@
 ---
-title: When Oliviero Toscani appriciate a photo made by me
-subtitle: Once I sent a picture for a photo contest made by Oliviero, and within thousends of pictures, Oliviero found my creaton not so bad.
+title: When Oliviero Toscani appreciates a photo I took
+subtitle: Once, I submitted a photo to a contest hosted by Oliviero, and among thousands of pictures, Oliviero found my creaton not so bad.
 date: "2024-03-15"
 categories:
   - "Various"
