@@ -6,7 +6,8 @@
 <div class="sidebar">
   <div class="menu">
     <MenuItem isSidebar={true} link="/blog" text="Blog" />
-    <MenuItem isSidebar={true} link="/books" text="Books" />
+    <!--TODO: evaluate if remove completly the section-->
+    <!-- <MenuItem isSidebar={true} link="/books" text="Books" /> -->
     <MenuItem isSidebar={true} link="/about" text="About" />
     <MenuItem isSidebar={true} link="/contact" text="Contact" />
   </div>
@@ -23,7 +24,7 @@
     display: flex;
     width: 5rem;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: space-around;
 
     @media screen and (max-width: 900px), screen and (max-height: 530px) {

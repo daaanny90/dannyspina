@@ -1,6 +1,8 @@
 <script lang="ts">
   import PageTitle from "$lib/components/PageTitle.svelte";
   import Accordion from "$lib/components/Accordion.svelte";
+  import Divider from "$lib/components/Divider.svelte";
+  import AiIndicator from "$lib/components/AiIndicator.svelte";
 
   const today = new Date();
   const startCodingDate = new Date("2017-09-01");
@@ -8,7 +10,10 @@
   const yearsOfExperience = today.getFullYear() - startCodingDate.getFullYear();
 </script>
 
-<PageTitle title="About Me" />
+<div class="header">
+  <PageTitle title="About Me" />
+  <AiIndicator humanLevel={50} />
+</div>
 
 <p>
   Interested in my CV? <a href="https://cv.dannyspina.com">Get it here</a>
@@ -384,3 +389,42 @@
     for gaming once more.
   </p>
 </Accordion>
+
+<Divider />
+
+<h2>Credits</h2>
+
+<a
+  href="https://www.flaticon.com/free-icons/automation"
+  title="automation icons"
+  >Automation icons created by Vector Squad - Flaticon</a
+>
+<a href="https://www.flaticon.com/free-icons/bot" title="bot icons"
+  >Bot icons created by Smashicons - Flaticon</a
+>
+<a
+  href="https://www.flaticon.com/free-icons/interaction"
+  title="interaction icons">Interaction icons created by pojok d - Flaticon</a
+>
+<a href="https://www.flaticon.com/free-icons/person" title="person icons"
+  >Person icons created by DinosoftLabs - Flaticon</a
+>
+<a
+  href="https://www.flaticon.com/free-icons/proofreading"
+  title="proofreading icons"
+  >Proofreading icons created by Vectors Tank - Flaticon</a
+>
+
+<style lang="scss" scoped>
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (max-width: 434px) {
+      gap: 0;
+    }
+  }
+</style>

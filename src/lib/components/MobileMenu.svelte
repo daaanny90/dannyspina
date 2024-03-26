@@ -5,18 +5,16 @@
   import { menuOpen } from "../../store";
 
   let isMenuOpen: boolean;
-  menuOpen.subscribe(state => {
-    isMenuOpen = state
-  })
+  menuOpen.subscribe((state) => {
+    isMenuOpen = state;
+  });
 </script>
 
 <!-- <Burger on:menuOpen={handleMessage} /> -->
-<div
-  class="mobile-menu"
-  class:active={isMenuOpen}
->
+<div class="mobile-menu" class:active={isMenuOpen}>
   <MenuItem link="/blog" text="Blog" />
-  <MenuItem link="/books" text="Books" />
+  <!--TODO: evaluate if remove completly the section-->
+  <!-- <MenuItem link="/books" text="Books" /> -->
   <MenuItem link="/about" text="About" />
   <MenuItem link="/contact" text="Contact" />
 </div>

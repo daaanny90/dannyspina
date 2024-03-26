@@ -81,6 +81,7 @@ subtitle: ${subtitle}
 date: "${postDate}"
 categories:
   - "${category}"
+human: 100
 ---
 
 <script lang="ts">

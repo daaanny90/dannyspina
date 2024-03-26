@@ -4,6 +4,7 @@ subtitle: Once, I submitted a photo to a contest hosted by Oliviero, and among t
 date: "2024-03-15"
 categories:
   - "Various"
+human: 90
 ---
 
 <script lang="ts">

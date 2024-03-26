@@ -1,7 +1,10 @@
 <section>
   <h1>Hi! I'm <span>Danny.</span></h1>
-  <p>I am a frontend engineer with some <a href="/about">passions</a>.</p>
-  <p>Currently @ <a href="http://herole.de">Herolé</a>.</p>
+  <p>
+    I am a Frontend Engineer & Design Ops with some <a href="/about">passions</a
+    >.
+  </p>
+  <p>Currently @ <a href="https://herole.de">Herolé</a>.</p>
 </section>
 
 <style lang="scss" scoped>
