@@ -72,7 +72,7 @@
   });
 </script>
 
-<div class="AI" on:click={() => goto("/ai")} on:keypress={() => {}}>
+<div class="AI" on:click={() => goto("/ai")} on:keypress={() => goto("/ai")}>
   <img src={icon} alt="AI" />
   <div class="indicator-container">
     <span>Human content: {humanLevel}%</span>
