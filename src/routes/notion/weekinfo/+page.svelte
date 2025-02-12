@@ -3,15 +3,11 @@
   import Calendar from "$lib/helpers/Calendar";
 
   const calendar = new Calendar();
-  let widget;
+  let widget: HTMLDivElement;
   let light = false;
 
   onMount(() => {
     const queryString = window.location.search;
-    const urlParams = new URLSearchParams();
-    const lightTheme = urlParams.entries;
-
-    console.log(queryString)
 
     if (queryString.includes("light")) {
       light = true
@@ -54,6 +50,13 @@
 </div>
 
 <style lang="scss">
+:global(body:has(.background)) {
+  background-color: #191919;
+}
+
+:global(body:has(.background.light)) {
+  background-color: #ffffff;
+}
   // manage theme palette
   .background {
     --notion-primary: #d1d1d1;
