@@ -21,7 +21,7 @@
       >{calendar.getDayName()}
       {calendar.getDayNumber()}
       {calendar.getMonthName()}</u
-    >. <br />
+    ><br />
   </h2>
   <h5>Week {calendar.getWeekNumber()}</h5>
   <span class="progressBar">
@@ -113,7 +113,6 @@
         bottom: -17px;
         width: 100%;
         height: 1rem;
-        border-right: 2px solid var(--notion-primary);
 
         span {
           width: 25%;
