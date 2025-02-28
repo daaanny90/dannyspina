@@ -4,6 +4,7 @@
   export let subtitle:string;
   export let date:string;
   export let categories:string[];
+  export let info = '';
 
   let dateOptions = {
     weekday: "long",
@@ -19,6 +20,7 @@
 </script>
 
 <a class="post-card" href={path}>
+  <span>{info}</span>
   <h2>
     {title}
   </h2>
