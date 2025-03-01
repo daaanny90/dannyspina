@@ -12,34 +12,6 @@
   onMount(() => {
     theme = document.documentElement.getAttribute("data-theme");
 
-    const getIcon = (iconName: "human" | "proof" | "mix" | "ai") => {
-      return theme === "light"
-        ? `${iconsPath}/${iconName}_light.png`
-        : `${iconsPath}/${iconName}_dark.png`;
-    };
-
-    /**
-     * Set the icon based on the human level
-     */
-    const setIconSrc = (): void => {
-      switch (humanLevel) {
-        case 100:
-          icon = getIcon("human");
-          break;
-        case 90:
-          icon = getIcon("proof");
-          break;
-        case 50:
-          icon = getIcon("mix");
-          break;
-        case 10:
-          icon = getIcon("ai");
-          break;
-      }
-    };
-
-    setIconSrc();
-
     setTimeout(() => {
       switch (humanLevel) {
         case 100:
@@ -60,7 +32,6 @@
     // Observe changes to the data-theme attribute
     const observer = new MutationObserver(() => {
       theme = document.documentElement.getAttribute("data-theme");
-      setIconSrc();
     });
 
     observer.observe(document.documentElement, {
@@ -73,7 +44,6 @@
 </script>
 
 <div class="AI" on:click={() => goto("/ai")} on:keypress={() => goto("/ai")}>
-  <img src={icon} alt="AI" />
   <div class="indicator-container">
     <span>Human content: {humanLevel}%</span>
     <span class="ai-indicator {aiIndicatorClass}" />
@@ -142,16 +112,6 @@
 
       @media only screen and (max-width: 600px) {
         justify-content: center;
-      }
-    }
-
-    img {
-      height: 2.1rem;
-      align-self: flex-end;
-      margin-right: 0.5rem;
-
-      @media only screen and (max-width: 600px) {
-        display: none;
       }
     }
 
