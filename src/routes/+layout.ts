@@ -6,4 +6,4 @@ export const load = ({ url }) => {
   };
 };
 
-export const prerender = 'auto';
+export const prerender = true;
