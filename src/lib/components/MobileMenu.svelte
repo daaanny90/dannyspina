@@ -17,6 +17,7 @@
   <!-- <MenuItem link="/books" text="Books" /> -->
   <MenuItem link="/about" text="About" />
   <MenuItem link="/contact" text="Contact" />
+  <MenuItem link="/asincrono" text="Podcast" />
 </div>
 
 <style lang="scss" scoped>

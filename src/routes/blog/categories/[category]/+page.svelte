@@ -14,7 +14,13 @@
 <ul class="blog-posts">
   {#each data.posts as post}
     <li>
-      <PostCard {post} />
+      <PostCard
+        title={post.meta.title}
+        path={post.path}
+        subtitle={post.meta.subtitle}
+        categories={post.meta.categories}
+        date={post.meta.date}
+      />
     </li>
   {/each}
 </ul>

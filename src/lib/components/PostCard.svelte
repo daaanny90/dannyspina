@@ -1,7 +1,10 @@
 <script lang="ts">
-  import type { Post } from "$lib/helpers/types";
-
-  export let post: Post;
+  export let path: string;
+  export let title:string;
+  export let subtitle:string;
+  export let date:string;
+  export let categories:string[];
+  export let info = '';
 
   let dateOptions = {
     weekday: "long",
@@ -10,21 +13,22 @@
     day: "numeric",
   } as Intl.DateTimeFormatOptions;
   
-  let pusblishDate = new Date(post.meta.date).toLocaleDateString(
+  let pusblishDate = new Date(date).toLocaleDateString(
     "gb-GB",
     dateOptions
   );
 </script>
 
-<a class="post-card" href={post.path}>
+<a class="post-card" href={path}>
+  <span>{info}</span>
   <h2>
-    {post.meta.title}
+    {title}
   </h2>
-  <p>{post.meta.subtitle}</p>
+  <p>{subtitle}</p>
   <div class="card-footer">
     <span class="cat">{pusblishDate}</span>
     <div class="categories">
-      {#each post.meta.categories as category}
+      {#each categories as category}
         <span class="cat">#{category}</span>
       {/each}
     </div>

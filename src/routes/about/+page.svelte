@@ -19,68 +19,15 @@
   Interested in my CV? <a href="https://cv.dannyspina.com">Get it here</a>
   <br />
   <br />
-  <strong>I'm Danny</strong>, a web developer with a focus on building scalable
-  and maintainable web applications.
-  <br />
-  <br />
-  I have {yearsOfExperience} years of experience working with
-  <strong>front-end</strong>
-  and <strong>back-end</strong> technologies, and specialize in
-  <strong>TypeScript</strong>
-  and <strong>JavaScript</strong>. I have a solid understanding of the latest
-  web development technologies and frameworks such as <strong>React</strong>,
-  <strong>Vue</strong>, <strong>Node.js</strong> and <strong>Express</strong>,
-  and have experience working with a variety of databases like
-  <strong>MongoDB</strong>, <strong>MySQL</strong> and
-  <strong>PostgreSQL</strong>. I am well-versed in <strong>Agile</strong>
-  development methodologies and have experience working in a
-  <strong>team-oriented environment</strong>.
-  <br />
-  <br />
-  I take pride in my ability to write
-  <strong>clean, efficient and well-documented code</strong>, and am always
-  looking for ways to improve my skills and stay up-to-date with the latest
-  industry trends.
-  <br />
-  I am also passionate about the <strong>ethical aspects</strong> of software
-  development and I love <strong>open source</strong> projects. I am focused on
-  <strong>architecture</strong>
-  and <strong>design methodologies</strong> such as
-  <strong>Domain-Driven Design</strong>, which allows me to create sustainable,
-  easy to maintain and well-designed systems.
-</p>
-<p>
-  Beyond writing code, I am deeply invested in the impact that technology has on
-  society. I believe that software development is a powerful tool for <strong
-    >creating positive change</strong
-  >, and I am committed to using my skills for the greater good. This passion
-  for ethical technology is reflected in my love for open-source projects and my
-  focus on design methodologies like Domain-Driven Design. These practices not
-  only result in <strong>sustainable, easy-to-maintain systems</strong>, but
-  they also promote transparency and collaboration. I am always eager to apply
-  my skills to projects that align with my values and have a
-  <strong>meaningful impact on the world</strong>.
-</p>
+  <p>I'm Danny, a <strong>Frontend Engineer</strong> with a strong focus on <strong>architecture, design systems, and scalable web applications</strong>.</p>
 
-<p>
-  In the end, <strong
-    >I am grateful to be able to do what I love every day</strong
-  >.
-  <br />
-  <br />
-  Programming is not just a job for me, it's a <strong>passion</strong>.
-  <br />
-  It's a <strong>privilege</strong> to be able to use my skills to create
-  something that <strong>can make a difference</strong>, whether it's a small
-  feature or a large-scale application. I am constantly in awe of the power of
-  code to connect people, solve problems and improve lives. I am excited to
-  continue on this journey, and to see where it takes me next.
-  <br />
-  <br />
-  <strong>If you share my passion</strong> for creating meaningful technology
-  and want to connect, <strong>I would be happy to hear from you</strong>.
-</p>
+<p>With {yearsOfExperience} years of experience, I specialize in <strong>TypeScript, Vue.js, Web Components, and frontend architecture</strong>. My expertise lies in <strong>building maintainable design systems, implementing component-driven development, and applying domain-driven design principles</strong> to create clean, scalable codebases.</p>
 
+<p>While my strength is in frontend engineering, I also have also <strong>experience in backend development</strong>. I’m comfortable working with <strong>Node.js, Express, and databases like PostgreSQL and MongoDB</strong>, which helps me build solutions with a broader architectural perspective.</p>
+
+<p>Beyond coding, I focus on <strong>improving development workflows</strong>, bridging the gap between <strong>design and engineering</strong>, and ensuring that every system I work on is built for long-term sustainability.</p>
+
+<p>If you’re passionate about <strong>frontend architecture, scalable design patterns, and building robust web applications</strong>, let’s connect!</p>
 <h2>My passions</h2>
 
 <p>I have some passions outside the tech world:</p>
@@ -167,61 +114,6 @@
     projects. As I continue my journey through the world of cinema, I am always
     on the lookout for more masterpieces that will captivate my imagination and
     deepen my appreciation for the art of filmmaking.
-  </p>
-</Accordion>
-
-<Accordion title="Astronomy">
-  <p>
-    The vastness and mysteries of the universe have always fascinated me. One of
-    the aspects that intrigues me the most is space exploration. The idea of
-    venturing beyond our planet and exploring the cosmos ignites a sense of
-    wonder and curiosity in me. I make sure to stay updated on the latest
-    missions and discoveries, as they represent humanity's quest to unravel the
-    secrets of the universe.
-  </p>
-
-  <p>
-    Beyond the scientific aspects, astronomy also sparks profound philosophical
-    questions about our existence and our place in the cosmos. Contemplating the
-    vastness of space and the countless stars and galaxies raises fundamental
-    questions about who we are and where we are headed, both as a species and as
-    individuals. Exploring these questions generates awareness and a deeper
-    understanding of ourselves and our role in the universe.
-  </p>
-
-  <p>
-    I am excited to share this fascination with my passion for astronomy with my
-    daughters. I plan to begin observing the night sky with a telescope, hoping
-    that this experience will ignite their curiosity and inspire them to ask
-    profound questions like "Who are we?" and "What lies beyond?" Encouraging
-    their curiosity and nurturing their interest in astronomy can open doors to
-    a world of knowledge and a lifelong journey of exploration.
-  </p>
-
-  <p>
-    Observing the cosmos with a telescope not only allows us to appreciate the
-    beauty of celestial objects but also serves as a reminder of our connection
-    to the universe. It is a humbling experience that can spark curiosity and
-    inspire a sense of responsibility to protect and preserve our planet and the
-    wonders of space for future generations.
-  </p>
-
-  <p>
-    By instilling a passion for astronomy in my daughters, I hope to plant the
-    seeds of curiosity and wonder that will accompany them throughout their
-    lives. I envision a future where they continue to explore the mysteries of
-    the universe, ask meaningful questions, and seek understanding of the world
-    around them. Their journey of exploration and discovery can lead to new
-    insights, awareness, and a greater appreciation for the beauty and
-    complexity of the cosmos.
-  </p>
-
-  <p>
-    As we ponder the vastness of the universe and the questions it poses, we
-    embark on a journey of self-discovery and connection to something greater
-    than ourselves. It is a journey that has the potential to shape our
-    perspectives and inspire a sense of wonder and awe that will forever remain
-    with us, guiding our pursuit of knowledge and understanding.
   </p>
 </Accordion>
 
@@ -335,58 +227,6 @@
     on new adventures in life. It is a journey that will continue to unfold, and
     I eagerly anticipate the discoveries that lie ahead in the boundless realms
     of literature.
-  </p>
-</Accordion>
-
-<Accordion title="Gaming">
-  <p>
-    Gaming has been an important part of my life, even though I have mostly
-    stepped away from it in recent times. To me, video games are not just
-    trivial pastimes for children; they are a form of art. Comparable to cinema,
-    but with the added dimension of interactivity, video games can be profound
-    and thought-provoking experiences.
-  </p>
-
-  <p>
-    Video games with compelling storylines have the power to make me reflect on
-    significant themes in life, challenge my perspectives, and inspire action in
-    various directions. Unfortunately, there is still a prevalent perception
-    that video games are frivolous, but I firmly believe that one day they will
-    be recognized as a serious and profound art form on par with cinema.
-  </p>
-
-  <p>
-    Gaming has the potential to engage me emotionally and intellectually, just
-    like any other art form. Those with excellent storytelling can leave a
-    lasting impact and resonate deeply with me. For example, games like Hideo
-    Kojima's "Metal Gear" series, the "Mass Effect" trilogy, and "The Last of
-    Us" have had a profound influence on my thoughts and emotions.
-  </p>
-
-  <p>
-    While I used to be a slow and deliberate gamer, often picking up titles
-    years after their release, I found immense enjoyment in immersing myself in
-    games with elaborate and deep narratives. The complex characters and
-    thought-provoking dilemmas in these games have left a lasting impression on
-    me, and I cherish the experiences they provided.
-  </p>
-
-  <p>
-    Regarding "The Last of Us 2," I share my apprehension about sequels,
-    especially when the first installment ended so perfectly. I can understand
-    the fear of potentially tainting a masterpiece. However, there is a
-    lingering hope that one day I might rediscover my passion for gaming and
-    venture into new experiences, including the sequel. If I do, I'm sure it
-    will be a journey filled with emotions and introspection.
-  </p>
-
-  <p>
-    Gaming, in its essence, is an interactive form of art that can elicit a
-    range of emotions and provoke meaningful contemplation. Despite my current
-    break from gaming, its impact on my life and perspectives remains evident.
-    Perhaps one day, when the time feels right, I will return to this beloved
-    hobby and discover new stories and experiences that will reignite my passion
-    for gaming once more.
   </p>
 </Accordion>
 
