@@ -6,7 +6,6 @@ import { onMount } from "svelte";
 export let data;
 let { episodes } = data;
 </script>
-
 <PageTitle title="Asincrono" subtitle="Il mio podcast dove chiacchiero con me" />
 
 <ul class="episode-list">

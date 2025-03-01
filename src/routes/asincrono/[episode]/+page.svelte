@@ -4,7 +4,8 @@ import { page } from "$app/stores";
 import PageTitle from "$lib/components/PageTitle.svelte";
 
 export let data;
-let { episodes } = data;
+
+let { episodes, currentRoute } = data;
 let episode;
 let episodeId;
 let publishDate;
@@ -15,12 +16,18 @@ let dateOptions = {
   day: "numeric",
 };
 
-$: episodeId = $page.params.episode;
+currentRoute = currentRoute.replace('/asincrono/', '');
 
-episode = episodes.find(e => e.id === episodeId);
-  episode.description = episode.description
-    .replace(/<br>/g, '')
-    .replace(/<p><\/p>/g, '</>');
+episode = episodes.find(e =>  {
+  console.log(e.id, currentRoute, e.id === currentRoute)
+  return e.id === currentRoute
+});
+
+episode.description = episode.description
+  .replace(/<br>/g, '')
+  .replace(/<p><\/p>/g, '</>');
+
+publishDate = new Date(episode.pubDate).toLocaleDateString("gb-GB", dateOptions);
 </script>
 
 {#if episode}
