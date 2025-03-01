@@ -1,14 +1,12 @@
 <script>
 import PageTitle from "$lib/components/PageTitle.svelte";
-  import PostCard from "$lib/components/PostCard.svelte";
+import PostCard from "$lib/components/PostCard.svelte";
 import { onMount } from "svelte";
-let episodes = [];
 
-  onMount(async () => {
-    const res = await fetch("/api/episodes.json");
-    episodes = await res.json();
-  });
+export let data;
+let { episodes } = data;
 </script>
+
 <PageTitle title="Asincrono" subtitle="Il mio podcast dove chiacchiero con me" />
 
 <ul class="episode-list">

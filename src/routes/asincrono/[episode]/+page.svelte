@@ -3,6 +3,8 @@ import { onMount } from "svelte";
 import { page } from "$app/stores";
 import PageTitle from "$lib/components/PageTitle.svelte";
 
+export let data;
+let { episodes } = data;
 let episode;
 let episodeId;
 let publishDate;
@@ -12,20 +14,13 @@ let dateOptions = {
   month: "long",
   day: "numeric",
 };
+
 $: episodeId = $page.params.episode;
 
-onMount(async () => {
-  const res = await fetch("/api/episodes.json");
-  const episodes = await res.json();
-  episode = episodes.find(e => e.id === episodeId);
+episode = episodes.find(e => e.id === episodeId);
   episode.description = episode.description
     .replace(/<br>/g, '')
     .replace(/<p><\/p>/g, '</>');
-
-  console.log(episode)
-
-  publishDate = new Date(episode.pubDate).toLocaleDateString("gb-GB", dateOptions);
-});
 </script>
 
 {#if episode}
