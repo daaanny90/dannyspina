@@ -9,7 +9,7 @@ let { episodes } = data;
 <PageTitle title="Asincrono" subtitle="Il mio podcast dove chiacchiero con me" />
 
 <ul class="episode-list">
-  {#each episodes as { title, id, pubDate }, index}
+  {#each episodes.reverse() as { title, id, pubDate }, index}
     <li>
       <PostCard 
         info="Episode {index + 1}"
@@ -24,11 +24,18 @@ let { episodes } = data;
 </ul>
 
 <style>
-  .episode-list {
-    margin-top: 3rem;
-    list-style-type: none;
-    padding: 0;
-  }
+.episode-list {
+  margin-top: 3rem;
+  list-style-type: none;
+  padding: 0;
+}
 
-li {margin-bottom: 1rem;}
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+li {
+  margin-bottom: 3rem;
+}
 </style>

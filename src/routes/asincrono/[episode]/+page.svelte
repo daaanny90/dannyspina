@@ -7,7 +7,6 @@ export let data;
 
 let { episodes, currentRoute } = data;
 let episode;
-let episodeId;
 let publishDate;
 let dateOptions = {
   weekday: "long",
