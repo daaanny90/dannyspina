@@ -29,4 +29,6 @@ let { episodes } = data;
     list-style-type: none;
     padding: 0;
   }
+
+li {margin-bottom: 1rem;}
 </style>
