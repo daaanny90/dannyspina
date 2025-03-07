@@ -47,23 +47,61 @@ publishDate = new Date(episode.pubDate).toLocaleDateString("gb-GB", dateOptions)
 <style>
 audio {
   width: 100%;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  filter: invert(0%);
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #1e1e1e;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  border: none;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  border: none;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #333;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #555;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+audio::-moz-range-track {
+  background-color: #555;
   border-radius: 10px;
 }
 
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button {
-  filter: invert(1);
+audio::-moz-range-thumb {
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
 }
 
-audio::-webkit-media-controls-timeline {
-  background: #333;
-  border-radius: 5px;
+audio:hover {
+  opacity: 0.9;
 }
+
 .audio-player {
   display: flex;
   align-items: center;
