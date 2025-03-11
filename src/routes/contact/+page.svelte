@@ -14,4 +14,4 @@
   <li><a href="https://open.spotify.com/show/6DQKst03uhUPBStqSFYVai?si=517c76c4c11d4122">Asincrono</a> - my podcast (in italian)</li>
 </ul>
 <p>Additionally, you can contact me <a href="mailto:hi@danny.com">via email.</a></p>
-<p>I am always open to networking, discussing new projects, or just chatting about technology and development. Don't hesitate to reach out!</p>
+<p>I am always open to networking, discussing new projects, or just chatting. Don't hesitate to reach out!</p>
