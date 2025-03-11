@@ -18,6 +18,7 @@
       margin: 1rem 0;
       line-height: 1.1;
       letter-spacing: 1px;
+      color: var(--accent-color);
 
       @media only screen and (max-width: 600px) {
         font-size: 2rem;
