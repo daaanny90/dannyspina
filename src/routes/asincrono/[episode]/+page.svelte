@@ -2,6 +2,7 @@
 import { onMount } from "svelte";
 import { page } from "$app/stores";
 import PageTitle from "$lib/components/PageTitle.svelte";
+  import BackArrow from "$lib/components/BackArrow.svelte";
 
 export let data;
 
@@ -28,6 +29,8 @@ episode.description = episode.description
 
 publishDate = new Date(episode.pubDate).toLocaleDateString("gb-GB", dateOptions);
 </script>
+
+<BackArrow page="asincrono" hideUnderHeader />
 
 {#if episode}
   <PageTitle title={episode.title}/>
