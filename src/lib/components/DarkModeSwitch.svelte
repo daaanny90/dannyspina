@@ -7,9 +7,11 @@
 
    if (theme === "light") {
     html.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
     soundOff.play()
    } else {
     html.setAttribute("data-theme", "light")
+      localStorage.setItem("theme", "light");
     soundOn.play()
    }
 
