@@ -1,33 +1,57 @@
 <section>
-  <h1>Hi! I'm <span>Danny<span class="point">.</span></span></h1>
+  <h1><span class="prefix">Hi! I'm </span><span>Danny</span></h1>
   <p>
-    I am a Frontend Engineer & Design Ops with some <a href="/about">passions</a
+    I am a <span class="highlight">Frontend Engineer</span> & <span class="highlight">Design Ops</span> with some <a href="/about">passions</a
     >.
   </p>
   <p>Currently @ <a href="https://herole.de">Herolé</a>.</p>
 </section>
 
 <style lang="scss" scoped>
-  section {
+section {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 85px;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+span {
+  color: var(--accent-color);
+}
+
+.point,
+.highlight {
+  color: var(--accent-color-inverted);
+}
+
+.point {
+  margin-left: -20px;
+}
+
+.prefix {
+  color: inherit;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3.5rem;
+    margin: 0 auto;
     text-align: center;
   }
+}
 
-  h1 {
-    font-size: 5rem;
-  }
+p {
+  font-size: 1.5rem;
 
-  span {
-    color: var(--accent-color);
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
   }
-  .point {
-    color: var(--accent-color-inverted);
-  }
-  p {
-    font-weight: lighter;
-    font-size: 2.3rem;
-
-    @media only screen and (max-width: 600px) {
-      font-size: 1.5rem;
-    }
-  }
+}
 </style>
