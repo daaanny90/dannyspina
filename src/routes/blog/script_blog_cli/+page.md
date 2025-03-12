@@ -268,6 +268,6 @@ ChatGPT has been very helpful at work, and while this task was slightly outside 
 
 I've come to realize that ChatGPT excels at smaller tasks rather than code generation with complex logic. Nevertheless, for tasks like this one, it can be very useful.
 
-Perhaps this little script can serve as a basis for your own post generation process for your static blog, or maybe it will remind you of something else you wanted to automate. Either way, I hope you find it useful. If you have any questions, don't hesitate to [contact me](/contact).
+Perhaps this little script can serve as a basis for your own post generation process for your static blog, or maybe it will remind you of something else you wanted to automate. Either way, I hope you find it useful. If you have any questions, don't hesitate to [contact me](/contacts).
 
 Ciao!
