@@ -9,7 +9,7 @@
     <!--TODO: evaluate if remove completly the section-->
     <!-- <MenuItem isSidebar={true} link="/books" text="Books" /> -->
     <MenuItem isSidebar={true} link="/about" text="About" />
-    <MenuItem isSidebar={true} link="/contact" text="Contact" />
+    <MenuItem isSidebar={true} link="/contacts" text="Contacts" />
     <MenuItem isSidebar={true} link="/asincrono" text="Podcast" />
   </div>
 </div>
