@@ -22,7 +22,17 @@ export let title: string;
       }
 
       &::marker {
-        color: var(--accent-color);
+        color: var(--accent-color-inverted);
+      }
+    }
+
+    &[open] {
+      summary {
+        color: var(--accent-color-inverted);
+
+        &::marker {
+          color: var(--accent-color);
+        }
       }
     }
   }
