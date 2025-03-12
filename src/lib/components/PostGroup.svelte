@@ -48,7 +48,7 @@
     }
 
     ul {
-      border: 2px solid var(--text-color);
+      border: 2px solid var(--accent-color-inverted);
 
       li {
         margin-bottom: 0.5rem;

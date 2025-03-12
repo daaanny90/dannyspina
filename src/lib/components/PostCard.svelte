@@ -26,7 +26,7 @@
   </h2>
   <p>{subtitle}</p>
   <div class="card-footer">
-    <span class="cat">{pusblishDate}</span>
+    <span class="cat date">{pusblishDate}</span>
     <div class="categories">
       {#each categories as category}
         <span class="cat">#{category}</span>
@@ -45,7 +45,9 @@
     .categories {
       .cat {
         font-size: 0.7rem;
+        color: var(--accent-color);
       }
+
       .cat:not(:first-child) {
         margin-left: 0.3rem;
       }
@@ -58,7 +60,7 @@
     color: inherit;
     height: 100%;
     display: block;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--accent-color-inverted);
     padding: 1rem;
 
     &:visited,

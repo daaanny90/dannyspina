@@ -64,6 +64,7 @@
   }
   .date {
     align-self: flex-start;
+    color: var(--accent-color-inverted);
   }
 
   .footer {

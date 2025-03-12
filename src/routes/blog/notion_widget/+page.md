@@ -46,6 +46,6 @@ I set yearly goals, as well as intermediate quarterly goals, and organize my to-
 
 ## Hope it can help!
 
-I hope you find this widget to be a useful and valuable tool. If you have any **questions, concerns, suggestions, or discover any unexpected bugs**, please don't hesitate to [reach out to me directly](/contact) or [open an issue on GitHub](https://github.com/daaanny90/dannyspina) so that I can address them. I am committed to **continuing to update it over time** with improvements and new features. Your feedback is essential for me to ensure that this widget is of the highest quality and remains as useful as possible.
+I hope you find this widget to be a useful and valuable tool. If you have any **questions, concerns, suggestions, or discover any unexpected bugs**, please don't hesitate to [reach out to me directly](/contacts) or [open an issue on GitHub](https://github.com/daaanny90/dannyspina) so that I can address them. I am committed to **continuing to update it over time** with improvements and new features. Your feedback is essential for me to ensure that this widget is of the highest quality and remains as useful as possible.
 
 Ciao! 😊

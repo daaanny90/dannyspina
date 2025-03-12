@@ -15,7 +15,7 @@
     '/blog',
     '/books',
     '/about',
-    '/contact'
+    '/contacts'
   ]
   
   backArrowPage.subscribe(page => {

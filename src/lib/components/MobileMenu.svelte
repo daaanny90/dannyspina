@@ -16,7 +16,7 @@
   <!--TODO: evaluate if remove completly the section-->
   <!-- <MenuItem link="/books" text="Books" /> -->
   <MenuItem link="/about" text="About" />
-  <MenuItem link="/contact" text="Contact" />
+  <MenuItem link="/contacts" text="Contacts" />
   <MenuItem link="/asincrono" text="Podcast" />
 </div>
 

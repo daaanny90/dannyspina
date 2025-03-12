@@ -56,7 +56,7 @@
       float: left;
       margin: 1rem 0 1rem;
       padding: 1rem;
-      border-left: 2px solid var(--accent-color);
+      border-left: 2px solid var(--accent-color-inverted);
       position: relative;
       left: auto;
     }

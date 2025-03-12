@@ -34,7 +34,7 @@ publishDate = new Date(episode.pubDate).toLocaleDateString("gb-GB", dateOptions)
 
 {#if episode}
   <PageTitle title={episode.title}/>
-  <p>{publishDate}</p>
+  <p class="date">{publishDate}</p>
  {@html episode.description}
   {#if episode.audioUrl}
     <div class="audio-player">
@@ -118,5 +118,8 @@ audio:hover {
   width: 8rem;
   height: 8rem;
   border-radius: 5px;
+}
+.date {
+  color: var(--accent-color-inverted);
 }
 </style>

@@ -15,9 +15,10 @@
     <!-- END Pixel Code -->
   </head>
   <body data-sveltekit-preload-code="viewport" data-sveltekit-noscroll>
-    <div>%sveltekit.body%</div>
+    %sveltekit.body%
     <script>
-      document.documentElement.setAttribute("data-theme", "dark");
+    const themeSettings = localStorage.getItem("theme") ?? "dark";
+      document.documentElement.setAttribute("data-theme", themeSettings);
     </script>
   </body>
 </html>
