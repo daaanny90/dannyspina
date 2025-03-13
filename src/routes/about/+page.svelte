@@ -234,27 +234,7 @@
 
 <h2>Credits</h2>
 
-<a
-  href="https://www.flaticon.com/free-icons/automation"
-  title="automation icons"
-  >Automation icons created by Vector Squad - Flaticon</a
->
-<a href="https://www.flaticon.com/free-icons/bot" title="bot icons"
-  >Bot icons created by Smashicons - Flaticon</a
->
-<a
-  href="https://www.flaticon.com/free-icons/interaction"
-  title="interaction icons">Interaction icons created by pojok d - Flaticon</a
->
-<a href="https://www.flaticon.com/free-icons/person" title="person icons"
-  >Person icons created by DinosoftLabs - Flaticon</a
->
-<a
-  href="https://www.flaticon.com/free-icons/proofreading"
-  title="proofreading icons"
-  >Proofreading icons created by Vectors Tank - Flaticon</a
->
-
+Vectors and icons by <a href="https://dazzleui.gumroad.com/l/dazzleiconsfree?ref=svgrepo.com" target="_blank">Dazzle Ui</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>
 <style lang="scss" scoped>
   .header {
     display: flex;

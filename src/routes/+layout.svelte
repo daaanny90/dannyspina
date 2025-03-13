@@ -42,7 +42,7 @@
 
     overflow-x: hidden;
 
-    @media screen and (max-width: 800px), screen and (max-height: 530px) {
+    @media screen and (max-width: $breakpoint-mobile), screen and (max-height: 330px) {
       margin: 8rem 1rem 0 1rem;
     }
   }
