@@ -16,10 +16,7 @@ export let title: string;
 
     summary {
       cursor: pointer;
-
-      &:hover {
-        color: var(--accent-color);
-      }
+      color: var(--accent-color);
 
       &::marker {
         color: var(--accent-color-inverted);

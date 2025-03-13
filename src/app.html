@@ -15,7 +15,9 @@
     <!-- END Pixel Code -->
   </head>
   <body data-sveltekit-preload-code="viewport" data-sveltekit-noscroll>
-    %sveltekit.body%
+    <div style="display: contents">
+      %sveltekit.body%
+    </div>
     <script>
     const themeSettings = localStorage.getItem("theme") ?? "dark";
       document.documentElement.setAttribute("data-theme", themeSettings);

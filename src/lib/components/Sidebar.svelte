@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: space-around;
 
-    @media screen and (max-width: 900px), screen and (max-height: 530px) {
+    @media screen and (max-width: $breakpoint-mobile), screen and (max-height: 530px) {
       display: none;
     }
 
