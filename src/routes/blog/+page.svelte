@@ -39,7 +39,21 @@ function closeSearch() {
   searchResult = [];
 }
 
+let virtualKeyboard = false;
+
+
 onMount(() => {
+  if ('visualViewport' in window) {
+    const VIEWPORT_VS_CLIENT_HEIGHT_RATIO = 0.75;
+    window.visualViewport.addEventListener('resize', function (event) {
+      if (
+        (event.target.height * event.target.scale) / window.screen.height <
+          VIEWPORT_VS_CLIENT_HEIGHT_RATIO
+      )
+        virtualKeyboard = true;
+        else virtualKeyboard = false;
+    });
+  }
   window.addEventListener("keydown", handleGlobalKeydown, true);
 return () => {
     window.removeEventListener("keydown", handleGlobalKeydown, true);
@@ -84,8 +98,11 @@ function openSearch() {
     class="search-background" 
     on:click|self={closeSearch}
     on:keydown={handleInputKeydown}
+    class:virtual-keyboard="{ virtualKeyboard }"
   >
-    <div class="search">
+    <div class="search" 
+      class:virtual-keyboard="{ virtualKeyboard }"
+    >
       <input 
         bind:this={search} 
         type="search" 
@@ -136,7 +153,6 @@ function openSearch() {
   font-size: 1.5rem;
   height: 60px;
   font-family: "JetBrains Mono", sans-serif;
-  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,6 +192,10 @@ color: var(--accent-color);
   backdrop-filter: blur(7px);
 }
 
+.search-background.virtual-keyboard {
+  align-items: flex-start;
+}
+
 .search {
   width: 500px;
   min-height: 400px;
@@ -185,7 +205,10 @@ color: var(--accent-color);
   border: 2px solid var(--accent-color);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+}
+
+.search.virtual-keyboard {
+  margin-top: 6rem;
 }
 
 .search input {
