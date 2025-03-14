@@ -20,7 +20,7 @@
     </div>
     <script>
     const themeSettings = localStorage.getItem("theme") ?? "dark";
-      document.documentElement.setAttribute("data-theme", themeSettings);
+      document.documentElement.dataset.theme = themeSettings;
     </script>
   </body>
 </html>
