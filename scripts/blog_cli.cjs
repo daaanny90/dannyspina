@@ -25,6 +25,7 @@ const categoryOptions = [
   "Personal Growth",
   "Personal Life",
   "Various",
+  "Photoessay",
 ];
 
 const bookCategoryOptions = [
