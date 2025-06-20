@@ -1,6 +1,6 @@
 ---
 title: Ti Lascio Qui
-subtitle: Un pensiero dedicato a Dresda, città con cui ho condiviso gli anni piu belli e importanti della mia vita
+subtitle: Un photoessay e un pensiero dedicati a Dresda, città con cui ho condiviso gli anni piu belli e importanti della mia vita
 date: "2025-06-19"
 categories:
   - "Photoessay"
