@@ -24,6 +24,10 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   overflow-x: hidden;
+
+  @media (min-width: 512px) {
+    font-size: 20px;
+  }
 }
 
 h1,
