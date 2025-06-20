@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
   figure {
-    margin: 0;
+    margin: 3rem 0;
     z-index: 100;
 
     img {
