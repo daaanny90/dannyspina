@@ -1,0 +1,47 @@
+name: Check RSS and Trigger Netlify
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  check-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install feedparser
+        run: pip install feedparser
+
+      - name: Check RSS feed
+        id: rss
+        run: |
+          python - <<EOF
+          import feedparser, os, sys, json
+          
+          FEED_URL = "https://anchor.fm/s/101cdbd18/podcast/rss"
+          feed = feedparser.parse(FEED_URL)
+          latest = feed.entries[0].id if "id" in feed.entries[0] else feed.entries[0].link
+
+          record_file = ".last-episode"
+          last = open(record_file).read().strip() if os.path.exists(record_file) else ""
+
+          if latest != last:
+              open(record_file, "w").write(latest)
+              print("::set-output name=updated::true")
+          else:
+              print("::set-output name=updated::false")
+          EOF
+
+      - name: Trigger Netlify build
+        if: steps.rss.outputs.updated == 'true'
+        run: curl -X POST -d {} "$NETLIFY_BUILD_HOOK"
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
