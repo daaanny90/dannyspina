@@ -1,10 +1,9 @@
 <section>
   <h1><span class="prefix">Hi! I'm </span><span>Danny</span></h1>
   <p>
-    I am a <span class="highlight">Frontend Engineer</span> & <span class="highlight">Design Ops</span> with some <a href="/about">passions</a
+    I am a <span class="highlight">Software Developer</span> & <span class="highlight">Design Ops</span> with some <a href="/about">passions</a
     >.
   </p>
-  <p>Currently @ <a href="https://herole.de">Herolé</a>.</p>
 </section>
 
 <style lang="scss" scoped>
