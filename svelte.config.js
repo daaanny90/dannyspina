@@ -2,6 +2,10 @@ import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
 import autoprefixer from "autoprefixer";
+import { fileURLToPath } from "url";
+import path from "path";
+
+const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,8 +22,8 @@ const config = {
     mdsvex({
       extensions: [".md"],
       layout: {
-        blog: "src/routes/blog/post.svelte",
-        books: "src/routes/books/book.svelte",
+        blog: path.join(dirname, "src/routes/blog/post.svelte"),
+        books: path.join(dirname, "src/routes/books/book.svelte"),
       },
     }),
   ],
