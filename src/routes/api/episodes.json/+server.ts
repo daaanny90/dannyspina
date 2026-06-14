@@ -1,5 +1,5 @@
 import { DOMParser } from "xmldom";
-import { json, error } from "@sveltejs/kit";
+import { json } from "@sveltejs/kit";
 
 export const GET = async () => {
   try {
@@ -53,6 +53,6 @@ export const GET = async () => {
     return json(episodes);
   } catch (err) {
     console.error("Error fetching episodes:", err);
-    throw error(500, "Impossibile recuperare il feed RSS");
+    return json([]);
   }
 };

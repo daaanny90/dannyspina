@@ -3,8 +3,11 @@ import { create } from "xmlbuilder2";
 
 export const prerender = true;
 
-export const GET = async () => {
-  const response = await fetch(`https://dannyspina.com/api/posts.json`);
+export const GET = async ({ fetch }) => {
+  const response = await fetch(`/api/posts.json`);
+  if (!response.ok) {
+    return new Response("", { status: 500 });
+  }
   const posts: Post[] = await response.json();
 
   const feed = create({
