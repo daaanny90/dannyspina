@@ -9,7 +9,7 @@ let { episodes } = data;
 <PageTitle title="Asincrono" subtitle="Il mio podcast dove chiacchiero con me" />
 
 <ul class="episode-list">
-  {#each episodes.reverse() as { title, id, pubDate }, index}
+  {#each [...episodes].reverse() as { title, id, pubDate }, index}
     <li>
       <PostCard 
         info="Episode {index + 1}"
