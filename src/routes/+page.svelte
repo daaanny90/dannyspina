@@ -48,7 +48,7 @@
 
   const serviceLog = [
     {
-      years: "2024–now",
+      years: "2024–26",
       client: "Herole Services · DE",
       desc: "Frontend architecture rebuild, new design system, design↔engineering processes",
       tag: "[design-ops]",
@@ -64,6 +64,12 @@
       client: "Ostec · DE",
       desc: "Full stack: Node/TypeScript, Vue, Google Cloud",
       tag: "[full-stack]",
+    },
+    {
+      years: "2017–20",
+      client: "3m5. · DE",
+      desc: "Ausbildung: 3-year apprenticeship as software developer — PHP, React, Docker",
+      tag: "[apprenticeship]",
     },
   ];
 </script>
