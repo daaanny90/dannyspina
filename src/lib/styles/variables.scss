@@ -7,24 +7,21 @@ $font-weight-bold: 600;
 // breakpoints
 $breakpoint-mobile: 900px;
 
-// colors
+// legacy colors (kept for components that still reference them)
 $white: #faf9f6;
 $black: #333;
 $accent-color-dark: #5ebd3e;
 $accent-color-light: #f78200;
 
-html[data-theme='dark'] {
-  --text-color: #{$white};
-  --background-color: #{$black};
-  --accent-color: #{$accent-color-dark};
-  --accent-color-inverted: #{$accent-color-light};
-}
-
+// Sistema 2b "scheda tecnica, grafite": single graphite theme.
+// Legacy custom properties are remapped onto the ds-tokens (tokens.css)
+// so older components keep working without a light/dark split.
+html[data-theme='dark'],
 html[data-theme='light'] {
-  --text-color: #{$black};
-  --background-color: #{$white};
-  --accent-color: #{$accent-color-light};
-  --accent-color-inverted: #{$accent-color-dark};
+  --text-color: var(--ds-color-ink);
+  --background-color: var(--ds-color-bg);
+  --accent-color: var(--ds-color-brass);
+  --accent-color-inverted: var(--ds-color-cold);
 }
 
 // mixins
