@@ -68,6 +68,18 @@
   ];
 </script>
 
+<svelte:head>
+  <meta
+    name="description"
+    content="Danny Spina — software developer (web) in Parma, Italy. Special focus on frontend and design ops. Software that stays serviceable."
+  />
+  <meta property="og:title" content="Danny Spina — software developer" />
+  <meta
+    property="og:description"
+    content="Web software for teams and founders that plan in years, not sprints. Special focus on frontend and design ops."
+  />
+</svelte:head>
+
 <div class="hero">
   <div class="pitch">
     <p class="kicker">SOFTWARE DEVELOPER &middot; WEB &mdash; PARMA, IT</p>

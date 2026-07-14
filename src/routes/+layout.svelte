@@ -30,6 +30,10 @@
   );
 </script>
 
+<svelte:head>
+  <title>Danny Spina — software developer</title>
+</svelte:head>
+
 {#if !excludedRoutesFromLayout.includes(currentRoute)}
   <Header />
 
