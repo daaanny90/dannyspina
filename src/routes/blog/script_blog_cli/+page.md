@@ -119,13 +119,13 @@ program
                 const postDirectory = path.join(
                   __dirname,
                   "../src/routes/blog",
-                  postName
+                  postName,
                 );
 
                 const postImagesDirectory = path.join(
                   __dirname,
                   "../static/images/blog",
-                  postName
+                  postName,
                 );
 
                 const postFilePath = path.join(postDirectory, `+page.md`);
@@ -167,14 +167,14 @@ categories:
                 const branchName = `blog_${postName}`;
                 git.checkoutLocalBranch(branchName, () => {
                   console.log(
-                    `New branch '${branchName}' created and checked out!`
+                    `New branch '${branchName}' created and checked out!`,
                   );
                 });
               })
               .catch(console.error);
           });
         });
-      }
+      },
     );
   });
 
@@ -203,11 +203,11 @@ program
                   const postDirectory = path.join(
                     __dirname,
                     "../src/routes/books",
-                    bookName
+                    bookName,
                   );
                   const postFilePath = path.join(
                     postDirectory,
-                    `${bookName}.md`
+                    `${bookName}.md`,
                   );
 
                   const bookContent = `
@@ -229,7 +229,7 @@ category: ${category}
                   const branchName = `book_${bookName}`;
                   git.checkoutLocalBranch(branchName, () => {
                     console.log(
-                      `New branch '${branchName}' created and checked out!`
+                      `New branch '${branchName}' created and checked out!`,
                     );
                   });
                 })
@@ -237,7 +237,7 @@ category: ${category}
             });
           });
         });
-      }
+      },
     );
   });
 
@@ -250,7 +250,7 @@ Examples:
 
   $ node ./scripts/blog_cli.cjs new-book
     - This command will create a new book post, prompt for book details, and create the book file.
-`
+`,
 );
 
 program.parse(process.argv);

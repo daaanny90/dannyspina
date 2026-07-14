@@ -30,7 +30,7 @@ const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      handleUnseenRoutes: 'warn',
+      handleUnseenRoutes: "warn",
     },
   },
 };

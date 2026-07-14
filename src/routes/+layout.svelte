@@ -1,4 +1,4 @@
-<script charset="utf-8">
+<script>
   import "$lib/styles/tokens.css";
   import "$lib/styles/style.scss";
   import "$lib/styles/variables.scss";
@@ -25,7 +25,8 @@
   $: currentRoute = data.currentRoute;
   $: wide = wideRoutes.some(
     (route) =>
-      currentRoute === route || (route !== "/" && currentRoute.startsWith(route))
+      currentRoute === route ||
+      (route !== "/" && currentRoute.startsWith(route)),
   );
 </script>
 

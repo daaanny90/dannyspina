@@ -22,7 +22,7 @@
 <style lang="scss">
   .affiliate_link {
     @include unstyledLink;
-    
+
     position: absolute;
     width: 2rem;
     padding-left: 0.5rem;

@@ -25,7 +25,7 @@ class Calendar {
     const days = Math.floor(
       (this.currentDate.getTime() -
         new Date(this.currentDate.getFullYear(), 0, 1).getTime()) /
-        (24 * 60 * 60 * 1000)
+        (24 * 60 * 60 * 1000),
     );
 
     return Math.ceil(days / 7);

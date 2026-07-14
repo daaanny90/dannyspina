@@ -16,8 +16,8 @@ $accent-color-light: #f78200;
 // Sistema 2b "scheda tecnica, grafite": single graphite theme.
 // Legacy custom properties are remapped onto the ds-tokens (tokens.css)
 // so older components keep working without a light/dark split.
-html[data-theme='dark'],
-html[data-theme='light'] {
+html[data-theme="dark"],
+html[data-theme="light"] {
   --text-color: var(--ds-color-ink);
   --background-color: var(--ds-color-bg);
   --accent-color: var(--ds-color-brass);
@@ -37,7 +37,7 @@ html[data-theme='light'] {
     border-bottom: 1px dashed var(--background-color);
   }
 
-  html[data-theme='light'] {
+  html[data-theme="light"] {
     :global(a) {
       &:hover {
         border-bottom: 1px dashed $accent-color-dark;
@@ -45,7 +45,7 @@ html[data-theme='light'] {
     }
   }
 
-  html[data-theme='dark'] {
+  html[data-theme="dark"] {
     :global(a) {
       &:hover {
         border-bottom: 1px dashed $accent-color-light;

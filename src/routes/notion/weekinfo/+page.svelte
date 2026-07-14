@@ -10,7 +10,7 @@
     const queryString = window.location.search;
 
     if (queryString.includes("light")) {
-      light = true
+      light = true;
     }
   });
 </script>
@@ -50,19 +50,19 @@
 </div>
 
 <style lang="scss">
-:global(body:has(.background)) {
-  background-color: #191919;
-}
+  :global(body:has(.background)) {
+    background-color: #191919;
+  }
 
-:global(body:has(.background.light)) {
-  background-color: #ffffff;
-}
+  :global(body:has(.background.light)) {
+    background-color: #ffffff;
+  }
   // manage theme palette
   .background {
     --notion-primary: #d1d1d1;
     --notion-secondary: #191919;
   }
-  
+
   .background.light {
     --notion-primary: #191919;
     --notion-secondary: #d1d1d1;
@@ -85,7 +85,7 @@
     h2 {
       color: var(--notion-primary);
     }
-    
+
     &.light {
       color: var(--notion-secondary);
     }
@@ -145,5 +145,4 @@
       }
     }
   }
-
 </style>

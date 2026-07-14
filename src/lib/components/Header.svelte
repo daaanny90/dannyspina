@@ -38,7 +38,8 @@
     <nav class="desktop" aria-label="Main">
       {#each items as item}
         <a href={item.href} class:active={pathname.startsWith(item.match)}>
-          {item.n} {item.label}
+          {item.n}
+          {item.label}
         </a>
       {/each}
     </nav>
@@ -123,7 +124,8 @@
     a {
       border-bottom: 2px solid transparent;
       padding-bottom: 2px;
-      transition: color var(--ds-motion-shutter) var(--ds-ease-mechanical),
+      transition:
+        color var(--ds-motion-shutter) var(--ds-ease-mechanical),
         border-color var(--ds-motion-shutter) var(--ds-ease-mechanical);
 
       &:hover {

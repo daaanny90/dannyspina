@@ -5,20 +5,21 @@
   export let category: string;
   export let posts: Post[];
 </script>
+
 <article>
   <header>
     <h2>{category}</h2>
     {#if posts.length > 4}
-      <a href="/blog/categories/{category}"
-        >Read all ({posts.length})</a
-      >
+      <a href="/blog/categories/{category}">Read all ({posts.length})</a>
     {/if}
   </header>
   <ul>
     {#each posts.slice(0, 4) as post}
       <li>
         <a href={post.path}>{post.meta.title}</a>
-        {#if post.latest} <Badge text="New" outline/> {/if}
+        {#if post.latest}
+          <Badge text="New" outline />
+        {/if}
       </li>
     {/each}
   </ul>
@@ -28,9 +29,9 @@
   .badge {
     background-color: var(--accent-color);
     color: var(--background-color);
-    padding: .1rem .5rem;
-    margin: 0 .5rem;
-    font-size: .8rem;
+    padding: 0.1rem 0.5rem;
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
     font-family: "JetBrains Mono", sans-serif;
   }
 

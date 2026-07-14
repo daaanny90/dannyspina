@@ -17,7 +17,7 @@ export const GET = async () => {
         path: postPath,
         latest: false,
       };
-    })
+    }),
   );
 
   const sorted = sortedPosts(allPosts);

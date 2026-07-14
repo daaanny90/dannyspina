@@ -1,23 +1,23 @@
 const fs = require("fs-extra");
 const path = require("path");
-const matter = require( "gray-matter");
+const matter = require("gray-matter");
 
 const postsDir = "./src/routes/blog";
 const outputFile = "./static/search-index.json";
 
 async function generateIndex() {
   const files = await fs.readdir(postsDir);
-  const cleanFiles = files.filter(file => { 
+  const cleanFiles = files.filter((file) => {
     if (
-      file !== "categories" && 
-      file !== "+page.svelte" && 
-      file !== "+page.ts" && 
+      file !== "categories" &&
+      file !== "+page.svelte" &&
+      file !== "+page.ts" &&
       file !== "post.svelte" &&
       file !== "index.md"
     ) {
-      return file
+      return file;
     }
-  })
+  });
 
   const index = [];
 

@@ -36,6 +36,7 @@ So, as always happens in these cases, I satisfied a personal need by writing thi
 ## A better dependency audit
 
 NPMGuard is a CLI tool that can be installed globally with npm: `npm i -g npmguard` and it does exactly what I needed: it checks the package.json dependency by dependency, and generates a report on the current situation, telling me which dependencies require my attention and could be problematic:
+
 - unstable packages below version 1
 - archived packages
 - packages with releases too old that don't receive updates

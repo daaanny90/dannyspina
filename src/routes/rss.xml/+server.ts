@@ -28,7 +28,7 @@ export const GET = async ({ fetch }) => {
   channel
     .ele("description")
     .txt(
-      "Danny's blog about coding, books, design, and some personal thoughts."
+      "Danny's blog about coding, books, design, and some personal thoughts.",
     );
   channel.ele("link").txt("https://dannyspina.com");
   channel.ele("language").txt("en");

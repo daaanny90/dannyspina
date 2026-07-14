@@ -4,14 +4,18 @@
 
   const manageMenu = () => {
     menuOpen.set(false);
-  }
+  };
 
   export let link: string;
   export let text: string;
   export let isSidebar = false;
 </script>
 
-<p class:sidebar={isSidebar} class:active={$page.url.pathname.includes(link)} on:click={manageMenu}>
+<p
+  class:sidebar={isSidebar}
+  class:active={$page.url.pathname.includes(link)}
+  on:click={manageMenu}
+>
   <a href={link}>{text}</a>
 </p>
 
@@ -24,7 +28,7 @@
     a {
       color: var(--text-color);
     }
-    
+
     &:hover {
       a {
         text-decoration: line-through;
@@ -37,17 +41,18 @@
     a {
       text-decoration: line-through;
       text-decoration-color: var(--accent-color);
-    }  }
+    }
+  }
 
   a {
     @include unstyledLink;
-    
+
     text-decoration: none;
     font-size: 1.3rem;
     // ...but in the mobile menu must be the opposite
     color: var(--background-color);
     font-weight: 400;
-    font-family: 'JetBrains Mono';
+    font-family: "JetBrains Mono";
 
     &:visited {
       color: inherit;

@@ -4,7 +4,7 @@ export const load = async ({ params, fetch }) => {
   const posts = await response.json();
 
   const matchingPosts = posts.filter((post) =>
-    post.meta.categories.includes(currentCategory)
+    post.meta.categories.includes(currentCategory),
   );
 
   return {

@@ -64,13 +64,13 @@ program
                 const postDirectory = path.join(
                   __dirname,
                   "../src/routes/blog",
-                  postName
+                  postName,
                 );
 
                 const postImagesDirectory = path.join(
                   __dirname,
                   "../static/images/blog",
-                  postName
+                  postName,
                 );
 
                 const postFilePath = path.join(postDirectory, `+page.md`);
@@ -112,14 +112,14 @@ human: 100
                 const branchName = `blog_${postName}`;
                 git.checkoutLocalBranch(branchName, () => {
                   console.log(
-                    `New branch '${branchName}' created and checked out!`
+                    `New branch '${branchName}' created and checked out!`,
                   );
                 });
               })
               .catch(console.error);
           });
         });
-      }
+      },
     );
   });
 
@@ -148,12 +148,9 @@ program
                   const postDirectory = path.join(
                     __dirname,
                     "../src/routes/books",
-                    bookName
+                    bookName,
                   );
-                  const postFilePath = path.join(
-                    postDirectory,
-                    `+page.md`
-                  );
+                  const postFilePath = path.join(postDirectory, `+page.md`);
 
                   const bookContent = `---
 title: ${title}
@@ -183,42 +180,42 @@ category: ${category}
             });
           });
         });
-      }
+      },
     );
   });
 
 program
-  .command('new-weekly')
-  .description('create a new weekly post')
+  .command("new-weekly")
+  .description("create a new weekly post")
   .action(() => {
-    rl.question('how was your moday?', (monday) => {
-      rl.question('how was your thuesday?', (tuesday) => {
-        rl.question('how was your wednesday?', (wednesday) => {
-          rl.question('how was your thursday?', (thursday) => {
-            rl.question('how was yout friday?', (friday) => {
+    rl.question("how was your moday?", (monday) => {
+      rl.question("how was your thuesday?", (tuesday) => {
+        rl.question("how was your wednesday?", (wednesday) => {
+          rl.question("how was your thursday?", (thursday) => {
+            rl.question("how was yout friday?", (friday) => {
               rl.close();
 
               const currentDate = new Date();
               const postDate = new Date().toISOString().slice(0, 10);
 
-              const year = currentDate.toLocaleDateString('en', { year: '2-digit' })
+              const year = currentDate.toLocaleDateString("en", {
+                year: "2-digit",
+              });
               const startDate = new Date(currentDate.getFullYear(), 0, 1);
-              const days = Math.floor((currentDate - startDate) /
-                (24 * 60 * 60 * 1000));
+              const days = Math.floor(
+                (currentDate - startDate) / (24 * 60 * 60 * 1000),
+              );
 
               const weekNumber = Math.ceil(days / 7);
 
-              const weeklyName = `weekly${weekNumber}${year}`
+              const weeklyName = `weekly${weekNumber}${year}`;
 
               const weeklyDirectory = path.join(
                 __dirname,
                 "../src/routes/blog",
-                weeklyName
+                weeklyName,
               );
-              const weeklyFilePath = path.join(
-                weeklyDirectory,
-                `+page.md`
-              );
+              const weeklyFilePath = path.join(weeklyDirectory, `+page.md`);
 
               const weeklyContent = `---
 title: weekly${weekNumber}${year}
@@ -254,12 +251,12 @@ ${friday}
               fs.writeFileSync(weeklyFilePath, weeklyContent);
 
               console.log(`New weekly post created successfully!`);
-            })
-          })
-        })
-      })
-    })
-  })
+            });
+          });
+        });
+      });
+    });
+  });
 
 program.addHelpText(
   "after",
@@ -273,7 +270,7 @@ program.addHelpText(
   
 $ node./ scripts / blog_cli.cjs new-weekly
                 - This command will create a new weekly post, prompt for week days details, and create the weekly file.
-`
+`,
 );
 
 program.parse(process.argv);

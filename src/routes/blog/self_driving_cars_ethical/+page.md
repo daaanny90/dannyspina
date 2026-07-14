@@ -20,9 +20,9 @@ I want to emphasize **full self-driving cars**. What I mean is cars that can dri
 Now, imagine that one of these cars is in trouble. An emergency situation happens where the car should choose between two options:
 
 1. **Sacrifice your life to save the life of another person** <br />
-   *Example: a person crosses the road without looking. The speed of the car, the environment, and the position of the person leave the car with only two choices: turn really hard the steering wheel left or right, saving the life of the person, but probably killing the driver, as the car is also going to crash against a wall **OR** will try to brake but probably the person will die, while the driver stays safe.*
+   _Example: a person crosses the road without looking. The speed of the car, the environment, and the position of the person leave the car with only two choices: turn really hard the steering wheel left or right, saving the life of the person, but probably killing the driver, as the car is also going to crash against a wall **OR** will try to brake but probably the person will die, while the driver stays safe._
 2. **Choose between two people** <br/>
-   *Example: two people are crossing the road, and the car must choose whether to turn right and save the person on the left or the opposite.*
+   _Example: two people are crossing the road, and the car must choose whether to turn right and save the person on the left or the opposite._
 
 I doubt that this kind of situation could really happen in reality or, if it can, it has an extremely low possibility of happening. I think about this more like a nice mental and theoretical exercise.
 

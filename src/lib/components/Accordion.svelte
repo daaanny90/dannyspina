@@ -1,10 +1,10 @@
 <script lang="ts">
-export let title: string;
+  export let title: string;
 </script>
 
 <details>
   <summary><h3>{title}</h3></summary>
-  <slot></slot>
+  <slot />
 </details>
 
 <style lang="scss" scoped>

@@ -1,6 +1,6 @@
 ---
 title: Leadership without ego
-subtitle: Spoiler, bad leaders have big ego 
+subtitle: Spoiler, bad leaders have big ego
 date: "2024-03-26"
 categories:
   - "Thoughts"
@@ -16,7 +16,7 @@ human: 90
 
 Leadership is a really cool thing.
 
-I've read the book ["Leadership, Strategy, and Tactics" by Jocko Willink](https://www.ethicalbooksearch.com/?query=jocko+willink+leadership+strategy+and+tactics), and it gave me a really good point of view I can use to see leadership (and be a subordinate). This perspective gave me the chance to analyze all the people I encountered in my career who had leadership positions (and where I was a subordinate), and I noticed a lot of interesting things. Also, I recognized a lot of errors we both <Sidenote text="The leader and me" /> made due to ego. 
+I've read the book ["Leadership, Strategy, and Tactics" by Jocko Willink](https://www.ethicalbooksearch.com/?query=jocko+willink+leadership+strategy+and+tactics), and it gave me a really good point of view I can use to see leadership (and be a subordinate). This perspective gave me the chance to analyze all the people I encountered in my career who had leadership positions (and where I was a subordinate), and I noticed a lot of interesting things. Also, I recognized a lot of errors we both <Sidenote text="The leader and me" /> made due to ego.
 
 I started to notice and reflect on different things regarding leadership; these are some of them.
 
@@ -28,7 +28,7 @@ There are many memes that illustrate this concept, but truly understanding it is
 
 <ImagePost file="{imagesPath}/leadership_meme.webp" alt="leadership meme, the difference between a boss and a leader" caption="I would put the leader behind" credits='' position="center" />
 
-A leader leads, no doubt, but they do it *for* the team. Their leadership methods have a purpose: to accomplish a mission as a team.
+A leader leads, no doubt, but they do it _for_ the team. Their leadership methods have a purpose: to accomplish a mission as a team.
 
 Transitioning from the military world of Jocko back into the tech industry, the purpose is to close tickets, ship features, and solve bugs. A leader is there to do everything in their power to enable the team to work together in the most efficient way possible to do the best job possible.
 
@@ -88,4 +88,3 @@ Sounds good, right?
 Well, I think that to have this, a leader, as well as their subordinates, should just learn how to put their ego in check and develop humility.
 
 By doing so, a lot of cool things will start to happen.
-

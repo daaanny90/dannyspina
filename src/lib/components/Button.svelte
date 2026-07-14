@@ -5,7 +5,7 @@
   export let styling: "full-width" | "" = "";
 </script>
 
-<button 
+<button
   class:centered={position === "centered"}
   class:fullWidth={styling === "full-width"}
   on:click={clickFunc}

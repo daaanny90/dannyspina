@@ -73,9 +73,9 @@
 </p>
 
 <p>
-  Now, more than ever, human written content is <strong>special</strong> I got a
-  really nice feeling now reading a human content instead of a generated one, and
-  I give a lot more value to something that comes from a real brain.
+  Now, more than ever, human written content is <strong>special</strong> I got a really
+  nice feeling now reading a human content instead of a generated one, and I give
+  a lot more value to something that comes from a real brain.
 </p>
 
 <h2>The Idea</h2>

@@ -10,29 +10,29 @@ export const outerHeight = (elSelector: string) => {
   const elm = document.querySelector(elSelector);
 
   const elmHeight = parseInt(
-    document.defaultView.getComputedStyle(elm, "").getPropertyValue("height")
+    document.defaultView.getComputedStyle(elm, "").getPropertyValue("height"),
   );
   const elmMargin =
     parseInt(
       document.defaultView
         .getComputedStyle(elm, "")
-        .getPropertyValue("margin-top")
+        .getPropertyValue("margin-top"),
     ) +
     parseInt(
       document.defaultView
         .getComputedStyle(elm, "")
-        .getPropertyValue("margin-bottom")
+        .getPropertyValue("margin-bottom"),
     );
   const elmPadding =
     parseInt(
       document.defaultView
         .getComputedStyle(elm, "")
-        .getPropertyValue("padding-top")
+        .getPropertyValue("padding-top"),
     ) +
     parseInt(
       document.defaultView
         .getComputedStyle(elm, "")
-        .getPropertyValue("padding-bottom")
+        .getPropertyValue("padding-bottom"),
     );
   return elmHeight + elmMargin + elmPadding;
 };
@@ -46,11 +46,13 @@ export const outerHeight = (elSelector: string) => {
  */
 export const sortedPosts = (posts: Post[]) => {
   return posts.sort(
-    (a, b) => (new Date(b.meta.date) as any) - (new Date(a.meta.date) as any)
+    (a, b) => (new Date(b.meta.date) as any) - (new Date(a.meta.date) as any),
   );
 };
 
-export const groupPostsByCategory = (posts: Post[]): {
+export const groupPostsByCategory = (
+  posts: Post[],
+): {
   [category: string]: Post[];
 } => {
   const groupedPosts: { [category: string]: Post[] } = {};
@@ -65,4 +67,4 @@ export const groupPostsByCategory = (posts: Post[]): {
   });
 
   return groupedPosts;
-}
+};

@@ -3,40 +3,66 @@
 
 :root {
   /* ---- colore: 5 tinte totali, come da brief ---- */
-  --ds-color-bg: #26221c;            /* grafite calda: metallo brunito, non #000 da terminale */
-  --ds-color-bg-raised: #2b2721;     /* superficie rialzata (schede, tabelle): +1 passo di luce */
-  --ds-color-ink: #ede7da;           /* avorio tecnico: carta del manuale, non bianco puro */
-  --ds-color-ink-muted: #a79e8d;     /* testo secondario: leggibile, mai grigio-UI freddo */
-  --ds-color-ink-faint: #6b6355;     /* annotazioni e ironia da manuale: presenti, sussurrate */
-  --ds-color-brass: #c99b3f;         /* ottone: unico caldo, riservato ad azioni e numerazione */
-  --ds-color-on-brass: #26221c;      /* testo su ottone */
-  --ds-color-cold: #7c99a6;          /* accento freddo: solo stati informativi/visited; raro */
+  --ds-color-bg: #26221c; /* grafite calda: metallo brunito, non #000 da terminale */
+  --ds-color-bg-raised: #2b2721; /* superficie rialzata (schede, tabelle): +1 passo di luce */
+  --ds-color-ink: #ede7da; /* avorio tecnico: carta del manuale, non bianco puro */
+  --ds-color-ink-muted: #a79e8d; /* testo secondario: leggibile, mai grigio-UI freddo */
+  --ds-color-ink-faint: #6b6355; /* annotazioni e ironia da manuale: presenti, sussurrate */
+  --ds-color-brass: #c99b3f; /* ottone: unico caldo, riservato ad azioni e numerazione */
+  --ds-color-on-brass: #26221c; /* testo su ottone */
+  --ds-color-cold: #7c99a6; /* accento freddo: solo stati informativi/visited; raro */
 
   /* ---- linee e griglia: la millimetrata sussurrata ---- */
-  --ds-color-line: rgba(237, 231, 218, 0.35);       /* filetto strutturale */
-  --ds-color-line-soft: rgba(237, 231, 218, 0.14);  /* filetto di appoggio */
-  --ds-color-grid: rgba(237, 231, 218, 0.03);       /* passo 8px */
-  --ds-color-grid-major: rgba(237, 231, 218, 0.055);/* passo 40px */
-  --ds-grid-bg: repeating-linear-gradient(to right, var(--ds-color-grid) 0, var(--ds-color-grid) 1px, transparent 1px, transparent 8px),
-    repeating-linear-gradient(to bottom, var(--ds-color-grid) 0, var(--ds-color-grid) 1px, transparent 1px, transparent 8px),
-    repeating-linear-gradient(to right, var(--ds-color-grid-major) 0, var(--ds-color-grid-major) 1px, transparent 1px, transparent 40px),
-    repeating-linear-gradient(to bottom, var(--ds-color-grid-major) 0, var(--ds-color-grid-major) 1px, transparent 1px, transparent 40px);
+  --ds-color-line: rgba(237, 231, 218, 0.35); /* filetto strutturale */
+  --ds-color-line-soft: rgba(237, 231, 218, 0.14); /* filetto di appoggio */
+  --ds-color-grid: rgba(237, 231, 218, 0.03); /* passo 8px */
+  --ds-color-grid-major: rgba(237, 231, 218, 0.055); /* passo 40px */
+  --ds-grid-bg:
+    repeating-linear-gradient(
+      to right,
+      var(--ds-color-grid) 0,
+      var(--ds-color-grid) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--ds-color-grid) 0,
+      var(--ds-color-grid) 1px,
+      transparent 1px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--ds-color-grid-major) 0,
+      var(--ds-color-grid-major) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--ds-color-grid-major) 0,
+      var(--ds-color-grid-major) 1px,
+      transparent 1px,
+      transparent 40px
+    );
 
   /* ---- tipografia: grottesca per il discorso, mono per la misura ---- */
-  --ds-font-sans: "Archivo", sans-serif;            /* compatta, sa di DIN senza costume */
-  --ds-font-mono: "JetBrains Mono", monospace;      /* già tua: metadati, numeri, etichette */
-  --ds-text-xs: 0.75rem;     /* 12 — annotazioni ↳ */
-  --ds-text-s: 0.8125rem;    /* 13 — meta, nav, tabelle */
-  --ds-text-m: 0.9375rem;    /* 15 — ui secondaria */
+  --ds-font-sans: "Archivo", sans-serif; /* compatta, sa di DIN senza costume */
+  --ds-font-mono:
+    "JetBrains Mono", monospace; /* già tua: metadati, numeri, etichette */
+  --ds-text-xs: 0.75rem; /* 12 — annotazioni ↳ */
+  --ds-text-s: 0.8125rem; /* 13 — meta, nav, tabelle */
+  --ds-text-m: 0.9375rem; /* 15 — ui secondaria */
   --ds-text-body: 1.0625rem; /* 17 — corpo testo */
   --ds-text-lead: 1.1875rem; /* 19 — lead sotto i titoli */
-  --ds-text-h3: 1.5rem;      /* 24 */
-  --ds-text-h2: 2.125rem;    /* 34 */
-  --ds-text-h1: 3rem;        /* 48 — titoli di pagina interna */
-  --ds-text-display: 4.25rem;/* 68 — solo hero della home */
-  --ds-leading-tight: 1.05;  /* titoli: piombo stretto */
-  --ds-leading-text: 1.6;    /* corpo: aria da manuale */
-  --ds-tracking-label: 0.1em;/* etichette mono maiuscole */
+  --ds-text-h3: 1.5rem; /* 24 */
+  --ds-text-h2: 2.125rem; /* 34 */
+  --ds-text-h1: 3rem; /* 48 — titoli di pagina interna */
+  --ds-text-display: 4.25rem; /* 68 — solo hero della home */
+  --ds-leading-tight: 1.05; /* titoli: piombo stretto */
+  --ds-leading-text: 1.6; /* corpo: aria da manuale */
+  --ds-tracking-label: 0.1em; /* etichette mono maiuscole */
 
   /* ---- spaziatura: base 8, mezzo passo 4 ---- */
   --ds-space-1: 4px;
@@ -54,6 +80,11 @@
   --ds-shadow-sheet: 0 2px 8px rgba(0, 0, 0, 0.25); /* la scheda si stacca dal banco, poco */
 
   /* ---- motion: uno scatto d'otturatore, non un fade ---- */
-  --ds-motion-shutter: 140ms;                       /* durata unica; niente oltre 200ms */
-  --ds-ease-mechanical: cubic-bezier(0.2, 0, 0, 1); /* parte netto, si arresta netto */
+  --ds-motion-shutter: 140ms; /* durata unica; niente oltre 200ms */
+  --ds-ease-mechanical: cubic-bezier(
+    0.2,
+    0,
+    0,
+    1
+  ); /* parte netto, si arresta netto */
 }

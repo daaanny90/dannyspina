@@ -3,13 +3,13 @@
 </script>
 
 <section>
-  <slot></slot>
+  <slot />
 </section>
 
 <style lang="scss" scoped>
-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 </style>

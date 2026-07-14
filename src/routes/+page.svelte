@@ -74,8 +74,8 @@
     <h1>Software that stays serviceable.</h1>
     <p class="lead">
       Web software for teams and founders that plan in years, not sprints
-      &mdash; with a special focus on frontend and design ops. The framework
-      is a detail; the discipline is not.
+      &mdash; with a special focus on frontend and design ops. The framework is
+      a detail; the discipline is not.
     </p>
     <div class="cta-row">
       <a class="ds-btn" href="/contacts">WORK WITH ME &rarr;</a>
@@ -103,7 +103,9 @@
         <h3>{service.title}</h3>
         <p class="desc">{service.desc}</p>
         {#if service.sheet}
-          <a class="sheet" href={service.href}>SPEC SHEET {service.sheet} &rarr;</a>
+          <a class="sheet" href={service.href}
+            >SPEC SHEET {service.sheet} &rarr;</a
+          >
         {:else}
           <a class="sheet" href={service.href}>REQUEST SPEC SHEET &rarr;</a>
         {/if}
@@ -163,9 +165,9 @@
 
 <section class="bench-strip">
   <p class="text">
-    <span class="strip-label">OFF THE BENCH &mdash;</span> I also repair
-    mechanical cameras, write a book on the method, and build my own bench
-    tools: forfy &middot; strider &middot; pit stop.
+    <span class="strip-label">OFF THE BENCH &mdash;</span> I also repair mechanical
+    cameras, write a book on the method, and build my own bench tools: forfy &middot;
+    strider &middot; pit stop.
   </p>
   <a class="workshop" href="/workshop">THE WORKSHOP &rarr;</a>
 </section>

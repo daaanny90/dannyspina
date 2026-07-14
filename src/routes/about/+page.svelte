@@ -19,15 +19,42 @@
   Interested in my CV? <a href="https://cv.dannyspina.com">Get it here</a>
   <br />
   <br />
-  <p>I'm Danny, a <strong>Frontend Engineer</strong> with a strong focus on <strong>architecture, design systems, and scalable web applications</strong>.</p>
+</p>
+<p>
+  I'm Danny, a <strong>Frontend Engineer</strong> with a strong focus on
+  <strong>architecture, design systems, and scalable web applications</strong>.
+</p>
 
-<p>With {yearsOfExperience} years of experience, I specialize in <strong>TypeScript, Vue.js, Web Components, and frontend architecture</strong>. My expertise lies in <strong>building maintainable design systems, implementing component-driven development, and applying domain-driven design principles</strong> to create clean, scalable codebases.</p>
+<p>
+  With {yearsOfExperience} years of experience, I specialize in
+  <strong>TypeScript, Vue.js, Web Components, and frontend architecture</strong
+  >. My expertise lies in
+  <strong
+    >building maintainable design systems, implementing component-driven
+    development, and applying domain-driven design principles</strong
+  > to create clean, scalable codebases.
+</p>
 
-<p>While my strength is in frontend engineering, I also have also <strong>experience in backend development</strong>. I’m comfortable working with <strong>Node.js, Express, and databases like PostgreSQL and MongoDB</strong>, which helps me build solutions with a broader architectural perspective.</p>
+<p>
+  While my strength is in frontend engineering, I also have also <strong
+    >experience in backend development</strong
+  >. I’m comfortable working with
+  <strong>Node.js, Express, and databases like PostgreSQL and MongoDB</strong>,
+  which helps me build solutions with a broader architectural perspective.
+</p>
 
-<p>Beyond coding, I focus on <strong>improving development workflows</strong>, bridging the gap between <strong>design and engineering</strong>, and ensuring that every system I work on is built for long-term sustainability.</p>
+<p>
+  Beyond coding, I focus on <strong>improving development workflows</strong>,
+  bridging the gap between <strong>design and engineering</strong>, and ensuring
+  that every system I work on is built for long-term sustainability.
+</p>
 
-<p>If you’re passionate about <strong>frontend architecture, scalable design patterns, and building robust web applications</strong>, let’s connect!</p>
+<p>
+  If you’re passionate about <strong
+    >frontend architecture, scalable design patterns, and building robust web
+    applications</strong
+  >, let’s connect!
+</p>
 <h2>My passions</h2>
 
 <p>I have some passions outside the tech world:</p>
@@ -234,7 +261,13 @@
 
 <h2>Credits</h2>
 
-Vectors and icons by <a href="https://dazzleui.gumroad.com/l/dazzleiconsfree?ref=svgrepo.com" target="_blank">Dazzle Ui</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>
+Vectors and icons by<a
+  href="https://dazzleui.gumroad.com/l/dazzleiconsfree?ref=svgrepo.com"
+  target="_blank">Dazzle Ui</a
+>
+in CC Attribution License via
+<a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>
+
 <style lang="scss" scoped>
   .header {
     display: flex;

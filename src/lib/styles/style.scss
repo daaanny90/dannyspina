@@ -49,7 +49,8 @@ a {
   text-decoration: none;
   border-bottom: 1px solid var(--ds-color-brass);
   padding-bottom: 1px;
-  transition: color var(--ds-motion-shutter) var(--ds-ease-mechanical),
+  transition:
+    color var(--ds-motion-shutter) var(--ds-ease-mechanical),
     border-color var(--ds-motion-shutter) var(--ds-ease-mechanical);
 
   &:hover {

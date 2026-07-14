@@ -32,13 +32,7 @@
 
   <div class="field">
     <label for="email">YOUR EMAIL</label>
-    <input
-      id="email"
-      name="email"
-      type="email"
-      required
-      autocomplete="email"
-    />
+    <input id="email" name="email" type="email" required autocomplete="email" />
   </div>
 
   <div class="field">

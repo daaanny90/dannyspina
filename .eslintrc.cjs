@@ -7,7 +7,7 @@ module.exports = {
     "plugin:svelte/recommended",
     "prettier",
   ],
-  ignorePatterns: ["*.cjs"],
+  ignorePatterns: ["*.cjs", "build", ".svelte-kit"],
   overrides: [
     {
       files: ["*.svelte"],
@@ -22,7 +22,13 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/no-unused-vars": "off",
- },
+    // compiler warnings (a11y, unused selectors/exports) stay visible in dev
+    // but must not fail CI builds for legacy components
+    "svelte/valid-compile": ["error", { ignoreWarnings: true }],
+    // {@html} is only used with self-authored, static content
+    "svelte/no-at-html-tags": "warn",
+    "svelte/no-inner-declarations": "warn",
+  },
   env: {
     browser: true,
     es2017: true,

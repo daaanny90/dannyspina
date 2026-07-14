@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install feedparser
         run: pip install feedparser
@@ -25,7 +25,7 @@ jobs:
         run: |
           python - <<EOF
           import feedparser, os, sys, json
-          
+
           FEED_URL = "https://anchor.fm/s/101cdbd18/podcast/rss"
           feed = feedparser.parse(FEED_URL)
           latest = feed.entries[0].id if "id" in feed.entries[0] else feed.entries[0].link

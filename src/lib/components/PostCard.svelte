@@ -1,10 +1,10 @@
 <script lang="ts">
   export let path: string;
-  export let title:string;
-  export let subtitle:string;
-  export let date:string;
-  export let categories:string[];
-  export let info = '';
+  export let title: string;
+  export let subtitle: string;
+  export let date: string;
+  export let categories: string[];
+  export let info = "";
 
   let dateOptions = {
     weekday: "long",
@@ -12,11 +12,8 @@
     month: "long",
     day: "numeric",
   } as Intl.DateTimeFormatOptions;
-  
-  let pusblishDate = new Date(date).toLocaleDateString(
-    "gb-GB",
-    dateOptions
-  );
+
+  let pusblishDate = new Date(date).toLocaleDateString("gb-GB", dateOptions);
 </script>
 
 <a class="post-card" href={path}>

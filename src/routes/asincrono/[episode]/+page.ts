@@ -5,7 +5,7 @@ export const load = async ({ params, fetch }) => {
     const episodes = await response.json();
     return { episodes: Array.isArray(episodes) ? episodes : [] };
   } catch (e) {
-    console.error('error fetching episodes', e);
+    console.error("error fetching episodes", e);
     return { episodes: [] };
   }
 };

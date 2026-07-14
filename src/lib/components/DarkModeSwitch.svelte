@@ -1,32 +1,38 @@
 <script lang="ts">
   function toggle(): void {
-   const html = document.documentElement
-   const theme = html.getAttribute("data-theme");
-   const soundOn: HTMLAudioElement = document.querySelector('#switch-on');
-   const soundOff: HTMLAudioElement = document.querySelector('#switch-off');
+    const html = document.documentElement;
+    const theme = html.getAttribute("data-theme");
+    const soundOn: HTMLAudioElement = document.querySelector("#switch-on");
+    const soundOff: HTMLAudioElement = document.querySelector("#switch-off");
 
-   if (theme === "light") {
-    html.setAttribute("data-theme", "dark");
+    if (theme === "light") {
+      html.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
-    soundOff.play()
-   } else {
-    html.setAttribute("data-theme", "light")
+      soundOff.play();
+    } else {
+      html.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
-    soundOn.play()
-   }
+      soundOn.play();
+    }
 
-  const wraps = document.querySelectorAll(".icon-wrap");
+    const wraps = document.querySelectorAll(".icon-wrap");
     for (const wrap of wraps) {
       wrap.classList.toggle("active");
     }
   }
 </script>
 
-<audio id="switch-on" src="/sounds/switch-on.mp3"></audio>
-<audio id="switch-off" src="/sounds/switch-off.mp3"></audio>
+<audio id="switch-on" src="/sounds/switch-on.mp3" />
+<audio id="switch-off" src="/sounds/switch-off.mp3" />
 
 <div class="toggle">
-  <div class="mask" on:click={toggle} on:keypress={() => {toggle}}>
+  <div
+    class="mask"
+    on:click={toggle}
+    on:keypress={() => {
+      toggle;
+    }}
+  >
     <div class="icon-wrap">
       <div class="icon sun" />
     </div>
@@ -52,7 +58,7 @@
   .toggle {
     width: $size;
     cursor: pointer;
-    z-index: 252;;
+    z-index: 252;
 
     @media screen and (max-width: $breakpoint-mobile) {
       margin-right: -45px;

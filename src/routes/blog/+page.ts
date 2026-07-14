@@ -6,6 +6,6 @@ export const load = async ({ fetch }) => {
 
   return {
     posts: allPosts,
-    index: allIndex
+    index: allIndex,
   };
 };

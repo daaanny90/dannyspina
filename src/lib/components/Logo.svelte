@@ -1,4 +1,3 @@
-
 <a class="logo" href="/">DS</a>
 
 <style lang="scss" scoped>

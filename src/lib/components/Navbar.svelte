@@ -4,33 +4,33 @@
   import Burger from "./Burger.svelte";
   import Logo from "./Logo.svelte";
   import { isArrowUnderHeader, backArrowPage } from "../../store";
-  import { onMount } from 'svelte';
-  import { afterNavigate } from '$app/navigation';
+  import { onMount } from "svelte";
+  import { afterNavigate } from "$app/navigation";
 
   let currentPage;
   let show;
   let currentUrl: string;
   const backArrowExcludedPaths = [
-    '/',
-    '/blog',
-    '/books',
-    '/about',
-    '/contacts'
-  ]
-  
-  backArrowPage.subscribe(page => {
-    currentPage = page
-  })
-  
-  isArrowUnderHeader.subscribe(status => {
-    show = status
-  })
-  
-  onMount(() => currentUrl = window.location.pathname);
+    "/",
+    "/blog",
+    "/books",
+    "/about",
+    "/contacts",
+  ];
+
+  backArrowPage.subscribe((page) => {
+    currentPage = page;
+  });
+
+  isArrowUnderHeader.subscribe((status) => {
+    show = status;
+  });
+
+  onMount(() => (currentUrl = window.location.pathname));
 
   afterNavigate(() => {
-    currentUrl = window.location.pathname
-  })
+    currentUrl = window.location.pathname;
+  });
 </script>
 
 <nav>
@@ -38,9 +38,9 @@
 
   <!-- for accessibility, the back arrow must not be present on all pages due to redundant links -->
   {#if !backArrowExcludedPaths.includes(currentUrl)}
-  <div class="backArrow" class:show>
-    <BackArrow page={currentPage} />
-  </div>
+    <div class="backArrow" class:show>
+      <BackArrow page={currentPage} />
+    </div>
   {/if}
 
   <div class="buttonsContainer">
@@ -75,12 +75,12 @@
     opacity: 0;
     flex-grow: 1;
     max-width: 720px;
-    transition: opacity .1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     margin: 0 auto;
 
     &.show {
       opacity: 1;
-   transition: opacity .1s ease-in-out;
+      transition: opacity 0.1s ease-in-out;
     }
   }
 </style>

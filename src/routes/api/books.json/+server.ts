@@ -15,7 +15,7 @@ export const GET = async () => {
         meta: metadata,
         path: bookPath,
       };
-    })
+    }),
   );
 
   return json(books);

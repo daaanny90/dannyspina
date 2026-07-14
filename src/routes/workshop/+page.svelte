@@ -128,19 +128,17 @@
 <article>
   <p class="breadcrumb">
     &mdash; OFF THE BENCH /
-    <span class="current">SHEET DS&middot;WS&middot;01</span> &middot; REV 01
-    &middot; 2026&ndash;07
+    <span class="current">SHEET DS&middot;WS&middot;01</span> &middot; REV 01 &middot;
+    2026&ndash;07
   </p>
   <h1>The workshop</h1>
   <p class="lead">
-    What leaves the bench when nobody is billing: cameras brought back to
-    spec, small tools, pixels, paper. Not billable &mdash; built anyway.
+    What leaves the bench when nobody is billing: cameras brought back to spec,
+    small tools, pixels, paper. Not billable &mdash; built anyway.
   </p>
 
   <div class="ruler-slot">
-    <RulerDivider
-      label="INVENTORY — CAMERAS · TOOLS · PIXELS · PAPER"
-    />
+    <RulerDivider label="INVENTORY — CAMERAS · TOOLS · PIXELS · PAPER" />
   </div>
 
   <div class="grid">
@@ -148,7 +146,7 @@
       <div class="card">
         <div class="card-head">
           <span class="code">{item.code}</span>
-        <span class="tag">{item.tag}</span>
+          <span class="tag">{item.tag}</span>
         </div>
         <h3>{item.title}</h3>
         <p class="desc">{item.desc}</p>
@@ -295,6 +293,4 @@
     font-size: 11.5px;
     color: var(--ds-color-ink-faint);
   }
-
-
 </style>

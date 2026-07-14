@@ -31,19 +31,31 @@ export const GET = async () => {
 
         const title = item.getElementsByTagName("title")[0]?.textContent || "";
         const link = item.getElementsByTagName("link")[0]?.textContent || "";
-        const description = item.getElementsByTagName("description")[0]?.textContent || "";
-        const pubDate = item.getElementsByTagName("pubDate")[0]?.textContent || "";
+        const description =
+          item.getElementsByTagName("description")[0]?.textContent || "";
+        const pubDate =
+          item.getElementsByTagName("pubDate")[0]?.textContent || "";
         const enclosure = item.getElementsByTagName("enclosure")[0];
 
         const imageElement = item.getElementsByTagName("itunes:image")[0];
-        const imageUrl = imageElement ? imageElement.getAttribute("href") : null;
+        const imageUrl = imageElement
+          ? imageElement.getAttribute("href")
+          : null;
 
         const audioUrl = enclosure ? enclosure.getAttribute("url") : null;
 
         // Usa il guid se esiste, altrimenti genera uno slug SEO-friendly
         const id = generateSlug(title, pubDate);
 
-        episodes.push({ id, title, link, description, pubDate, audioUrl, imageUrl });
+        episodes.push({
+          id,
+          title,
+          link,
+          description,
+          pubDate,
+          audioUrl,
+          imageUrl,
+        });
       }
 
       return episodes;
