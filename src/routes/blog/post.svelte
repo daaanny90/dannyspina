@@ -182,24 +182,47 @@
   .post-body {
     font-size: 17px;
     line-height: 1.75;
+    counter-reset: section;
 
     :global(p) {
       margin: 0 0 24px 0;
     }
 
+    /* h2 = numbered section header, like a manual chapter */
     :global(h2) {
-      font-size: 26px;
+      counter-increment: section;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      font-size: 30px;
       font-weight: 700;
-      letter-spacing: -0.01em;
-      line-height: 1.2;
-      margin: 48px 0 16px 0;
-      padding-top: 8px;
+      letter-spacing: -0.015em;
+      line-height: 1.15;
+      margin: 56px 0 18px 0;
+      padding-top: 18px;
       border-top: 1px solid var(--ds-color-line);
+
+      @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 24px;
+        gap: 12px;
+      }
     }
 
+    :global(h2)::before {
+      content: counter(section, decimal-leading-zero);
+      font-family: var(--ds-font-mono);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ds-color-brass);
+      flex: none;
+      transform: translateY(-0.35em);
+    }
+
+    /* h3 = sub-heading, smaller and lighter than a numbered section */
     :global(h3) {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 700;
+      color: var(--ds-color-ink);
       margin: 36px 0 12px 0;
     }
 
@@ -246,26 +269,29 @@
       }
     }
 
-    /* figures frame like manual plates; on desktop they bleed a little wider */
+    /* figures = framed plates; frame hugs the image so tall/narrow shots
+       don't sit in a sea of empty background */
     :global(figure) {
-      margin: 40px 0;
+      width: fit-content;
+      max-width: 100%;
+      margin: 40px auto;
       border: 1px solid var(--ds-color-line);
       background: var(--ds-color-bg-raised);
       padding: 12px;
-
-      @media screen and (min-width: 900px) {
-        margin-left: -100px;
-        margin-right: -100px;
-      }
     }
 
+    /* override ImagePost's 80rem clamp; cap height so portrait shots stay
+       readable, never stretched */
     :global(figure img) {
       display: block;
-      width: 100%;
+      max-width: 100%;
+      max-height: 640px;
+      width: auto;
       height: auto;
     }
 
     :global(figcaption) {
+      align-self: stretch;
       font-family: var(--ds-font-mono);
       font-size: 12px;
       color: var(--ds-color-ink-muted);
@@ -275,7 +301,10 @@
     /* plain markdown images (not wrapped in a figure) */
     :global(p > img) {
       display: block;
-      width: 100%;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 640px;
+      width: auto;
       height: auto;
       border: 1px solid var(--ds-color-line);
       background: var(--ds-color-bg-raised);
