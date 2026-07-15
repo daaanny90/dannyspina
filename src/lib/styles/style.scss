@@ -25,7 +25,9 @@ body {
   line-height: var(--ds-leading-text);
   margin: 0;
   color: var(--ds-color-ink);
-  background-color: var(--ds-color-bg);
+  /* NO opaque background here — the base color lives on <html> (the canvas).
+     A solid body background would paint over the z-index:-1 grid layer below
+     and hide it entirely. */
   overflow-x: hidden;
 }
 
@@ -33,12 +35,14 @@ body {
    pages (14000px+) a repeating-gradient background accumulates sub-pixel
    rounding at DPR 2 and renders doubled/blurry, and it shifts whenever the
    page height changes (e.g. opening a sidenote). A fixed layer only ever
-   rasterizes one viewport, so it stays crisp and never moves. */
+   rasterizes one viewport, so it stays crisp and never moves. It sits above
+   the <html> canvas colour and below all page content. */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
+  background-color: var(--ds-color-bg);
   background-image: var(--ds-grid-bg);
   pointer-events: none;
 }
