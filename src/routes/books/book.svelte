@@ -12,17 +12,12 @@
   export let description = "";
 </script>
 
+<!-- the reading log is kept out of the site menu and out of search on purpose -->
 <Seo
   {title}
   description={description ||
     `Reading notes on "${title}" by ${author}, from the ${category} shelf.`}
-  schema={{
-    "@context": "https://schema.org",
-    "@type": "Book",
-    name: title,
-    author: { "@type": "Person", name: author },
-    genre: category,
-  }}
+  noindex
 />
 
 <BackArrow page="books" hideUnderHeader />

@@ -34,9 +34,11 @@
   };
 </script>
 
+<!-- reading log: off the menu, kept out of search -->
 <Seo
   title="Books I've read &amp; currently reading"
   description="The reading log: notes on the books that shaped how I work and think, from software and design to personal growth."
+  noindex
 />
 
 <PageTitle
