@@ -57,8 +57,12 @@
 <svelte:head>
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
-  <link rel="canonical" href={canonical} />
-  {#if noindex}<meta name="robots" content="noindex, follow" />{/if}
+  {#if noindex}
+    <!-- no canonical: pairing it with noindex is a contradictory signal -->
+    <meta name="robots" content="noindex, follow" />
+  {:else}
+    <link rel="canonical" href={canonical} />
+  {/if}
 
   <meta property="og:site_name" content={SITE_NAME} />
   <meta property="og:type" content={type} />
