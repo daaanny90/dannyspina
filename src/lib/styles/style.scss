@@ -176,6 +176,77 @@ pre code {
 }
 
 /*
+ *  Tables
+ *  Scheda dati: cornice come le figure, la tabella scorre dentro di sé
+ *  invece di sfondare la colonna sulle larghezze strette.
+ */
+table {
+  /* display:block abilita overflow-x sull'elemento stesso: mdsvex non
+     genera nessun wrapper attorno alla tabella */
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border: 1px solid var(--ds-color-line);
+  border-radius: var(--ds-radius);
+  background: var(--ds-color-bg-raised);
+  margin: 40px 0;
+  font-family: var(--ds-font-mono);
+  font-size: var(--ds-text-s);
+  line-height: 1.5;
+}
+
+th {
+  font-size: var(--ds-text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--ds-tracking-label);
+  color: var(--ds-color-ink-muted);
+  text-align: left;
+  white-space: nowrap;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--ds-color-line);
+}
+
+td {
+  color: var(--ds-color-ink);
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 16px;
+  border-bottom: 1px dashed rgba(237, 231, 218, 0.22);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* allineamento dichiarato in markdown (`:---:`, `---:`): mdsvex lo emette
+   come attributo align, che il text-align qui sopra sovrascriverebbe */
+th[align="center"],
+td[align="center"] {
+  text-align: center;
+}
+th[align="right"],
+td[align="right"] {
+  text-align: right;
+}
+th[align="left"],
+td[align="left"] {
+  text-align: left;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  th,
+  td {
+    padding: 8px 12px;
+  }
+  td {
+    font-size: var(--ds-text-xs);
+  }
+}
+
+/*
  * Quotes
  */
 blockquote {
