@@ -1,7 +1,12 @@
-<svelte:head>
-  <title>Message logged — Danny Spina</title>
-  <meta name="robots" content="noindex" />
-</svelte:head>
+<script lang="ts">
+  import Seo from "$lib/components/Seo.svelte";
+</script>
+
+<Seo
+  title="Message logged"
+  description="Your message reached the bench. I read everything myself and reply within 48 hours."
+  noindex
+/>
 
 <p class="breadcrumb">04 &mdash; CONTACT / RECEIPT</p>
 <h1>Message logged.</h1>

@@ -3,6 +3,8 @@ title: The alter ego effect
 author: Todd Herman
 amazonLink:
 category: Personal Growth
+description: >-
+  My recent exploration of "The Alter Ego Effect" by Todd Herman proved to be an enlightening journey filled with insights that I'm eager to integrate into…
 ---
 
 My recent exploration of "The Alter Ego Effect" by Todd Herman proved to be an enlightening journey filled with insights that I'm eager to integrate into both my professional and personal life. This book is a beacon of wisdom and a valuable guide to unlocking one's full potential.

@@ -15,7 +15,7 @@
 </script>
 
 <figure class:gallery class={position}>
-  <img {src} {alt} />
+  <img {src} {alt} loading="lazy" decoding="async" />
   <figcaption>
     <div id="caption-credits-container">
       {caption}

@@ -3,6 +3,8 @@ title: The mountain is you
 author: Brianna Wiest
 amazonLink:
 category: Personal Growth
+description: >-
+  My recent encounter with "The Mountain Is You" by Brianna Wiest was a delightful journey filled with insightful reflections. This book provided not only…
 ---
 
 My recent encounter with "The Mountain Is You" by Brianna Wiest was a delightful journey filled with insightful reflections. This book provided not only an enjoyable read but also thought-provoking concepts that I'm excited to incorporate into my life, such as the idea of conversing with my future self.

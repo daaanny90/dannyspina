@@ -3,6 +3,8 @@ title: Story
 author: Robert McKee
 amazonLink:
 category: Arts & Entertainment
+description: >-
+  "Story" by Robert McKee is a truly enlightening read for anyone interested in creative writing. This book provides a comprehensive look at the elements…
 ---
 
 "Story" by Robert McKee is a truly enlightening read for anyone interested in creative writing. This book provides a comprehensive look at the elements that make up a successful story, from character development to plot structure. It offers a deep dive into the underlying principles of storytelling, and the insights contained within will forever change the way you view films, listen to or tell a story.

@@ -2,7 +2,13 @@
   import PageTitle from "$lib/components/PageTitle.svelte";
   import AiIndicator from "$lib/components/AiIndicator.svelte";
   import Divider from "$lib/components/Divider.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 </script>
+
+<Seo
+  title="How I use LLMs to write"
+  description="Transparency about AI on this site: what the human-written percentage on every page means, and where a language model was involved."
+/>
 
 <PageTitle
   title="How I use LLMs to write"

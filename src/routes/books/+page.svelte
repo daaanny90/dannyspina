@@ -4,6 +4,7 @@
   import BookList from "$lib/components/BookList.svelte";
   import Book from "$lib/components/Book.svelte";
   import Callout from "$lib/components/Callout.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   import Rocket from "$lib/icons/Rocket.svelte";
   import Power from "$lib/icons/Power.svelte";
@@ -32,6 +33,11 @@
     "Arts & Entertainment": Art,
   };
 </script>
+
+<Seo
+  title="Books I've read &amp; currently reading"
+  description="The reading log: notes on the books that shaped how I work and think, from software and design to personal growth."
+/>
 
 <PageTitle
   title="Books I've Read & Currently Reading"

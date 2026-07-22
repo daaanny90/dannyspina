@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Seo from "$lib/components/Seo.svelte";
+
   export let data: { posts: any[] };
 
   const posts = data.posts; // newest first, enriched with { log, readingMinutes }
@@ -70,13 +72,10 @@
   }
 </script>
 
-<svelte:head>
-  <title>The log — Danny Spina</title>
-  <meta
-    name="description"
-    content="Writing on frontend architecture, design systems and design ops — a running log, searchable, no tracking, no comments."
-  />
-</svelte:head>
+<Seo
+  title="The log"
+  description="Writing on frontend architecture, design systems and design ops — a running log, searchable, no tracking, no comments."
+/>
 
 <div class="wrap">
   <div class="top">

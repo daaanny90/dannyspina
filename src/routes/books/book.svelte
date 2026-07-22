@@ -3,12 +3,27 @@
   // "Unexpected token" pointing on the double point of type declaration of variables.
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BackArrow from "$lib/components/BackArrow.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   export let title;
   export let author;
   export let amazonLink = "";
   export let category;
+  export let description = "";
 </script>
+
+<Seo
+  {title}
+  description={description ||
+    `Reading notes on "${title}" by ${author}, from the ${category} shelf.`}
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: title,
+    author: { "@type": "Person", name: author },
+    genre: category,
+  }}
+/>
 
 <BackArrow page="books" hideUnderHeader />
 <PageTitle {title} subtitle={author} />

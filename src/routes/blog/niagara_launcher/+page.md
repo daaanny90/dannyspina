@@ -14,7 +14,7 @@ categories:
 
 In the ever-evolving world of smartphones, our choices for customization and personalization are becoming increasingly important. The Android operating system is celebrated for its flexibility, yet it can sometimes feel overwhelming due to the sheer number of apps and widgets we accumulate over time. For years, I'd been contemplating switching to iOS for its perceived simplicity, but then I stumbled upon Niagara Launcher, a game-changer that not only rekindled my love for Android but also made me reconsider my iOS aspirations.
 
-<ImagePost file="{imagesPath}/niagara_launcher_home.jpeg" alt="alt" caption="My brand new clean and minimal home" />
+<ImagePost file="{imagesPath}/niagara_launcher_home.jpeg" alt="Niagara Launcher home screen: a vertical list of app names on a plain background" caption="My brand new clean and minimal home" />
 
 ## Embracing Minimalism
 

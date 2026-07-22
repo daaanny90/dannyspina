@@ -3,6 +3,7 @@
   import { page } from "$app/stores";
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BackArrow from "$lib/components/BackArrow.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   export let data;
 
@@ -31,7 +32,26 @@
     "gb-GB",
     dateOptions,
   );
+
+  // show notes are HTML; the meta description needs plain text, one sentence long
+  const summarize = (html) => {
+    const text = (html ?? "")
+      .replace(/<[^>]*>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    if (text.length <= 155) return text;
+    const cut = text.slice(0, 155);
+    return cut.slice(0, cut.lastIndexOf(" ")) + "…";
+  };
 </script>
+
+<Seo
+  title={episode?.title ?? "Asincrono"}
+  description={summarize(episode?.description) ||
+    "Un episodio di Asincrono, il podcast di Danny Spina."}
+  type="article"
+  publishedAt={episode?.pubDate ? new Date(episode.pubDate).toISOString() : ""}
+/>
 
 <BackArrow page="asincrono" hideUnderHeader />
 

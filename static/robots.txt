@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# widget embedded in Notion, not a landing page
+Disallow: /notion/
+
+Sitemap: https://dannyspina.com/sitemap.xml
