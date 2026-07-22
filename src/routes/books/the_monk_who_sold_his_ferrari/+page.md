@@ -3,6 +3,8 @@ title: The monk who sold his Ferrari
 author: Robin Sharma
 amazonLink:
 category: Personal Growth
+description: >-
+  "The Monk Who Sold His Ferrari" by Robin Sharma is a book that focuses on personal growth and development. However, if you have a background in self-help…
 ---
 
 "The Monk Who Sold His Ferrari" by Robin Sharma is a book that focuses on personal growth and development. However, if you have a background in self-help or have read other books on the topic, some of the concepts may seem familiar.

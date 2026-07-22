@@ -3,6 +3,8 @@ title: Alla ricerca delle coccole perdute
 author: Giulio Cesare Giacobbe
 amazonLink:
 category: Personal Growth
+description: >-
+  Il libro "Alla ricerca delle coccole perdute" di Giulio Cesare Giacobbe è un testo che ti porta in un viaggio introspettivo per comprendere il tuo livello…
 ---
 
 Il libro "Alla ricerca delle coccole perdute" di Giulio Cesare Giacobbe è un testo che ti porta in un viaggio introspettivo per comprendere il tuo livello di crescita. La divisione della crescita in bambino, adulto e genitore è stata illuminante e ho iniziato a vedere i miei comportamenti e quelli degli altri in una luce nuova.

@@ -1,5 +1,7 @@
 <script lang="ts">
   import ServiceSheet from "$lib/components/ServiceSheet.svelte";
+  import Seo from "$lib/components/Seo.svelte";
+  import { SITE_NAME, SITE_URL } from "$lib/siteConfig";
 
   const tolerances = [
     { key: "ENGAGEMENT", value: "2 weeks &ndash; ongoing" },
@@ -51,13 +53,20 @@
   ];
 </script>
 
-<svelte:head>
-  <title>Frontend & design systems — Danny Spina</title>
-  <meta
-    name="description"
-    content="Design systems, design tokens and component libraries that survive team turnover — built in Vue and web components, framework-agnostic by design."
-  />
-</svelte:head>
+<Seo
+  title="Frontend &amp; design systems"
+  description="Design systems, design tokens and component libraries that survive team turnover — built in Vue and web components, framework-agnostic by design."
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Frontend & design systems",
+    serviceType: "Frontend and design systems",
+    description:
+      "Design systems, design tokens and component libraries that survive team turnover.",
+    provider: { "@type": "Person", name: SITE_NAME, url: SITE_URL },
+    areaServed: ["IT", "DE", "EU"],
+  }}
+/>
 
 <ServiceSheet
   sheetRef="DS·SRV·02"

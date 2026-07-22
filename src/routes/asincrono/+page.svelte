@@ -1,11 +1,17 @@
 <script>
   import PageTitle from "$lib/components/PageTitle.svelte";
   import PostCard from "$lib/components/PostCard.svelte";
+  import Seo from "$lib/components/Seo.svelte";
   import { onMount } from "svelte";
 
   export let data;
   let { episodes } = data;
 </script>
+
+<Seo
+  title="Asincrono"
+  description="Asincrono, il podcast di Danny Spina: episodi in italiano su sviluppo software, lavoro da remoto e letture."
+/>
 
 <PageTitle
   title="Asincrono"

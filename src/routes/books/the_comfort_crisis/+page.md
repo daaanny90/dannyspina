@@ -3,6 +3,8 @@ title: The comfort crisis
 author: Michael Easter
 amazonLink:
 category: Personal Growth
+description: >-
+  I recently had the pleasure of reading "The Comfort Crisis" by Michael Easter, and I have to say, it was a real game changer for me. This book completely…
 ---
 
 I recently had the pleasure of reading "The Comfort Crisis" by Michael Easter, and I have to say, it was a real game changer for me. This book completely transformed the way I look at comfort and made me appreciate the value of discomfort.

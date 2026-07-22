@@ -3,12 +3,22 @@
   // "Unexpected token" pointing on the double point of type declaration of variables.
   import PageTitle from "$lib/components/PageTitle.svelte";
   import BackArrow from "$lib/components/BackArrow.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   export let title;
   export let author;
   export let amazonLink = "";
   export let category;
+  export let description = "";
 </script>
+
+<!-- the reading log is kept out of the site menu and out of search on purpose -->
+<Seo
+  {title}
+  description={description ||
+    `Reading notes on "${title}" by ${author}, from the ${category} shelf.`}
+  noindex
+/>
 
 <BackArrow page="books" hideUnderHeader />
 <PageTitle {title} subtitle={author} />

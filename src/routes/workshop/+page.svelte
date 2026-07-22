@@ -1,5 +1,6 @@
 <script lang="ts">
   import RulerDivider from "$lib/components/RulerDivider.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   type Item = {
     code: string;
@@ -117,13 +118,10 @@
   ];
 </script>
 
-<svelte:head>
-  <title>The workshop — Danny Spina</title>
-  <meta
-    name="description"
-    content="Off the bench: camera repairs, small tools, colorschemes and wallpapers by Danny Spina."
-  />
-</svelte:head>
+<Seo
+  title="The workshop"
+  description="Off the bench: camera repairs, small tools, colorschemes and wallpapers by Danny Spina."
+/>
 
 <article>
   <p class="breadcrumb">

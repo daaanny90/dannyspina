@@ -3,6 +3,8 @@ title: Dopamine Nation
 author: Anna Lembke
 amazonLink:
 category: Personal Growth
+description: >-
+  "Dopamine Nation" by Dr. Anna Lembke offers a captivating exploration of the intricate workings of our brains, using real patient stories to delve into the…
 ---
 
 Dopamine Nation" by Dr. Anna Lembke offers a captivating exploration of the intricate workings of our brains, using real patient stories to delve into the fascinating realm of dopamine and its effects. As someone who finds the complexities of our mind and its impact on behavior intriguing, I found this book to be a deeply engrossing read.

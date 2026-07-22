@@ -1,7 +1,7 @@
 ---
-title: My logo was two letters 
+title: My logo was two letters
 subtitle: DS. Like every developer who cannot draw.
- 
+
 date: "2026-07-25"
 categories:
   - "Projects"
@@ -80,14 +80,14 @@ My surname is Spina, and I have never particularly liked it.
 
 I did not go looking for this. It came up in the middle of a long session of throwing ideas at an AI, somewhere between two bad ones.
 
-A *spina elastica* is a spring pin: the pin that aligns two parts. It comes in two flavours, both standardised:
+A _spina elastica_ is a spring pin: the pin that aligns two parts. It comes in two flavours, both standardised:
 
 - the slotted spring pin (ISO 8752), a hollow C-shaped cylinder with a slot running along its whole length
 - the coiled spring pin (ISO 8750), rolled from a thinner strip into a spiral
 
 Both work the same way. Their outside diameter is slightly larger than the hole, so they compress when you drive them in and hold by pushing outwards, permanently.
 
-They hold *because they are not closed*.
+They hold _because they are not closed_.
 
 The slot is the tolerance that lets the pin grip. I stared at that sentence for a while.
 
@@ -99,7 +99,7 @@ It is a small piece of code, `spina(turns, band, gap)`, and every version of the
 
 This sounds like showing off, but it is the only reason the rest of this post exists. A drawing you can only look at, you can only have opinions about. A drawing you can generate, you can test.
 
- <ImagePost file="{imagesPath}/fig-05-family.svg" alt="the family of the logos, increasing the turns" caption="The family" /> 
+ <ImagePost file="{imagesPath}/fig-05-family.svg" alt="the family of the logos, increasing the turns" caption="The family" />
 
 I froze it at 1.45 turns.
 
@@ -119,7 +119,7 @@ The fix was rotation. I generated the same mark at eight angles and looked at ev
 
 <ImagePost file="{imagesPath}/fig-03-rotation.svg" alt="all version of the mark rotated" caption="All the rotation angles." />
 
-135° it is. As a bonus, at that angle it reads a little like a *d*.
+135° it is. As a bonus, at that angle it reads a little like a _d_.
 
 So after all that, I am back to my initials. Just not written down.
 
@@ -137,14 +137,13 @@ Enclosed voids, by size:
 
 <ImagePost file="{imagesPath}/fig-02-void-test.svg" alt="visualization of the void, at 16px the inside do not communicate with the outside" caption="This is the void I meant" />
 
-
-| geometry | 200 px | 32 px | 24 px | 16 px |
-|---|---|---|---|---|
-| base | 0 | 0 | 2 | 3 |
-| narrow gap | 0 | **6** | 5 | 3 |
-| thick band | 0 | 0 | 3 | 4 |
-| **wide gap** | 0 | 0 | **0** | 2 |
-| slotted | 0 | 0 | 0 | 0 |
+| geometry     | 200 px | 32 px | 24 px | 16 px |
+| ------------ | ------ | ----- | ----- | ----- |
+| base         | 0      | 0     | 2     | 3     |
+| narrow gap   | 0      | **6** | 5     | 3     |
+| thick band   | 0      | 0     | 3     | 4     |
+| **wide gap** | 0      | 0     | **0** | 2     |
+| slotted      | 0      | 0     | 0     | 0     |
 
 Two things came out of this.
 
@@ -166,7 +165,7 @@ So I stopped inventing and took the rule from the catalogue:
 
 **≥ 24 px → coiled pin. ≤ 16 px → slotted pin.**
 
-<ImagePost file="{imagesPath}/fig-04-threshold.svg" alt="threshold between coiled and slotted pins" caption="The threshold" /> 
+<ImagePost file="{imagesPath}/fig-04-threshold.svg" alt="threshold between coiled and slotted pins" caption="The threshold" />
 
 Change the diameter, change the standard. That is how spring pins work, and now it is how my logo works.
 
@@ -178,13 +177,13 @@ The screen is not the only thing that asks "how small?". The tool asks too, and 
 
 The smallest feature in the mark is about 6.5% of its width. So the minimum size is the tool diameter divided by 0.065:
 
-| process | tool | min. mark |
-|---|---|---|
-| milling | 1.0 mm | 15.4 mm |
-| milling | 0.5 mm | 7.7 mm |
-| photo-etching | 0.2 mm | 3.1 mm |
-| laser | 0.1 mm | 1.5 mm |
-| steel punch | 0.05 mm | 0.8 mm |
+| process       | tool    | min. mark |
+| ------------- | ------- | --------- |
+| milling       | 1.0 mm  | 15.4 mm   |
+| milling       | 0.5 mm  | 7.7 mm    |
+| photo-etching | 0.2 mm  | 3.1 mm    |
+| laser         | 0.1 mm  | 1.5 mm    |
+| steel punch   | 0.05 mm | 0.8 mm    |
 
 I got this wrong the first time. I had written down a single threshold, 16 mm, and treated it as a property of the logo. It is not. It is a property of a 1 mm end mill. With a laser the spiral holds below 2 mm.
 
@@ -198,7 +197,7 @@ The geometry was generated as code and checked with numbers: areas, bounding box
 
 But every decision that mattered was mine, and visual.
 
-The duck was mine. The *d* was mine. So was "this one is nice but it does not resonate with the name", which is not a measurable statement and was correct.
+The duck was mine. The _d_ was mine. So was "this one is nice but it does not resonate with the name", which is not a measurable statement and was correct.
 
 And at one point the machine told me, with total confidence, that the narrow gap variant died at 16 px. When I measured it, it died at 32. Right direction, invented number. Confident guesses are cheap, mine included. That is what the counting was for.
 
@@ -208,7 +207,7 @@ Measurement replaces taste only where taste was an opinion in disguise. Everythi
 
 Final numbers: `Ø 80 · band 8 · gap 7 · 1.45 turns · 135° · one colour`.
 
- <ImagePost file="{imagesPath}/fig-01-construction.svg" alt="a detailed view on how the logo is built" caption="Construction" /> 
+ <ImagePost file="{imagesPath}/fig-01-construction.svg" alt="a detailed view on how the logo is built" caption="Construction" />
 
 The mark is now in the header of this site, where the DS used to be. It says nothing: no letters, no name, no picture of a camera.
 

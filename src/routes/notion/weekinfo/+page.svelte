@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import Calendar from "$lib/helpers/Calendar";
+  import Seo from "$lib/components/Seo.svelte";
 
   const calendar = new Calendar();
   let widget: HTMLDivElement;
@@ -14,6 +15,13 @@
     }
   });
 </script>
+
+<!-- embedded widget, not a page anyone should land on from search -->
+<Seo
+  title="Week info widget"
+  description="A small date and year-progress widget, embedded in Notion."
+  noindex
+/>
 
 <div bind:this={widget} class="background" class:light>
   <h2>

@@ -1,5 +1,7 @@
 <script lang="ts">
   import ServiceSheet from "$lib/components/ServiceSheet.svelte";
+  import Seo from "$lib/components/Seo.svelte";
+  import { SITE_NAME, SITE_URL } from "$lib/siteConfig";
 
   const tolerances = [
     { key: "ENGAGEMENT", value: "2 weeks &ndash; ongoing" },
@@ -51,13 +53,20 @@
   ];
 </script>
 
-<svelte:head>
-  <title>Software development — Danny Spina</title>
-  <meta
-    name="description"
-    content="Software development for the web: features, architecture and maintenance for TypeScript and Vue codebases, with a special focus on frontend and design ops."
-  />
-</svelte:head>
+<Seo
+  title="Software development"
+  description="Software development for the web: features, architecture and maintenance for TypeScript and Vue codebases, with a special focus on frontend and design ops."
+  schema={{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Software development",
+    serviceType: "Web software development",
+    description:
+      "Features, architecture and maintenance for TypeScript and Vue codebases.",
+    provider: { "@type": "Person", name: SITE_NAME, url: SITE_URL },
+    areaServed: ["IT", "DE", "EU"],
+  }}
+/>
 
 <ServiceSheet
   sheetRef="DS·SRV·01"

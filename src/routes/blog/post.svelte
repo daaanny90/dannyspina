@@ -2,12 +2,16 @@
   import { onMount } from "svelte";
   import { page } from "$app/stores";
   import AiIndicator from "$lib/components/AiIndicator.svelte";
+  import Seo from "$lib/components/Seo.svelte";
+  import { DEFAULT_OG_IMAGE } from "$lib/siteConfig";
 
   export let title;
   export let subtitle = "";
   export let date;
   export let categories = [];
   export let human = undefined;
+  // optional frontmatter: site-root path to the entry's share card
+  export let image = DEFAULT_OG_IMAGE;
 
   let logNo = "···";
   let readingMinutes: number | null = null;
@@ -36,10 +40,14 @@
   });
 </script>
 
-<svelte:head>
-  <title>{title} — Danny Spina</title>
-  {#if subtitle}<meta name="description" content={subtitle} />{/if}
-</svelte:head>
+<Seo
+  {title}
+  description={subtitle || `${title} — an entry from the writing log.`}
+  type="article"
+  publishedAt={date}
+  tags={categories}
+  {image}
+/>
 
 <article>
   <p class="breadcrumb">

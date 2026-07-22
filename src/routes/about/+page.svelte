@@ -3,12 +3,18 @@
   import Accordion from "$lib/components/Accordion.svelte";
   import Divider from "$lib/components/Divider.svelte";
   import AiIndicator from "$lib/components/AiIndicator.svelte";
+  import Seo from "$lib/components/Seo.svelte";
 
   const today = new Date();
   const startCodingDate = new Date("2017-09-01");
 
   const yearsOfExperience = today.getFullYear() - startCodingDate.getFullYear();
 </script>
+
+<Seo
+  title="About me"
+  description="Who is behind dannyspina.com: how I got into software, the work I take on, and what I do away from the keyboard."
+/>
 
 <div class="header">
   <PageTitle title="About Me" />

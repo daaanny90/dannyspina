@@ -1,10 +1,11 @@
-<svelte:head>
-  <title>Contact — Danny Spina</title>
-  <meta
-    name="description"
-    content="Get in touch with Danny Spina — software developer (web), Parma, Italy. Tell me what you are building, I reply within 48 hours."
-  />
-</svelte:head>
+<script lang="ts">
+  import Seo from "$lib/components/Seo.svelte";
+</script>
+
+<Seo
+  title="Contact"
+  description="Get in touch with Danny Spina — software developer (web), Parma, Italy. Tell me what you are building, I reply within 48 hours."
+/>
 
 <p class="breadcrumb">04 &mdash; CONTACT</p>
 <h1>Get in touch</h1>

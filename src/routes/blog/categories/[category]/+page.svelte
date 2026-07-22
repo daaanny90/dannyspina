@@ -1,10 +1,17 @@
 <script lang="ts">
   import PageTitle from "$lib/components/PageTitle.svelte";
   import PostCard from "$lib/components/PostCard.svelte";
+  import Seo from "$lib/components/Seo.svelte";
   import type { BlogData } from "$lib/helpers/types.js";
 
   export let data: BlogData;
 </script>
+
+<Seo
+  title="Writing on {data.currentCategory.toLowerCase()}"
+  description="Every entry from the writing log filed under {data.currentCategory.toLowerCase()} — {data
+    .posts.length} in total."
+/>
 
 <div class="wrap">
   <p class="breadcrumb">
