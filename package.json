@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "vite dev --host",
-    "build": "node ./scripts/create_index.cjs && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -23,7 +23,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte": "^2.46.1",
     "fs-extra": "^11.1.1",
-    "inquirer": "^9.3.8",
     "mdsvex": "^0.12.7",
     "prettier": "^3.3.3",
     "prettier-plugin-svelte": "^3.3.2",
@@ -40,7 +39,6 @@
   "type": "module",
   "dependencies": {
     "autoprefixer": "^10.4.13",
-    "gray-matter": "^4.0.3",
     "xmlbuilder2": "^4.0.3",
     "xmldom": "^0.6.0"
   }
