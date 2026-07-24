@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isArrowUnderHeader, backArrowPage } from "../../store";
+  import { isArrowUnderHeader } from "../../store";
 
   export let page;
   // manage the capability to hide itself when scrolled under the header.
@@ -15,7 +15,6 @@
   });
 
   let backArrow;
-  backArrowPage.set(page);
 
   const positionY = () => {
     if (!hideUnderHeader) return;
