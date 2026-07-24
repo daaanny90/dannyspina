@@ -13,7 +13,7 @@ categories:
   const imagesPath = "blog/script_blog_cli";
 </script>
 
-This blog is static. [It's made with the famous JAMStack](/blog/new_website_new_start), using Svelte and SvelteKit, which utilizes the folder structure to generate routes and parses markdown files to create posts. The entire site is a simple HTML static site.
+This blog is static. [It's made with the famous JAMStack](/archive/new_website_new_start), using Svelte and SvelteKit, which utilizes the folder structure to generate routes and parses markdown files to create posts. The entire site is a simple HTML static site.
 
 I find it fantastic, and I especially love markdown, which allows me to write all my posts in this fantastic format.
 
@@ -262,7 +262,7 @@ And it works! I generated this post with the CLI, and as you can see, I can auto
 
 ## ChatGPT and Its Role in the Workflow
 
-[I've used ChatGPT extensively since it became available](/blog/chatgpt_posts_explained), and lately, I've found myself using it less but more effectively. I've gradually understood its limits and have fewer expectations regarding its capabilities. I mainly use it to automate writing of repetitive or boring content, or to generate something from my descriptions <Sidenote text="Example: 'Generate an array of objects with 40 entries and keys X, Y, and Z with random values.'" />, or even to help with writing tests for edge cases that I may not have considered.
+[I've used ChatGPT extensively since it became available](/archive/chatgpt_posts_explained), and lately, I've found myself using it less but more effectively. I've gradually understood its limits and have fewer expectations regarding its capabilities. I mainly use it to automate writing of repetitive or boring content, or to generate something from my descriptions <Sidenote text="Example: 'Generate an array of objects with 40 entries and keys X, Y, and Z with random values.'" />, or even to help with writing tests for edge cases that I may not have considered.
 
 ChatGPT has been very helpful at work, and while this task was slightly outside its usual boundaries, it performed quite well.
 

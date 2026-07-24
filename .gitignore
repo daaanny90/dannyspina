@@ -7,3 +7,6 @@ node_modules
 .env.*
 !.env.example
 .claude
+
+# editorial notes, kept local — the repo is public
+/blog-audit.md

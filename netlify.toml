@@ -15,17 +15,17 @@
   force = true
 
 
-# the weekly retro archive was removed — send its URLs to the log
+# the weekly retro that used to live at a path with a space in it
 [[redirects]]
-  from = "/archive/*"
-  to = "/blog"
+  from = "/archive/weekly 3123"
+  to = "/archive/weekly3123"
   status = 301
 
 
 # renamed post slugs
 [[redirects]]
   from = "/blog/1"
-  to = "/blog/new_website_new_start"
+  to = "/archive/new_website_new_start"
   status = 301
 
 [[redirects]]
@@ -35,5 +35,72 @@
 
 [[redirects]]
   from = "/blog/content_creaton_swoftware_engineering"
-  to = "/blog/content_creation_software_engineering"
+  to = "/archive/content_creation_software_engineering"
+  status = 301
+
+
+# entries moved off the log and into the archive
+[[redirects]]
+  from = "/blog/arc_browser"
+  to = "/archive/arc_browser"
+  status = 301
+
+[[redirects]]
+  from = "/blog/chatgpt_posts_explained"
+  to = "/archive/chatgpt_posts_explained"
+  status = 301
+
+[[redirects]]
+  from = "/blog/content_creation_software_engineering"
+  to = "/archive/content_creation_software_engineering"
+  status = 301
+
+[[redirects]]
+  from = "/blog/firestore"
+  to = "/archive/firestore"
+  status = 301
+
+[[redirects]]
+  from = "/blog/improve_productivity_water_wim_hof"
+  to = "/archive/improve_productivity_water_wim_hof"
+  status = 301
+
+[[redirects]]
+  from = "/blog/json_resume_2"
+  to = "/archive/json_resume_2"
+  status = 301
+
+[[redirects]]
+  from = "/blog/mastodon"
+  to = "/archive/mastodon"
+  status = 301
+
+[[redirects]]
+  from = "/blog/new_website_new_start"
+  to = "/archive/new_website_new_start"
+  status = 301
+
+[[redirects]]
+  from = "/blog/niagara_launcher"
+  to = "/archive/niagara_launcher"
+  status = 301
+
+[[redirects]]
+  from = "/blog/photography_future_generations"
+  to = "/archive/photography_future_generations"
+  status = 301
+
+[[redirects]]
+  from = "/blog/self_driving_cars_ethical"
+  to = "/archive/self_driving_cars_ethical"
+  status = 301
+
+[[redirects]]
+  from = "/blog/state_manager_from_scratch"
+  to = "/archive/state_manager_from_scratch"
+  status = 301
+
+[[redirects]]
+  from = "/blog/typescript_enterprise"
+  to = "/archive/typescript_enterprise"
   status = 301
