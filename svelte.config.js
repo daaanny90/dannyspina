@@ -24,8 +24,6 @@ const config = {
       layout: {
         blog: path.join(dirname, "src/routes/blog/post.svelte"),
         books: path.join(dirname, "src/routes/books/book.svelte"),
-        // fallback for markdown outside those folders (the weekly archive)
-        _: path.join(dirname, "src/lib/layouts/Doc.svelte"),
       },
     }),
   ],
