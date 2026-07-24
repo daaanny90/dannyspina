@@ -48,6 +48,10 @@
   Prefer email? <a href="mailto:hi@dannyspina.com">hi@dannyspina.com</a>
   &nbsp;&middot;&nbsp; Code on
   <a href="https://github.com/daaanny90">GitHub</a>
+  &nbsp;&middot;&nbsp; Also on
+  <a href="https://bsky.app/profile/dannyspina.com">Bluesky</a>
+  and
+  <a href="https://www.instagram.com/danny.spina/">Instagram</a>
 </p>
 
 <style lang="scss" scoped>

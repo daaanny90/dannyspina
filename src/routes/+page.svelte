@@ -92,7 +92,11 @@
           addressLocality: "Parma",
           addressCountry: "IT",
         },
-        sameAs: ["https://github.com/daaanny90"],
+        sameAs: [
+          "https://github.com/daaanny90",
+          "https://bsky.app/profile/dannyspina.com",
+          "https://www.instagram.com/danny.spina/",
+        ],
       },
       {
         "@type": "WebSite",

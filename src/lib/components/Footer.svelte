@@ -1,6 +1,8 @@
 <script lang="ts">
   const socials = [
     { label: "GITHUB", href: "https://github.com/daaanny90" },
+    { label: "BLUESKY", href: "https://bsky.app/profile/dannyspina.com" },
+    { label: "INSTAGRAM", href: "https://www.instagram.com/danny.spina/" },
     { label: "RSS", href: "/rss.xml" },
     { label: "WORKSHOP", href: "/workshop" },
   ];
