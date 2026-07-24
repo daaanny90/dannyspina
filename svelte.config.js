@@ -24,6 +24,7 @@ const config = {
       layout: {
         blog: path.join(dirname, "src/routes/blog/post.svelte"),
         books: path.join(dirname, "src/routes/books/book.svelte"),
+        archive: path.join(dirname, "src/routes/archive/entry.svelte"),
       },
     }),
   ],

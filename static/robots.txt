@@ -4,4 +4,7 @@ Allow: /
 # widget embedded in Notion, not a landing page
 Disallow: /notion/
 
+# kept for rereading, not for circulation
+Disallow: /archive/
+
 Sitemap: https://dannyspina.com/sitemap.xml
