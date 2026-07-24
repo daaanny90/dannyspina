@@ -14,3 +14,26 @@
   status = 301
   force = true
 
+
+# the weekly retro archive was removed — send its URLs to the log
+[[redirects]]
+  from = "/archive/*"
+  to = "/blog"
+  status = 301
+
+
+# renamed post slugs
+[[redirects]]
+  from = "/blog/1"
+  to = "/blog/new_website_new_start"
+  status = 301
+
+[[redirects]]
+  from = "/blog/Oliviero_toscani"
+  to = "/blog/oliviero_toscani"
+  status = 301
+
+[[redirects]]
+  from = "/blog/content_creaton_swoftware_engineering"
+  to = "/blog/content_creation_software_engineering"
+  status = 301

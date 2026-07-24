@@ -13,7 +13,7 @@ categories:
   const imagesPath = "blog/script_blog_cli";
 </script>
 
-This blog is static. [It's made with the famous JAMStack](/blog/1), using Svelte and SvelteKit, which utilizes the folder structure to generate routes and parses markdown files to create posts. The entire site is a simple HTML static site.
+This blog is static. [It's made with the famous JAMStack](/blog/new_website_new_start), using Svelte and SvelteKit, which utilizes the folder structure to generate routes and parses markdown files to create posts. The entire site is a simple HTML static site.
 
 I find it fantastic, and I especially love markdown, which allows me to write all my posts in this fantastic format.
 
