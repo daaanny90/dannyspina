@@ -57,10 +57,11 @@ src/
     ├── about/ ai/ workshop/ contacts/
     ├── services/{design-ops,frontend-design-systems,software-development}/
     ├── blog/             "The log" index + one folder per post + /categories/[category]
+    ├── archive/          entries retired from the log (noindex) + one folder each
     ├── books/            reading log (noindex) + one folder per book
     ├── asincrono/        podcast index + [episode]
     ├── notion/weekinfo/  embeddable Notion widget
-    ├── api/              posts.json, books.json, episodes.json
+    ├── api/              posts.json, archive.json, books.json, episodes.json
     └── rss.xml/          hand-rolled RSS 2.0 feed (blog posts only)
 
 scripts/
@@ -102,6 +103,18 @@ description: >-
 ```
 
 The whole `/books` section is `noindex` and excluded from the sitemap.
+
+**Archived entries** — `src/routes/archive/<slug>/+page.md`, same frontmatter as a blog post.
+
+The archive holds writing that is kept but no longer circulated: old experiments, the weekly
+retros, and posts that stopped holding up. Retiring an entry is a single move —
+`git mv src/routes/blog/<slug> src/routes/archive/<slug>` — because `/api/posts.json` globs
+only `src/routes/blog/**`, so the entry leaves the log index, the categories, the RSS feed,
+the `LOG·NNN` numbering and the prev/next links on its own. There is no exclusion list.
+
+Every archive page renders `noindex`, the section is disallowed in `robots.txt` and ignored
+by the sitemap, and nothing on the site links into it. **Add a 301 in `netlify.toml`** when
+you move something, so the old `/blog/<slug>` URL still resolves.
 
 **Podcast episodes** are not files — `/api/episodes.json` parses the Anchor.fm RSS at build
 time, so new episodes only appear after a rebuild. `.github/workflows/rss-check.yml` runs
