@@ -18,7 +18,7 @@
     }
   });
   // pages designed as full-width "sheets"; everything else stays prose-width
-  const wideRoutes = ["/", "/services", "/workshop", "/blog"];
+  const wideRoutes = ["/", "/services", "/workshop", "/blog", "/wallpapers"];
 
   export let data;
 

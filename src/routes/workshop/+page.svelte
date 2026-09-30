@@ -113,7 +113,8 @@
       tag: "[pixels]",
       title: "Wallpapers",
       desc: "I change wallpaper often and rarely find the one I'm looking for — so I make them, or generate them with AI. Shared here, free, when they ship.",
-      status: "next batch · in progress",
+      status: "batch 01 · 10 sheets",
+      links: [{ label: "OPEN →", href: "/wallpapers" }],
     },
   ];
 </script>
