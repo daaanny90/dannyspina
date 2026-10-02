@@ -50,6 +50,12 @@
 
   const serviceLog = [
     {
+      years: "2026–",
+      client: "Freelance · IT",
+      desc: "Independent practice: software development, frontend & design systems, design ops",
+      tag: "[freelance]",
+    },
+    {
       years: "2024–26",
       client: "Herole Services · DE",
       desc: "Frontend architecture rebuild, new design system, design↔engineering processes",
