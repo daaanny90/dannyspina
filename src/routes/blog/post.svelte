@@ -10,6 +10,8 @@
   export let date;
   export let categories = [];
   export let human = undefined;
+  // optional frontmatter: source language when a LLM translated the post, e.g. "it"
+  export let translated = undefined;
   // optional frontmatter: site-root path to the entry's share card
   export let image = DEFAULT_OG_IMAGE;
 
@@ -70,7 +72,7 @@
 
   {#if human !== undefined}
     <div class="ai">
-      <AiIndicator humanLevel={human} />
+      <AiIndicator humanLevel={human} {translated} />
     </div>
   {/if}
 

@@ -25,6 +25,14 @@
   imperfections like grammatical errors and typos.
 </p>
 
+<AiIndicator humanLevel={100} translated="it" interactive={false} />
+<p>
+  The content is 100% written by me, but in my mother tongue (Italian). A LLM
+  translated it to English word by word, without changing the structure, the
+  tone or the meaning. The thinking is all mine, the English words are the
+  machine's.
+</p>
+
 <AiIndicator humanLevel={90} interactive={false} />
 <p>
   The content is 100% written by me, but a LLM made the proof reading, removing

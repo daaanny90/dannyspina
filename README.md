@@ -82,7 +82,8 @@ subtitle: A tool to identify weakness in your package.json
 date: "2025-03-20"
 categories:
   - "Projects"
-human: 90 # optional 0–100, drives the AiIndicator badge (see /ai)
+human: 90 # optional, one of 100 | 90 | 50 | 10 — drives the AiIndicator badge (see /ai)
+translated: "it" # optional, source language when the post is human-written and LLM-translated
 ---
 ```
 
