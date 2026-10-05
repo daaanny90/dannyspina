@@ -38,8 +38,8 @@ npm run dev      # vite dev --host
 | `npm run lint`    | `prettier --check` + `eslint` (also enforced on Netlify CI) |
 | `npm run format`  | `prettier --write .`                                        |
 
-`postbuild` runs `svelte-sitemap` against `https://dannyspina.com`, excluding `/library`,
-`/meet` and `/books/**`.
+`postbuild` runs `scripts/sitemap.cjs`, which walks the prerendered `build/` output and
+writes `sitemap.xml`, excluding `/library`, `/meet`, `/books/**` and `/archive/**`.
 
 ## Layout
 

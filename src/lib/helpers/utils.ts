@@ -9,6 +9,6 @@ import type { Post } from "./types";
  */
 export const sortedPosts = (posts: Post[]) => {
   return posts.sort(
-    (a, b) => (new Date(b.meta.date) as any) - (new Date(a.meta.date) as any),
+    (a, b) => new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime(),
   );
 };

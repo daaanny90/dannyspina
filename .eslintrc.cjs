@@ -22,6 +22,9 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/no-unused-vars": "off",
+    // typescript-eslint v8 promotes this to error in recommended; keep the
+    // pre-existing anys visible as warnings without failing CI
+    "@typescript-eslint/no-explicit-any": "warn",
     // compiler warnings (a11y, unused selectors/exports) stay visible in dev
     // but must not fail CI builds for legacy components
     "svelte/valid-compile": ["error", { ignoreWarnings: true }],

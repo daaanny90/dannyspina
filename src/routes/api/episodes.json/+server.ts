@@ -1,4 +1,4 @@
-import { DOMParser } from "xmldom";
+import { DOMParser } from "@xmldom/xmldom";
 import { json } from "@sveltejs/kit";
 
 export const GET = async () => {

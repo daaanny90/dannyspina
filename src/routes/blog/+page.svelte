@@ -47,7 +47,7 @@
     .filter((p) => matchesTag(p, activeTag) && matchesQuery(p, query))
     .sort((a, b) => {
       const diff =
-        (new Date(b.meta.date) as any) - (new Date(a.meta.date) as any);
+        new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
       return newestFirst ? diff : -diff;
     });
 
