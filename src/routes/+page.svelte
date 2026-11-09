@@ -119,9 +119,8 @@
     <p class="kicker">SOFTWARE DEVELOPER &middot; WEB &mdash; PARMA, IT</p>
     <h1>Software that stays serviceable.</h1>
     <p class="lead">
-      Web software for teams and founders that plan in years, not sprints
-      &mdash; with a special focus on frontend and design ops. The framework is
-      a detail; the discipline is not.
+      I'm a web developer, mostly on the frontend. I also help designers and
+      developers work together.
     </p>
     <div class="cta-row">
       <a class="ds-btn" href="/contacts">WORK WITH ME &rarr;</a>
