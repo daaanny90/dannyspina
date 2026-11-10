@@ -10,7 +10,7 @@ const path = require("path");
 const { program } = require("commander");
 const readline = require("readline");
 const { Select } = require("enquirer");
-const simpleGit = require("simple-git");
+const { simpleGit } = require("simple-git");
 
 const rl = readline.createInterface({
   input: process.stdin,
