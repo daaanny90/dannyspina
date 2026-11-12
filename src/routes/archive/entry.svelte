@@ -12,11 +12,7 @@
     d ? String(d).slice(0, 10).replace(/-/g, "–") : "";
 </script>
 
-<Seo
-  {title}
-  description={subtitle || `${title} — filed in the archive.`}
-  noindex
-/>
+<Seo {title} description={subtitle || `${title}, from the archive.`} noindex />
 
 <article>
   <p class="breadcrumb">
@@ -35,8 +31,8 @@
   </div>
 
   <p class="notice">
-    Filed away. This entry is no longer part of the log — it is kept here
-    because it happened, not because it still holds up.
+    This post is not on the log anymore. I keep it in the archive, but it may be
+    out of date.
   </p>
 
   <div class="post-body">

@@ -44,7 +44,7 @@
 
 <Seo
   {title}
-  description={subtitle || `${title} — an entry from the writing log.`}
+  description={subtitle || `${title}, a post by Danny Spina.`}
   type="article"
   publishedAt={date}
   tags={categories}

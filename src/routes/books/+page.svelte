@@ -37,13 +37,13 @@
 <!-- reading log: off the menu, kept out of search -->
 <Seo
   title="Books I've read &amp; currently reading"
-  description="The reading log: notes on the books that shaped how I work and think, from software and design to personal growth."
+  description="The books I've read and what I'm reading now, with some notes."
   noindex
 />
 
 <PageTitle
   title="Books I've Read & Currently Reading"
-  subtitle="My Reading Adventure: A Collection of Books I've Read and Currently Reading"
+  subtitle="The books I've read, with some notes."
 />
 
 <Callout title="I'm reading">

@@ -19,18 +19,18 @@
 
 <Seo
   title="Archive"
-  description="Writing kept off the log — old experiments, weekly retros and pieces that no longer hold up."
+  description="Old posts taken off the log: experiments, weekly retros and pieces that are out of date."
   noindex
 />
 
 <section>
-  <PageTitle title="Archive" subtitle="What came off the shelf" />
+  <PageTitle title="Archive" subtitle="Old posts I took off the log" />
 
   <p class="intro">
-    Everything here used to be on the log. Some of it was written by a machine
-    in 2022, some of it was a weekly diary, some of it simply stopped being
-    true. None of it is indexed and none of it is in the feed — it lives here so
-    it can be reread in ten years, not found by accident today.
+    Everything here used to be on the log. There are posts written by a machine
+    in 2022, an old weekly diary and things that are not true anymore. None of
+    it is indexed or in the feed. I keep it here so I can reread it in ten
+    years.
   </p>
 
   {#each years as year}

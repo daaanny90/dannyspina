@@ -9,8 +9,8 @@
 
 <Seo
   title="Writing on {data.currentCategory.toLowerCase()}"
-  description="Every entry from the writing log filed under {data.currentCategory.toLowerCase()} — {data
-    .posts.length} in total."
+  description="All posts about {data.currentCategory.toLowerCase()}, {data.posts
+    .length} so far."
 />
 
 <div class="wrap">

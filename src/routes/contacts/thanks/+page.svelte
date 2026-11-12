@@ -4,14 +4,14 @@
 
 <Seo
   title="Message logged"
-  description="Your message reached the bench. I read everything myself and reply within 48 hours."
+  description="Thanks for your message. I'll reply within 48 hours."
   noindex
 />
 
 <p class="breadcrumb">04 &mdash; CONTACT / RECEIPT</p>
 <h1>Message logged.</h1>
 <p class="lead">
-  I read everything myself and reply within 48 hours &mdash; usually sooner.
+  I read every message myself and reply within 48 hours, usually sooner.
 </p>
 <a class="ds-btn" href="/">BACK TO THE BENCH &rarr;</a>
 

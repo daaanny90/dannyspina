@@ -1,6 +1,6 @@
 ---
 title: My Little CLI to Create Content for My Static Blog
-subtitle: Sharing a CLI I Made to Automate Blog Post Creation for My Static Blog
+subtitle: A small CLI that creates new posts for this blog. I wrote it because I'm lazy.
 date: "2023-08-01"
 categories:
   - "Projects"

@@ -1,6 +1,6 @@
 ---
-title: Blaze, Revolutionizing Mobile Browsing in Low Connectivity
-subtitle: Your Gateway to Lightning-Fast, Data-Efficient Web Surfing
+title: Blaze, browsing the web on a slow connection
+subtitle: When my mobile data runs out the web gets very slow, so I built a proxy that serves light pages, mostly text.
 date: "2023-10-24"
 categories:
   - "Projects"
