@@ -28,21 +28,21 @@
     {
       n: "01",
       title: "Software development",
-      desc: "Web software end to end: features, architecture, maintenance.",
+      desc: "Building features for web apps and keeping the code in good shape.",
       sheet: "DS·SRV·01",
       href: "/services/software-development",
     },
     {
       n: "02",
       title: "Frontend & design systems",
-      desc: "Special focus: UI architecture, component libraries that survive team turnover.",
+      desc: "UI architecture, component libraries and design tokens.",
       sheet: "DS·SRV·02",
       href: "/services/frontend-design-systems",
     },
     {
       n: "03",
       title: "Design ops",
-      desc: "The bridge between design and engineering teams.",
+      desc: "Getting designs from Figma into code with less back and forth.",
       sheet: "DS·SRV·03",
       href: "/services/design-ops",
     },
@@ -76,7 +76,7 @@
     {
       years: "2017–20",
       client: "3m5. · DE",
-      desc: "Ausbildung: 3-year apprenticeship as software developer — PHP, React, Docker",
+      desc: "3-year apprenticeship (Ausbildung) as software developer: PHP, React, Docker",
       tag: "[apprenticeship]",
     },
   ];
@@ -84,7 +84,7 @@
 
 <Seo
   title="Danny Spina — software developer"
-  description="Danny Spina — software developer (web) in Parma, Italy. Special focus on frontend and design ops. Software that stays serviceable."
+  description="Danny Spina, web developer in Parma, Italy. I mostly build frontends and help designers and developers work together."
   schema={{
     "@context": "https://schema.org",
     "@graph": [
@@ -211,7 +211,7 @@
 <section class="bench-strip">
   <p class="text">
     <span class="strip-label">OFF THE BENCH &mdash;</span> I also repair mechanical
-    cameras, write a book on the method, and build my own bench tools: forfy &middot;
+    cameras and I'm writing a book about it. I build small apps too: forfy &middot;
     strider &middot; pit stop.
   </p>
   <a class="workshop" href="/workshop">THE WORKSHOP &rarr;</a>
