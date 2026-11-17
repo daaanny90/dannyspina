@@ -16,7 +16,7 @@
       code: "WS·01",
       tag: "[cameras]",
       title: "Camera repairs",
-      desc: "Mechanical cameras disassembled, cleaned and brought back to spec. Six years as a Nikon service technician, kept alive on the bench.",
+      desc: "I take mechanical cameras apart, clean them and bring them back to spec. I worked six years as a Nikon service technician.",
       status: "on request",
       links: [{ label: "REQUEST A REPAIR →", href: "/contacts" }],
     },
@@ -24,21 +24,21 @@
       code: "WS·02",
       tag: "[paper]",
       title: "The repair manual",
-      desc: "A book about fixing mechanical cameras — and the method behind fixing anything: measure, disassemble, rebuild, document.",
+      desc: "A book about fixing mechanical cameras. It also explains the method I use for almost any repair: measure, disassemble, rebuild, document.",
       status: "manuscript · in progress",
     },
     {
       code: "WS·03",
       tag: "[tool]",
       title: "Forfy",
-      desc: "Tax simulator for Italian freelancers under Regime Forfettario: you invoice, Forfy does the math — set-asides, deadlines, the €85k ceiling.",
+      desc: "Tax simulator for Italian freelancers under Regime Forfettario. You enter your invoices and Forfy calculates what to set aside, the deadlines and how close you are to the €85k limit.",
       links: [{ label: "OPEN →", href: "https://forfy.tax" }],
     },
     {
       code: "WS·04",
       tag: "[tool]",
       title: "Strider",
-      desc: "Walking & running app: pick a mission — a real or fictional route — and advance along it by logging your own distance. Community mission catalog on GitHub.",
+      desc: "Walking and running app. You pick a mission, a real or fictional route, and move along it with the distance you log. Anyone can add new missions on GitHub.",
       links: [
         { label: "OPEN →", href: "https://strider.dannyspina.com" },
         {
@@ -51,14 +51,14 @@
       code: "WS·05",
       tag: "[tool]",
       title: "PitStop",
-      desc: "Vehicle maintenance for Android & iOS: services, costs, reminders — the service log, but for your car.",
+      desc: "Vehicle maintenance app for Android and iOS. It keeps track of services, costs and reminders for your car.",
       status: "coming to the stores",
     },
     {
       code: "WS·06",
       tag: "[tool]",
       title: "NPMGuard",
-      desc: "Dependency audit of your package.json: what is outdated, abandoned or risky — before it bites.",
+      desc: "Checks the dependencies in your package.json and tells you which ones are outdated, abandoned or risky.",
       links: [
         { label: "SOURCE →", href: "https://github.com/daaanny90/npmguard" },
         { label: "LOG ENTRY →", href: "/blog/npmguard" },
@@ -68,7 +68,7 @@
       code: "WS·07",
       tag: "[tool]",
       title: "Blaze",
-      desc: "Seamless browsing in challenging conditions: text-first, weight stripped, for when the network is against you.",
+      desc: "Browse the web on a slow connection. Blaze turns pages into light versions, mostly text.",
       links: [
         { label: "OPEN →", href: "https://blaze.dannyspina.com" },
         { label: "LOG ENTRY →", href: "/blog/blaze" },
@@ -78,7 +78,7 @@
       code: "WS·08",
       tag: "[tool]",
       title: "podshort",
-      desc: "Clip generator for podcast episodes — cut shorts out of long recordings without a video editor.",
+      desc: "Makes short clips from long podcast recordings, without a video editor.",
       links: [
         { label: "SOURCE →", href: "https://github.com/daaanny90/podshort" },
       ],
@@ -100,7 +100,7 @@
       code: "WS·10",
       tag: "[pixels]",
       title: "claude-desktop.nvim",
-      desc: "Warm dark Neovim colorscheme matching the Claude Desktop app. For terminals that live next to it.",
+      desc: "Warm dark Neovim colorscheme with the colors of the Claude Desktop app. I use it in the terminal next to the app.",
       links: [
         {
           label: "SOURCE →",
@@ -112,7 +112,7 @@
       code: "WS·11",
       tag: "[pixels]",
       title: "Wallpapers",
-      desc: "I change wallpaper often and rarely find the one I'm looking for — so I make them, or generate them with AI. Shared here, free, when they ship.",
+      desc: "I change wallpaper often and rarely find one I like, so I make my own, some of them with AI. Free to download.",
       status: "7 series · 53 sheets",
       links: [{ label: "OPEN →", href: "/wallpapers" }],
     },
@@ -121,7 +121,7 @@
 
 <Seo
   title="The workshop"
-  description="Off the bench: camera repairs, small tools, colorschemes and wallpapers by Danny Spina."
+  description="What Danny Spina makes outside of client work: camera repairs, small apps and wallpapers."
 />
 
 <article>
@@ -132,8 +132,8 @@
   </p>
   <h1>The workshop</h1>
   <p class="lead">
-    What leaves the bench when nobody is billing: cameras brought back to spec,
-    small tools, pixels, paper. Not billable &mdash; built anyway.
+    Things I make outside of client work: camera repairs, small apps, wallpapers
+    and a book I'm writing.
   </p>
 
   <div class="ruler-slot">

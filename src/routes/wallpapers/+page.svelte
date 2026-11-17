@@ -510,7 +510,7 @@
 
 <Seo
   title="Wallpapers"
-  description="Fifty-three wallpapers in seven series — grid paper, oversized marks, stripe stacks, auras, whispers and poster plates. 3840×2160 PNG, free to download."
+  description="Fifty-three wallpapers in seven series, all made around the same spiral mark. 3840×2160 PNG, free to download."
   image="/images/wallpapers/og.png"
 />
 
@@ -522,10 +522,9 @@
   </p>
   <h1>Wallpapers</h1>
   <p class="lead">
-    I change wallpaper often and rarely find the one I want &mdash; so I made
-    these. Seven series around the same spiral mark: grid paper, oversized
-    crops, construction lines, stripe stacks, slow glows, whispers and poster
-    plates. All 3840&times;2160, free to take.
+    I change wallpaper often and rarely find one I like, so I made these. There
+    are seven series around the same spiral mark, all 3840&times;2160 and free
+    to download.
   </p>
 
   <p class="index">
@@ -575,8 +574,8 @@
   {/each}
 
   <p class="note">
-    &#8627; free to take &mdash; &copy; dannyspina.com or the lockup in the
-    corner, the mark somewhere in the sheet.
+    &#8627; free to take. &copy; dannyspina.com or the lockup in the corner, the
+    mark somewhere in the sheet.
   </p>
 </article>
 

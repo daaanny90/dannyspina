@@ -4,14 +4,14 @@
 
 <Seo
   title="Contact"
-  description="Get in touch with Danny Spina — software developer (web), Parma, Italy. Tell me what you are building, I reply within 48 hours."
+  description="Get in touch with Danny Spina, web developer in Parma, Italy. Tell me what you're working on and I'll reply within 48 hours."
 />
 
 <p class="breadcrumb">04 &mdash; CONTACT</p>
 <h1>Get in touch</h1>
 <p class="lead">
-  Tell me what you are building &mdash; or what stopped working. I read
-  everything myself and reply within 48 hours, in Italian, German or English.
+  Tell me what you're building or what stopped working. I read every message
+  myself and reply within 48 hours, in Italian, German or English.
 </p>
 
 <form

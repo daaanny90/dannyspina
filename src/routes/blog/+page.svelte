@@ -74,7 +74,7 @@
 
 <Seo
   title="The log"
-  description="Writing on frontend architecture, design systems and design ops — a running log, searchable, no tracking, no comments."
+  description="Posts about frontend architecture, design systems and design ops. No tracking and no comments."
 />
 
 <div class="wrap">

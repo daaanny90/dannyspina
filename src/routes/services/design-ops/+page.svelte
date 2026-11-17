@@ -9,60 +9,63 @@
     { key: "LANGUAGES", value: "IT &middot; DE &middot; EN" },
     {
       key: "COMPATIBILITY",
-      value: "Figma &middot; design tokens<br />your stack, your tools",
+      value: "Figma &middot; design tokens<br />the tools you already use",
     },
     {
       key: "PRICING",
-      value: "fixed quote or monthly<br />agreed at intake, no surprises",
+      value: "fixed quote or monthly<br />agreed before we start",
     },
   ];
 
   const scope = [
     {
       title: "Token pipeline",
-      desc: "Design decisions as code: from Figma variables into CI, drift caught early.",
+      desc: "Figma variables exported as code and checked in CI.",
     },
     {
       title: "Handoff & workflows",
-      desc: "Specs developers actually read; reviews that catch problems before release.",
+      desc: "Short specs and reviews that catch problems before release.",
     },
     {
       title: "Tooling",
-      desc: "Figma-to-code bridges, linting, scaffolds — the boring glue that saves weeks.",
+      desc: "Plugins and scripts between Figma and code, plus linting and project templates.",
     },
     {
       title: "Process & rituals",
-      desc: "Design reviews, contribution flows, naming that sticks after I leave.",
+      desc: "Regular design reviews, contribution rules and naming conventions.",
     },
   ];
 
   const procedure = [
-    { label: "INTAKE", desc: "30-minute call, free. You state the problem." },
+    {
+      label: "INTAKE",
+      desc: "A free 30-minute call where you tell me the problem.",
+    },
     {
       label: "OBSERVE",
-      desc: "I watch how design ships today — where it stalls. Numbers, not impressions.",
+      desc: "I look at how design gets into code today and where it gets stuck.",
     },
     {
       label: "WIRE",
-      desc: "Tokens, tooling, handoff — connected one piece at a time.",
+      desc: "I connect tokens, tools and handoff one piece at a time.",
     },
     {
       label: "EMBED",
-      desc: "Rituals documented and rehearsed. The team runs it without me.",
+      desc: "I write down the process and try it with the team until it works without me.",
     },
   ];
 </script>
 
 <Seo
   title="Design ops"
-  description="Design ops: token pipelines, Figma-to-code workflows and rituals that bridge design and engineering teams."
+  description="Design ops: token pipelines, Figma-to-code workflows and processes that help designers and developers work together."
   schema={{
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Design ops",
     serviceType: "Design ops",
     description:
-      "Token pipelines, Figma-to-code workflows and rituals that bridge design and engineering teams.",
+      "Token pipelines, Figma-to-code workflows and processes that help designers and developers work together.",
     provider: { "@type": "Person", name: SITE_NAME, url: SITE_URL },
     areaServed: ["IT", "DE", "EU"],
   }}
@@ -72,7 +75,7 @@
   sheetRef="DS·SRV·03"
   revNote="REV 01 · 2026–07"
   title="Design ops"
-  lead="For teams where design and engineering ship past each other. I build the bridge: shared tokens, working handoffs, and rituals that survive the next deadline."
+  lead="I help designers and developers work from the same tokens and the same specs. Most of the time I start with the handoff between the two."
   {scope}
   {tolerances}
   {procedure}

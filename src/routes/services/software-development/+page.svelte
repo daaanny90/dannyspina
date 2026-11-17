@@ -13,49 +13,52 @@
     },
     {
       key: "PRICING",
-      value: "fixed quote or monthly<br />agreed at intake, no surprises",
+      value: "fixed quote or monthly<br />agreed before we start",
     },
   ];
 
   const scope = [
     {
       title: "Feature development",
-      desc: "New capabilities, from data model to UI.",
+      desc: "New features, from the data model to the UI.",
     },
     {
       title: "Architecture & refactoring",
-      desc: "Structure that survives the next three features, not just the demo.",
+      desc: "Cleaning up the parts of the code that slow the team down.",
     },
     {
       title: "Frontend & design systems",
-      desc: "The special focus: UI architecture, component libraries, tokens.",
+      desc: "Most of my work is here: UI architecture, component libraries and tokens.",
     },
     {
       title: "Maintenance",
-      desc: "The unglamorous work: upgrades, dependencies, performance, bugs.",
+      desc: "Upgrades, dependency updates, performance and bug fixes.",
     },
   ];
 
   const procedure = [
-    { label: "INTAKE", desc: "30-minute call, free. You state the problem." },
+    {
+      label: "INTAKE",
+      desc: "A free 30-minute call where you tell me the problem.",
+    },
     {
       label: "MEASURE",
-      desc: "I read the codebase before promising anything. Numbers, not impressions.",
+      desc: "I read the codebase before promising anything.",
     },
     {
       label: "BUILD",
-      desc: "Features, refactors, fixes — shipped in small, reviewable steps.",
+      desc: "Features, refactors and fixes in small steps that are easy to review.",
     },
     {
       label: "DOCUMENT",
-      desc: "Decision records your next hire can read without a guide.",
+      desc: "I write down the important decisions and the reasons behind them.",
     },
   ];
 </script>
 
 <Seo
   title="Software development"
-  description="Software development for the web: features, architecture and maintenance for TypeScript and Vue codebases, with a special focus on frontend and design ops."
+  description="Web software development: new features, refactoring and maintenance for TypeScript and Vue codebases."
   schema={{
     "@context": "https://schema.org",
     "@type": "Service",
@@ -72,7 +75,7 @@
   sheetRef="DS·SRV·01"
   revNote="REV 02 · 2026–07"
   title="Software development"
-  lead="For products that grew faster than their structure. I open the codebase, measure what is actually there, and build what is missing — features, refactors, maintenance — with your team, not instead of it."
+  lead="I join your team and work on the code with you, from new features to maintenance."
   {scope}
   {tolerances}
   {procedure}
